@@ -8,6 +8,7 @@ const LayoutPublic = () => {
       <main>
         <Outlet />
       </main>
+      {/* Todo: footer */}
     </div>
   );
 };

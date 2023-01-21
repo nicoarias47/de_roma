@@ -18,6 +18,10 @@ export const router = createBrowserRouter([
         path: "/test",
         element: <Test />,
       },
+      {
+        path: "/asdsa",
+        element: <Adasda />,
+      },
     ],
   },
 ]);
