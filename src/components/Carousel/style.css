@@ -1,0 +1,38 @@
+.CarouselPhoto{
+   display:block;
+   width: 100%;
+}
+
+.carousel  {
+    height: 72vh !important;
+    /* margin-bottom: -1rem !important; */
+}
+.carousel-indicators button {
+    
+    background-color: rgb(255, 255, 255) !important;
+    border: 3px solid black !important;
+    border-radius: 50% !important;
+    width: 12px !important ;
+    height: 12px !important;
+}
+.see-more{
+    color: white;
+    width: 8rem;
+    height: 2.5rem;
+    background-color: #5F6F52;
+    border-radius: 5%;
+    border: hidden;
+    text-decoration: none;
+
+}
+.container-btn {
+    padding-bottom: 10rem;
+}
+.carousel-control-prev-icon {
+background-image: url(https://cdn-icons-png.flaticon.com/512/54/54517.png)!important;
+}
+
+.carousel-control-next-icon {
+    background-image: url(https://cdn-icons-png.flaticon.com/512/54/54661.png)!important;
+    opacity: 100%;
+    }

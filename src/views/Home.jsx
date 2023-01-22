@@ -1,12 +1,19 @@
+import "./style.css";
 import React from "react";
-import Btn from "../components/Button";
-
+import SectionGroup from "./SectionGroup";
+import HomeCarousel from "../components/Carousel/HomeCarousel"
 const Home = () => {
   return (
     <div className="test-home">
-      <h1>Hello World!</h1>
-      <h1>this is una prueba</h1>
-      <Btn />
+      <HomeCarousel/>
+          <div class="info-icons-container">
+            <ul class="info-icons">
+              <li><a class="envios" href="#"><i class="fa fa-truck fa-inverse" aria-hidden="true"></i></a></li>
+              <li><a class="pagos" href="#"><i class="fa fa-money fa-inverse" ></i></a></li>
+              <li><a class="entregas" href="#"><i class="fa fa-share-square-o fa-inverse"></i></a></li>
+            </ul>
+          </div>
+      <SectionGroup/> 
     </div>
   );
 };
