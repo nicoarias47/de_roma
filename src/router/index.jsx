@@ -3,7 +3,7 @@ import LayoutPublic from "../layout/LayoutPublic";
 import About from "../views/About";
 import Home from "../views/Home";
 import NotFound from "../views/NotFound";
-import Test from "../views/Test";
+import Products from "../views/Products";
 
 // Aqui van las rutas de las paginas del proyecto
 export const router = createBrowserRouter([
@@ -17,12 +17,13 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/test",
-        element: <Test />,
-      },
-      {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/productos",
+        element: <Products />,
+        children: [{ path: "/productos/:producto" }],
       },
     ],
   },

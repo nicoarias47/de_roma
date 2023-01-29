@@ -3,11 +3,11 @@ import { useMatch } from "react-router-dom";
 
 const paths = {
   home: {
-    name: "home",
+    name: "Home",
     path: "/",
   },
   products: {
-    name: "productos",
+    name: "Productos",
     path: "/productos",
     children: {
       home: {
@@ -18,26 +18,42 @@ const paths = {
         name: "Aromatizantes",
         path: "/aromatizantes",
       },
+      bathroom: {
+        name: "Baño",
+        path: "/baño",
+      },
+      textile: {
+        name: "Textil",
+        path: "/textil",
+      },
+      garden: {
+        name: "Jardín",
+        path: "/jardin",
+      },
+      organization: {
+        name: "Organización",
+        path: "/organizacion",
+      },
     },
   },
   about: {
-    name: "quienes somos",
+    name: "Quienes somos",
     path: "/quienes_somos",
   },
   shipping: {
-    name: "envios",
+    name: "Envíos",
     path: "/envios",
   },
   paymentMethods: {
-    name: "metodos de pago",
+    name: "Medios de pago",
     path: "/medios_de_pago",
   },
   faq: {
-    name: "preguntas frecuentes",
+    name: "Preguntas frecuentes",
     path: "/preguntas_frecuentes",
   },
   contact: {
-    name: "contacto",
+    name: "Contacto",
     path: "/contacto",
   },
 };

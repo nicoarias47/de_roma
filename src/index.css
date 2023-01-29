@@ -98,4 +98,12 @@
   background-color: #33353d;
 }
 
+.products h1 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.products b {
+  font-weight: 500;
+}
+
 /*# sourceMappingURL=index.css.map */

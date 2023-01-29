@@ -1,9 +1,7 @@
-import { NavLink } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
-
 import { Link } from "react-router-dom";
 import { useNavbar } from "../../hooks/useNavbar";
 
@@ -33,7 +31,7 @@ const NavBar = () => {
                     {Object.values(obj.children).map((child) => {
                       return (
                         <Link
-                          to={child.path}
+                          to={obj.path + child.path}
                           className="dropdown-item"
                           key={child.name}
                         >
