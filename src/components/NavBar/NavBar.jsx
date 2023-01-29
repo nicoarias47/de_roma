@@ -1,34 +1,61 @@
+import { NavLink } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
-function NavBar() {
+import { Link } from "react-router-dom";
+import { useNavbar } from "../../hooks/useNavbar";
+
+const NavBar = () => {
+  const { navbarClasses, paths } = useNavbar();
+
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg" id={navbarClasses}>
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <div className="menu-toggle">
+          <div className="menu-toggle_col-1">
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <span>Menú</span>
+          </div>
+          <Link to="/" className="navbar-brand"></Link>
+        </div>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">Link</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                Separated link
-              </NavDropdown.Item>
-            </NavDropdown>
+            {Object.values(paths).map((obj) => {
+              if (obj.children) {
+                return (
+                  <NavDropdown
+                    title={obj.name}
+                    id="basic-nav-dropdown"
+                    key={obj.name}
+                  >
+                    {Object.values(obj.children).map((child) => {
+                      return (
+                        <Link
+                          to={child.path}
+                          className="nav-link"
+                          key={child.name}
+                        >
+                          {child.name}
+                        </Link>
+                      );
+                    })}
+                  </NavDropdown>
+                );
+              } else {
+                return (
+                  <Link to={obj.path} key={obj.name} className="nav-link">
+                    {obj.name}
+                  </Link>
+                );
+              }
+            })}
           </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
-}
+};
 
 export default NavBar;

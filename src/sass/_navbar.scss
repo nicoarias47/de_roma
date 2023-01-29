@@ -1,0 +1,89 @@
+#navbar-home {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  z-index: 10000;
+  color: white;
+  transition: 0.4s ease-in;
+
+  .container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .navbar-toggler {
+    border: none;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+
+    &-icon {
+      width: 1.5rem;
+      background-image: url("./assets/icon/navbarToggle.svg");
+    }
+  }
+
+  .navbar-collapse {
+    padding: 2rem 0 1rem 0;
+    background-color: whitesmoke;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+}
+
+#navbar {
+  background-color: $color-principal-100;
+  width: 100%;
+  padding: 1;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: 0.4s ease-in;
+
+  .container {
+    .menu-toggle {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+
+    &-icon {
+      width: 1.5rem;
+      background-image: url("./assets/icon/navbarToggle.svg");
+    }
+  }
+
+  .navbar-collapse {
+    padding: 2rem 0 1rem 0;
+    background-color: $color-principal-100;
+  }
+
+  .navbar-brand {
+    background-image: url("./assets/icon/logo-icon.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 6rem;
+    height: 2rem;
+  }
+
+  .nav-link {
+    color: white;
+  }
+}

@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import LayoutPublic from "../layout/LayoutPublic";
+import About from "../views/About";
 import Home from "../views/Home";
 import NotFound from "../views/NotFound";
 import Test from "../views/Test";
-
 
 // Aqui van las rutas de las paginas del proyecto
 export const router = createBrowserRouter([
@@ -20,10 +20,10 @@ export const router = createBrowserRouter([
         path: "/test",
         element: <Test />,
       },
-      // {
-      //   path: "/asdsa",
-      //   element: <Adasda />,
-      // },
+      {
+        path: "/about",
+        element: <About />,
+      },
     ],
   },
 ]);

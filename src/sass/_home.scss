@@ -1,21 +1,9 @@
-// .test-home {
-//     background-color: black;
-//     min-height: 100vh;
-//     color: whitesmoke;
-//     text-align: center;
-//     padding-top: 10rem;
-// }
-
-.btn-sass {
-    background-color: $color-red;
+.info-icons {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 6px;
+  margin-right: 0;
+  border-radius: 100%;
+  background-color: #33353d;
 }
-
-.info-icons{
-    width:40px;
-    height:40px;
-    line-height:40px;
-    margin-left:6px;
-    margin-right:0;
-    border-radius:100%;
-    background-color:#33353d
-  }
