@@ -24,11 +24,18 @@
   background-image: url("./assets/icon/navbarToggle.svg");
 }
 #navbar-home .navbar-collapse {
-  padding: 2rem 0 1rem 0;
+  padding: 2rem 1rem 1rem 1rem;
   background-color: whitesmoke;
 }
 #navbar-home .navbar-brand {
   display: none;
+}
+#navbar-home .dropdown-menu {
+  background-color: whitesmoke;
+  border: none;
+}
+#navbar-home .dropdown-item {
+  color: rgba(0, 0, 0, 0.5019607843);
 }
 
 #navbar {
@@ -70,6 +77,14 @@
   height: 2rem;
 }
 #navbar .nav-link {
+  color: white;
+}
+#navbar .dropdown-menu {
+  background-color: #a9b388;
+  border: none;
+  color: white;
+}
+#navbar .dropdown-item {
   color: white;
 }
 

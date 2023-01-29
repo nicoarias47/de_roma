@@ -34,7 +34,7 @@ const NavBar = () => {
                       return (
                         <Link
                           to={child.path}
-                          className="nav-link"
+                          className="dropdown-item"
                           key={child.name}
                         >
                           {child.name}

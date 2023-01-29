@@ -28,12 +28,23 @@
   }
 
   .navbar-collapse {
-    padding: 2rem 0 1rem 0;
+    padding: 2rem 1rem 1rem 1rem;
     background-color: whitesmoke;
   }
 
   .navbar-brand {
     display: none;
+  }
+
+  .dropdown {
+    &-menu {
+      background-color: whitesmoke;
+      border: none;
+    }
+
+    &-item {
+      color: #00000080;
+    }
   }
 }
 
@@ -85,5 +96,17 @@
 
   .nav-link {
     color: white;
+  }
+
+  .dropdown {
+    &-menu {
+      background-color: $color-principal-100;
+      border: none;
+      color: white;
+    }
+
+    &-item {
+      color: white;
+    }
   }
 }
