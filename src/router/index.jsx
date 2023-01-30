@@ -1,9 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import LayoutPublic from "../layout/LayoutPublic";
 import About from "../views/About";
+import Faq from "../views/faq";
 import Home from "../views/Home";
 import NotFound from "../views/NotFound";
 import Products from "../views/Products";
+import Shipping from "../views/Shipping";
 
 // Aqui van las rutas de las paginas del proyecto
 export const router = createBrowserRouter([
@@ -24,6 +26,14 @@ export const router = createBrowserRouter([
         path: "/productos",
         element: <Products />,
         children: [{ path: "/productos/:producto" }],
+      },
+      {
+        path: "/envios",
+        element: <Shipping />,
+      },
+      {
+        path: "/preguntas_frecuentes",
+        element: <Faq />,
       },
     ],
   },
