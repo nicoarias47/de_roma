@@ -38,7 +38,7 @@ const paths = {
   },
   about: {
     name: "Quienes somos",
-    path: "/quienes_somos",
+    path: "/about",
   },
   shipping: {
     name: "Envíos",

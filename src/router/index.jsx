@@ -25,6 +25,7 @@ export const router = createBrowserRouter([
         element: <Products />,
         children: [{ path: "/productos/:producto" }],
       },
+      
     ],
   },
 ]);

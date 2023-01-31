@@ -106,4 +106,98 @@
   font-weight: 500;
 }
 
+.showpath {
+  width: 100%;
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+.about_container h2, i {
+  background-color: #5F6F52;
+  display: inline-block;
+  position: relative;
+  left: 10%;
+  top: 10%;
+  margin: 5px;
+  font-size: 34px;
+  font-weight: bold;
+}
+
+.about_container > header {
+  width: 100%;
+  height: 550px;
+  background-image: url(https://images.unsplash.com/photo-1631914289393-d529f81138a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80);
+}
+
+.waves > svg {
+  width: 100%;
+  display: inline-block;
+  height: auto;
+  transform: rotateY(180deg);
+}
+
+.section1, .section3 {
+  height: 18rem;
+  top: -4.5rem;
+  position: relative;
+  width: 100%;
+}
+
+.section1 > p, .section3 > p {
+  left: 1.2;
+  padding: 2rem;
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+  top: -4rem;
+}
+
+.section1 > h3, .section3 > h3 {
+  position: relative;
+  display: inline-block;
+  font-size: 32px;
+  width: 11rem;
+  top: -16%;
+  left: 10%;
+}
+
+.section2 {
+  background-color: #5F6F52;
+  width: 100%;
+  height: 32rem;
+  color: white;
+}
+
+.section2 > p {
+  padding: 2rem;
+  font-size: 16px;
+  text-align: left;
+  position: relative;
+  top: 1rem;
+}
+
+.section2 > h3 {
+  position: relative;
+  display: inline-block;
+  font-size: 32px;
+  width: 11rem;
+  top: 2rem;
+  left: 10%;
+}
+
+.section4 {
+  text-align: center;
+  width: 100%;
+  height: 18rem;
+  color: #B99470;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
 /*# sourceMappingURL=index.css.map */
