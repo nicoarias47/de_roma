@@ -2,28 +2,28 @@
 // probar con la ola top si encaja para el footer, rotar en "x" e "y" con css
 
 .doubts {
-  &-wave_one {
-    background-image: url("./assets/waves/doubts-wave_top.svg");
-    background-repeat: no-repeat;
-    background-position: 0% 105%;
-    background-size: contain;
-    // Todo: Ajuastar a 5rem el height
-    height: 10rem;
-    width: 100%;
-  }
+  // &-wave_one {
+  //   background-image: url("./assets/waves/doubts-wave_top.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0% 105%;
+  //   background-size: contain;
+  //   // Todo: Ajuastar a 5rem el height
+  //   height: 10rem;
+  //   width: 100%;
+  // }
 
-  &-wave_two {
-    background-image: url("./assets/waves/doubts-wave_bot.svg");
-    background-repeat: no-repeat;
-    background-position: 0% -5%;
-    background-size: contain;
-    // Todo: Ajuastar a 5rem el height
-    height: 10rem;
-    width: 100%;
-  }
+  // &-wave_two {
+  //   background-image: url("./assets/waves/doubts-wave_bot.svg");
+  //   background-repeat: no-repeat;
+  //   background-position: 0% -5%;
+  //   background-size: contain;
+  //   // Todo: Ajuastar a 5rem el height
+  //   height: 10rem;
+  //   width: 100%;
+  // }
 
   &-content {
-    background-color: $color-white-100;
+    background-color: $color-white-0;
     padding: 1rem;
 
     h2 {
