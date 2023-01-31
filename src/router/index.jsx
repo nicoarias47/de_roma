@@ -27,9 +27,6 @@ export const router = createBrowserRouter([
         element: <Products />,
         children: [{ path: "/productos/:producto" }],
       },
-<<<<<<< HEAD
-      
-=======
       {
         path: "/envios",
         element: <Shipping />,
@@ -38,7 +35,6 @@ export const router = createBrowserRouter([
         path: "/preguntas_frecuentes",
         element: <Faq />,
       },
->>>>>>> refs/remotes/origin/main
     ],
   },
 ]);
