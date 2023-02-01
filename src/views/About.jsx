@@ -1,4 +1,5 @@
 import React from "react";
+import Shipping from "../views/Shipping";
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
         <header>
           <i>chicas</i>
           <br />
-          <h2>De Roma</h2>
+          <h2 class="h2">De Roma</h2>
         </header>
         <section className="section1 waves">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -54,6 +55,8 @@ const About = () => {
         <section className="section4">
           <h3>Seguínos y se parte de esta comunidad</h3>
         </section>
+
+      <Shipping/>
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import LayoutPublic from "../layout/LayoutPublic";
 import About from "../views/About";
-import Faq from "../views/faq";
+import Faq from "../views/Faq";
 import Home from "../views/Home";
 import NotFound from "../views/NotFound";
 import Products from "../views/Products";
@@ -27,9 +27,6 @@ export const router = createBrowserRouter([
         element: <Products />,
         children: [{ path: "/productos/:producto" }],
       },
-<<<<<<< HEAD
-      
-=======
       {
         path: "/envios",
         element: <Shipping />,
@@ -38,7 +35,6 @@ export const router = createBrowserRouter([
         path: "/preguntas_frecuentes",
         element: <Faq />,
       },
->>>>>>> refs/remotes/origin/main
     ],
   },
 ]);

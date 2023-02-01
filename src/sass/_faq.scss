@@ -1,0 +1,28 @@
+.faq-title {
+    color:$color-secundario-green;
+    position: relative;
+    display: inline-block;
+    font-size: 32px;
+    width: 100%;
+    // top: -16%;
+    left: 5%;
+}
+.faq-container {
+    border-radius: 2rem;
+    background-color: $color-green-light;
+    padding: 2rem;
+}
+.faq-subtitle {
+    font-size: 16px;
+    color:$color-secundario-green;
+}
+
+.faq-header{
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+}
+.faq-body{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+}
