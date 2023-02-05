@@ -19,7 +19,6 @@ const Products = () => {
         <h1>
           Inicio <b>| {producto}</b>
         </h1>
-
         <div className="row">
           <div className="col">
             <CarouselAbstract data={itemSelect} />

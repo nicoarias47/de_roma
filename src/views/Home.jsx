@@ -1,11 +1,12 @@
 import "./style.css";
 import React from "react";
 import SectionGroup from "./SectionGroup";
-import HomeCarousel from "../components/Carousel/HomeCarousel";
+import MainCarousel from "../components/MainCarousel/MainCarousel";
+
 const Home = () => {
   return (
     <div className="test-home">
-      <HomeCarousel />
+      <MainCarousel />
       <div className="info-icons-container">
         <ul className="info-icons">
           <li>

@@ -1,9 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import LayoutPublic from "../layout/LayoutPublic";
 import About from "../views/About";
+import Contact from "../views/Contact";
 import Faq from "../views/Faq";
 import Home from "../views/Home";
 import NotFound from "../views/NotFound";
+import Payment from "../views/Payment";
 import Products from "../views/Products";
 import Shipping from "../views/Shipping";
 
@@ -19,7 +21,7 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/about",
+        path: "/acerca_de_nosotras",
         element: <About />,
       },
       {
@@ -32,8 +34,16 @@ export const router = createBrowserRouter([
         element: <Shipping />,
       },
       {
+        path: "/contacto",
+        element: <Contact />,
+      },
+      {
         path: "/preguntas_frecuentes",
         element: <Faq />,
+      },
+      {
+        path: "/medios_de_pago",
+        element: <Payment />,
       },
     ],
   },
