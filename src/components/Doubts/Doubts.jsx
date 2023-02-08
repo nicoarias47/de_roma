@@ -1,4 +1,5 @@
 import React from "react";
+import "../../views/style.css"
 import wspIcon from "../../assets/icon/wsp-icon.svg";
 import emailIcon from "../../assets/icon/email-icon.svg";
 
@@ -8,19 +9,17 @@ import emailIcon from "../../assets/icon/email-icon.svg";
 const Doubts = () => {
   return (
     <div className="doubts">
-      <div className="row doubts-content">
-        <div className="col-3"></div>
-        <div className="col-6 text-center">
-          <h2>¿Quedaste con dudas?</h2>
-          <span>Escribínos al Whatsapp o envianos un mail</span>
-          <div className="row">
-            <div className="col doubts-content_social_media py-4 d-flex gap-4 align-items-center justify-content-center">
-              <img src={wspIcon} alt="whatsapp" />
-              <img src={emailIcon} alt="mail" />
-            </div>
+      <div className="row row-top">
+        <h5>¿Quedaste con dudas?</h5>
+      </div>
+      <div className="row row-bottom background-doubts">
+          <p className="body3">
+            Estamos aquí para ti. Escríbenos a WhatsApp o envíanos un mail
+          </p>
+          <div className="social-doubts">
+            <img src={wspIcon} alt="whatsapp" />
+            <img src={emailIcon} alt="mail" />
           </div>
-        </div>
-        <div className="col-3"></div>
       </div>
     </div>
   );

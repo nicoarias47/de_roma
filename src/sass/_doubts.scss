@@ -1,46 +1,65 @@
-// ---TODO---:
-// probar con la ola top si encaja para el footer, rotar en "x" e "y" con css
 
 .doubts {
-  // &-wave_one {
-  //   background-image: url("./assets/waves/doubts-wave_top.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: 0% 105%;
-  //   background-size: contain;
-  //   // Todo: Ajuastar a 5rem el height
-  //   height: 10rem;
-  //   width: 100%;
-  // }
+    width: 100%;
+    height: 40vh;
 
-  // &-wave_two {
-  //   background-image: url("./assets/waves/doubts-wave_bot.svg");
-  //   background-repeat: no-repeat;
-  //   background-position: 0% -5%;
-  //   background-size: contain;
-  //   // Todo: Ajuastar a 5rem el height
-  //   height: 10rem;
-  //   width: 100%;
-  // }
+}
+.row-top {
+    display: flex;
+    height: 40%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+.row-top h5 {
+    color: $color-secondary-100;
+    width: 50%;
+}
+.row-bottom {
+    text-align: center;
+    display: flex;
+    height: 60%;
+    flex-direction: column;
+    justify-content: center;
+}
 
-  &-content {
-    background-color: $color-white-0;
-    padding: 1rem;
 
-    h2 {
-      color: $color-secondary-100;
+.background-doubts {
+    margin:1rem;
+    border-radius: 40px 10px 10px 10px;
+    background-color: $color-cream-100;
+}
+
+.social-doubts > img {
+    margin:0rem 0.5rem;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0px 0px 15px 9px rgba(0,0,0,0.1);
+}
+
+@media (min-width:767px) {
+
+
+    .doubts {
+       margin: 0 auto;
+        width: 50%;
+        height: 50vh;
     }
-
-    span {
-      color: $color-black-100;
+    .row-top > h5 {
+        width: 30%;
+        text-align: center;
     }
-
-    &_social_media {
-      img {
-        background-color: $color-white-0;
-        padding: 0.4rem;
-        border-radius: 0.4rem;
-        box-shadow: 0px 1px 7px #808080a5;
-      }
+    .row-bottom {
+        padding: 1rem 1rem;
     }
-  }
+    .row-bottom > p {
+        padding-bottom: 2rem;
+        width: 60%;
+        margin: 0 auto;
+    }
+    .social-doubts > img {
+        margin: 0rem 1rem;
+    }
 }

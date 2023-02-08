@@ -5,7 +5,10 @@ import Doubts from "../components/Doubts/Doubts";
 const Shipping = () => {
   return (
     <section className="shipping pt-5">
-      <Container></Container>
+      <Container>
+
+        
+      </Container>
       <Doubts />
     </section>
   );
