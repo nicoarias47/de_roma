@@ -12,7 +12,6 @@ function MainCarousel() {
         <Carousel.Caption>
           <div className="container-btn">
             <button className="see-more" href="">
-              {" "}
               Ver Mas
             </button>
           </div>
@@ -26,7 +25,6 @@ function MainCarousel() {
         <Carousel.Caption>
           <div className="container-btn">
             <button className="see-more" href="">
-              {" "}
               Ver Mas
             </button>
           </div>
@@ -40,7 +38,6 @@ function MainCarousel() {
         <Carousel.Caption>
           <div className="container-btn">
             <button className="see-more" href="">
-              {" "}
               Ver Mas
             </button>
           </div>
