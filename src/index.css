@@ -1,45 +1,50 @@
-h1, h2, h3, h4, h5 {
-  font-family: "Playfair Display", serif;
-}
-
 p {
   font-family: "Montserrat", sans-serif;
 }
 
 h1 {
   font-size: 84px;
+  font-family: "Playfair Display", serif;
 }
 
 h2 {
   font-size: 64px;
+  font-family: "Playfair Display", serif;
 }
 
 h3 {
   font-size: 48px;
+  font-family: "Playfair Display", serif;
 }
 
 h4 {
   font-size: 48px;
+  font-family: "Playfair Display", serif;
 }
 
 h5 {
   font-size: 32px;
+  font-family: "Playfair Display", serif;
 }
 
 .body1 {
   font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .body2 {
   font-size: 18px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .body3 {
   font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .body4 {
   font-size: 14px;
+  font-family: "Montserrat", sans-serif;
 }
 
 #navbar-home {
@@ -141,6 +146,7 @@ h5 {
   font-size: 15px;
   line-height: 24px;
   color: #737373;
+  margin-top: 5rem;
 }
 
 .site-footer hr {
@@ -202,7 +208,7 @@ h5 {
   .site-footer [class^=col-] {
     margin-bottom: 30px;
   }
-}
+} 
 @media (max-width: 767px) {
   .site-footer {
     padding-bottom: 0;
@@ -261,6 +267,7 @@ h5 {
 }
 
 .col-right > .body2 {
+  color: #5f6f52;
   padding: 1rem;
 }
 
@@ -324,7 +331,8 @@ h5 {
   }
   .payment-rectangule {
     width: 350px;
-    height: 70px;
+    height: auto;
+    padding-bottom: 1rem;
     bottom: 40%;
     right: 42%;
   }
@@ -436,13 +444,9 @@ h5 {
   color: #b99470;
 }
 
-.faq-title {
-  color: #5f6f52;
-  position: relative;
-  display: inline-block;
-  font-size: 32px;
-  width: 100%;
-  left: 5%;
+.accordion-item {
+  border: 1px solid #BDBDBD;
+  margin-bottom: 1rem;
 }
 
 .faq-container {
@@ -451,20 +455,9 @@ h5 {
   padding: 2rem;
 }
 
-.faq-subtitle {
-  font-size: 16px;
-  color: #5f6f52;
-}
-
-.faq-header {
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-}
-
-.faq-body {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+.accordion-button:not(.collapsed) {
+  color: #333333;
+  background-color: white;
 }
 
 .doubts {
@@ -530,13 +523,9 @@ h5 {
     margin: 0rem 1rem;
   }
 }
-.faq-title {
-  color: #5f6f52;
-  position: relative;
-  display: inline-block;
-  font-size: 32px;
-  width: 100%;
-  left: 5%;
+.accordion-item {
+  border: 1px solid #BDBDBD;
+  margin-bottom: 1rem;
 }
 
 .faq-container {
@@ -545,20 +534,9 @@ h5 {
   padding: 2rem;
 }
 
-.faq-subtitle {
-  font-size: 16px;
-  color: #5f6f52;
-}
-
-.faq-header {
-  font-weight: 400;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-}
-
-.faq-body {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+.accordion-button:not(.collapsed) {
+  color: #333333;
+  background-color: white;
 }
 
 .doubts {

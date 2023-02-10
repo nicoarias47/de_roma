@@ -1,8 +1,9 @@
 .background-left {
-  background-color: $color-cream-100;
+//   background-color: $color-cream-100;
 }
 
 .payment-img {
+    background-color: $color-cream-100;
     width: 230px;
     height: 312px;
     position:relative;
@@ -20,6 +21,7 @@
     right: 0;
 }
 .col-right > .body2{
+    color:$color-secundario-green;
     padding: 1rem;
 
 }
@@ -76,7 +78,8 @@
     }
     .payment-rectangule {
         width: 350px;
-    height: 70px;
+    height: auto;
+    padding-bottom: 1rem;
     bottom: 40%;
     right: 42%;
     }
