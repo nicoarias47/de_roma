@@ -12,8 +12,8 @@ const Payment = () => {
   return (
     <>
       <div className="payment-container">
-        <div class="row">
-          <div class="col-left col-xs-12 col-md-6 col-lg-6 p-3">
+        <div className="row">
+          <div className="col-left col-xs-12 col-md-6 col-lg-6 p-3">
             <div className="background-left">
               <img className="payment-img" src={paymentimg1} />
               <div className="payment-rectangule">
@@ -22,7 +22,7 @@ const Payment = () => {
             </div>
           </div>
 
-          <div class="col-right col-xs-12 col-md-6 col-lg-6 p-3">
+          <div className="col-right col-xs-12 col-md-6 col-lg-6 p-3">
             <p className="body2">
               Estos son los medios de pago que te ofrecemos
             </p>

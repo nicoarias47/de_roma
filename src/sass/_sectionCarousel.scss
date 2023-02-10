@@ -1,0 +1,49 @@
+.section_carousel {
+  display: flex;
+  position: relative;
+  gap: 1rem;
+  width: 100%;
+  overflow-x: scroll;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  &-item {
+    display: flex;
+    justify-content: center;
+
+    span {
+      position: absolute;
+      z-index: 100;
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: $color-white-0;
+    }
+  }
+
+  img {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 32px 8px 32px 8px;
+    position: relative;
+  }
+
+  &-shadow {
+    width: 16rem;
+    height: 16rem;
+    border-radius: 32px 8px 32px 8px;
+    position: absolute;
+    background-image: linear-gradient(
+      to bottom,
+      #33333380,
+      #28282860,
+      #1d1d1d20,
+      #12121200,
+      #00000000
+    );
+  }
+
+  // hidden scroll bar
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

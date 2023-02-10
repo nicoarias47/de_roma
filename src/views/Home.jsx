@@ -1,13 +1,22 @@
-import "./style.css";
 import React from "react";
-import SectionGroup from "./SectionGroup";
 import MainCarousel from "../components/MainCarousel/MainCarousel";
+import SectionCarousel from "../components/SectionCarousel/SectionCarousel";
+import img from "../assets/img/difu.png";
 
 const Home = () => {
+  const carouselOne = {
+    img1: img,
+    title1: "Living & Deco",
+    img2: img,
+    title2: "Aromatizantes",
+    img3: img,
+    title3: "Baño",
+  };
+
   return (
-    <div className="test-home">
+    <div className="home">
       <MainCarousel />
-      <div className="info-icons-container">
+      {/* <div className="info-icons-container">
         <ul className="info-icons">
           <li>
             <a className="envios" href="#">
@@ -25,8 +34,9 @@ const Home = () => {
             </a>
           </li>
         </ul>
-      </div>
-      <SectionGroup />
+      </div> */}
+      <SectionCarousel data={carouselOne} />
+      <SectionCarousel data={carouselOne} />
     </div>
   );
 };

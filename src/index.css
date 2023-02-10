@@ -208,7 +208,7 @@ h5 {
   .site-footer [class^=col-] {
     margin-bottom: 30px;
   }
-}
+} 
 @media (max-width: 767px) {
   .site-footer {
     padding-bottom: 0;
@@ -226,6 +226,13 @@ h5 {
   margin-right: 0;
   border-radius: 100%;
   background-color: #33353d;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .products h1 {
@@ -596,6 +603,43 @@ h5 {
   background-size: 10rem;
   width: 100%;
   height: 100%;
+}
+
+.section_carousel {
+  display: flex;
+  position: relative;
+  gap: 1rem;
+  width: 100%;
+  overflow-x: scroll;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.section_carousel-item {
+  display: flex;
+  justify-content: center;
+}
+.section_carousel-item span {
+  position: absolute;
+  z-index: 100;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+.section_carousel img {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 32px 8px 32px 8px;
+  position: relative;
+}
+.section_carousel-shadow {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 32px 8px 32px 8px;
+  position: absolute;
+  background-image: linear-gradient(to bottom, rgba(51, 51, 51, 0.5019607843), rgba(40, 40, 40, 0.3764705882), rgba(29, 29, 29, 0.1254901961), rgba(18, 18, 18, 0), rgba(0, 0, 0, 0));
+}
+.section_carousel::-webkit-scrollbar {
+  display: none;
 }
 
 /*# sourceMappingURL=index.css.map */
