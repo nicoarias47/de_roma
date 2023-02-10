@@ -1,7 +1,13 @@
 import React from "react";
+import { Container } from "react-bootstrap";
+import ContactForm from "../components/ContactForm/ContactForm";
 
 const Contact = () => {
-  return <div>Contact</div>;
+  return (
+    <Container fluid="lg">
+      <ContactForm />
+    </Container>
+  );
 };
 
 export default Contact;
