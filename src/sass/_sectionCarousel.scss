@@ -1,7 +1,7 @@
 .section_carousel {
   display: flex;
   position: relative;
-  gap: 1rem;
+  gap: 2rem;
   width: 100%;
   overflow-x: scroll;
   padding-left: 1rem;
@@ -10,13 +10,15 @@
   &-item {
     display: flex;
     justify-content: center;
+    height: 18rem;
 
     span {
       position: absolute;
       z-index: 100;
       font-size: 1.8rem;
-      font-weight: bold;
+      font-weight: 600;
       color: $color-white-0;
+      padding-top: 1rem;
     }
   }
 
@@ -25,6 +27,7 @@
     height: 16rem;
     border-radius: 32px 8px 32px 8px;
     position: relative;
+    filter: drop-shadow(0px 2px 7px #00000020);
   }
 
   &-shadow {

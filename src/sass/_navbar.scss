@@ -1,52 +1,52 @@
-#navbar-home {
-  background-color: transparent;
-  position: absolute;
-  width: 100%;
-  top: 0;
-  z-index: 10000;
-  color: white;
-  transition: 0.4s ease-in;
+// #navbar-home {
+//   background-color: transparent;
+//   position: absolute;
+//   width: 100%;
+//   top: 0;
+//   z-index: 10000;
+//   color: white;
+//   transition: 0.4s ease-in;
 
-  .container {
-    padding: 0;
-    display: flex;
-    justify-content: center;
-  }
+//   .container {
+//     padding: 0;
+//     display: flex;
+//     justify-content: center;
+//   }
 
-  .navbar-toggler {
-    border: none;
+//   .navbar-toggler {
+//     border: none;
 
-    &:focus {
-      box-shadow: none;
-      outline: none;
-    }
+//     &:focus {
+//       box-shadow: none;
+//       outline: none;
+//     }
 
-    &-icon {
-      width: 1.5rem;
-      background-image: url("./assets/icon/navbarToggle.svg");
-    }
-  }
+//     &-icon {
+//       width: 1.5rem;
+//       background-image: url("./assets/icon/navbarToggle.svg");
+//     }
+//   }
 
-  .navbar-collapse {
-    padding: 2rem 1rem 1rem 1rem;
-    background-color: whitesmoke;
-  }
+//   .navbar-collapse {
+//     padding: 2rem 1rem 1rem 1rem;
+//     background-color: whitesmoke;
+//   }
 
-  .navbar-brand {
-    display: none;
-  }
+//   .navbar-brand {
+//     display: none;
+//   }
 
-  .dropdown {
-    &-menu {
-      background-color: whitesmoke;
-      border: none;
-    }
+//   .dropdown {
+//     &-menu {
+//       background-color: whitesmoke;
+//       border: none;
+//     }
 
-    &-item {
-      color: #00000080;
-    }
-  }
-}
+//     &-item {
+//       color: #00000080;
+//     }
+//   }
+// }
 
 #navbar {
   background-color: $color-principal-100;
@@ -80,11 +80,6 @@
     }
   }
 
-  .navbar-collapse {
-    padding: 2rem 0 1rem 0;
-    background-color: $color-principal-100;
-  }
-
   .navbar-brand {
     background-image: url("./assets/icon/logo-icon.svg");
     background-size: contain;
@@ -93,20 +88,37 @@
     width: 6rem;
     height: 2rem;
   }
+}
 
-  .nav-link {
-    color: white;
+#offcanvasNavbar-expand-md {
+  margin-top: 3.4rem;
+  width: 70%;
+  background-color: $color-white-0;
+}
+
+#basic-nav-dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown {
+  &-menu {
+    background-color: $color-white-0;
+    border: none;
   }
 
-  .dropdown {
-    &-menu {
-      background-color: $color-principal-100;
-      border: none;
-      color: white;
-    }
+  &-item {
+    color: $color-black-100;
+    font-weight: 300;
+  }
+}
 
-    &-item {
-      color: white;
-    }
+.offcanvas-body {
+  padding-top: 0;
+
+  .nav-link {
+    border-bottom: thin solid $color-grey-0;
+    font-weight: 300;
   }
 }
