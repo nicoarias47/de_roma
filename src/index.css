@@ -192,14 +192,73 @@ h5 {
     text-align: center;
   }
 }
-.info-icons {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  margin-left: 6px;
-  margin-right: 0;
-  border-radius: 100%;
-  background-color: #33353d;
+@media (max-width: 767px) {
+  .carousel-control-prev {
+    display: none;
+  }
+  .carousel-control-next {
+    display: none;
+  }
+}
+.carousel-inner {
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+.CarouselPhoto {
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.ControlledCarousel {
+  z-index: 1;
+}
+
+.carousel-caption {
+  top: 52%;
+  color: #5f6f52;
+  z-index: 2;
+  display: inline-block;
+  bottom: auto;
+}
+
+.btn-catalogo {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  color: #22A95C;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: #22A95C 0.5px solid;
+  border-radius: 8px;
+  box-shadow: 1px 1px 0px 0px rgba(34, 169, 93, 0.3058823529);
+}
+.btn-catalogo svg {
+  width: auto;
+  stroke: #22A95C !important;
+}
+.btn-catalogo .body4 {
+  margin-bottom: 1px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.btn-catalogo:hover {
+  border: #22A95C 3px solid;
+}
+
+.carousel-indicators button {
+  background-color: #bdbdbd !important;
+  border: none !important;
+  border-radius: 50% !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.carousel-indicators .active {
+  background-color: #c4661f !important;
 }
 
 .home {
@@ -207,6 +266,42 @@ h5 {
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
+}
+.home section {
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.home b {
+  text-align: center;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.info-icons-container {
+  width: 100%;
+  padding: 1rem;
+}
+
+.info-icons {
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+  justify-content: space-around;
+}
+.info-icons li {
+  display: flex;
+  width: 95px;
+  height: 95px;
+  border-radius: 10%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.info-icons a {
+  text-decoration: none;
+  text-align: center;
+  color: #474747;
 }
 
 .products h1 {
@@ -231,7 +326,7 @@ h5 {
   z-index: 3;
   position: absolute;
   width: 215px;
-  height: 100px;
+  height: auto;
   border-radius: 30px 5px 5px 5px;
   bottom: 52%;
   right: 0;
@@ -261,7 +356,7 @@ h5 {
 }
 
 .sub-col-header {
-  padding: 1rem;
+  padding: 0rem 1rem 1rem 0rem;
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -429,6 +524,10 @@ h5 {
   background-color: white;
 }
 
+.ajustawidthtemp {
+  width: 180px;
+}
+
 .doubts {
   width: 100%;
   height: 40vh;
@@ -504,6 +603,10 @@ h5 {
 .accordion-button:not(.collapsed) {
   color: #333333;
   background-color: white;
+}
+
+.ajustawidthtemp {
+  width: 180px;
 }
 
 .doubts {

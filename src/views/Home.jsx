@@ -2,6 +2,9 @@ import React from "react";
 import MainCarousel from "../components/MainCarousel/MainCarousel";
 import SectionCarousel from "../components/SectionCarousel/SectionCarousel";
 import img from "../assets/img/difu.png";
+import envios from "../assets/icon/envios.svg";
+import payments from "../assets/icon/payments.svg";
+import faq from "../assets/icon/faq.svg";
 
 const Home = () => {
   const carouselOne = {
@@ -16,27 +19,35 @@ const Home = () => {
   return (
     <div className="home">
       <MainCarousel />
-      {/* <div className="info-icons-container">
+      <section>
+      <b className="body3"> Living & Deco / Aromatizantes / Baño </b>
+      <SectionCarousel data={carouselOne} />
+      <b className="body3"> Textiles / Jardín / Organización </b>
+      <SectionCarousel data={carouselOne} />
+      </section>
+         <div className="info-icons-container">
         <ul className="info-icons">
           <li>
             <a className="envios" href="#">
-              <i className="fa fa-truck fa-inverse" aria-hidden="true"></i>
+            <img className="" src={envios} />
+            <p className="body4"> Envíos </p>
             </a>
           </li>
           <li>
             <a className="pagos" href="#">
-              <i className="fa fa-money fa-inverse"></i>
+             <img className="" src={payments} />
+             <p className="body4"> Medios de pago </p> 
             </a>
           </li>
           <li>
             <a className="entregas" href="#">
-              <i className="fa fa-share-square-o fa-inverse"></i>
+            <img className="" src={faq} />
+            <p className="body4"> Preguntas Frecuentes</p>
             </a>
           </li>
         </ul>
-      </div> */}
-      <SectionCarousel data={carouselOne} />
-      <SectionCarousel data={carouselOne} />
+      </div>
+
     </div>
   );
 };

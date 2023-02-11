@@ -1,5 +1,4 @@
 import React from "react";
-import { Container } from "react-bootstrap";
 
 const SectionCarousel = ({ data }) => {
   const { img1, title1, img2, title2, img3, title3 } = data;
