@@ -11,29 +11,31 @@ const CardWithCarousel = ({ data }) => {
   };
 
   return (
-    <div>
+    <>
       {data.map((el) => {
-        console.log(el.img);
         return (
-          <Card style={{ width: "100%" }} key={el.title}>
-            <Carousel activeIndex={index} onSelect={handleSelect}>
+          <Card key={el.id} className="card_carousel">
+            <Carousel
+              activeIndex={index}
+              onSelect={handleSelect}
+              indicators={false}
+            >
               <Carousel.Item>
-                <img className="d-block w-100" src={el.img} alt="" />
-                <Carousel.Caption>
-                  <h3>{el.title}</h3>
-                  <p>{el.description}</p>
-                </Carousel.Caption>
+                <img className="d-block w-100" src={el.img} alt={el.title} />
+              </Carousel.Item>
+              <Carousel.Item>
+                <img className="d-block w-100" src={el.img} alt={el.title} />
               </Carousel.Item>
             </Carousel>
             <Card.Body>
               <Card.Title>{el.title}</Card.Title>
               <Card.Text>{el.description}</Card.Text>
-              <Button variant="primary">Ver mas {el.title}</Button>
+              <Button>Ver catalogo</Button>
             </Card.Body>
           </Card>
         );
       })}
-    </div>
+    </>
   );
 };
 

@@ -311,6 +311,12 @@ h5 {
 .products b {
   font-weight: 500;
 }
+.products_list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
 
 .payment-img {
   background-color: #f2ede7;
@@ -735,8 +741,13 @@ h5 {
 .contact-form .form-name, .contact-form .form-message, .contact-form .form-email {
   border: 1px solid #bdbdbd;
   border-radius: 8px;
+  resize: none;
   padding: 0.5rem;
   width: 100%;
+}
+.contact-form .form-name:focus, .contact-form .form-message:focus, .contact-form .form-email:focus {
+  outline: none;
+  border: 1px solid #a9b388;
 }
 .contact-form .form-button {
   background-color: #5f6f52;
@@ -751,6 +762,47 @@ h5 {
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #828282;
+}
+
+.card_carousel {
+  width: 85%;
+  border-radius: 32px 8px;
+  border: none;
+  filter: drop-shadow(0px 2px 7px rgba(0, 0, 0, 0.1450980392));
+}
+.card_carousel img {
+  border-radius: 32px 8px 0px 0px;
+}
+.card_carousel .carousel {
+  height: 60vh !important;
+}
+.card_carousel button {
+  background-color: #5f6f52;
+  border: none;
+  color: #ffffff;
+  padding: 0.4rem 1.2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 2px 7px #a9b388;
+}
+.card_carousel .carousel-control-prev-icon {
+  background-image: url("./assets/icon/prev-icon.svg") !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.card_carousel .carousel-control-next-icon {
+  background-image: url("./assets/icon/next-icon.svg") !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.card_carousel .card-text {
+  color: #828282;
+}
+.card_carousel .card-title {
+  color: #474747;
 }
 
 /*# sourceMappingURL=index.css.map */
