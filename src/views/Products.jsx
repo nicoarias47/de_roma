@@ -15,12 +15,9 @@ const Products = () => {
 
   return (
     <Container expand="lg">
-      <section className="products">
-        <h1>
-          Inicio <b>| {producto}</b>
-        </h1>
+      <section className="products py-5">
         <div className="row">
-          <div className="col">
+          <div className="col products_list">
             <CarouselAbstract data={itemSelect} />
           </div>
         </div>

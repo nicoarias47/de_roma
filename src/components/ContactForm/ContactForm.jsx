@@ -28,6 +28,8 @@ const ContactForm = () => {
             placeholder="Nombre Completo"
             className="form-name"
             onChange={handleChange}
+            value={form.name}
+            required
           />
           <input
             type="email"
@@ -35,15 +37,17 @@ const ContactForm = () => {
             placeholder="E-mail"
             className="form-email"
             onChange={handleChange}
+            value={form.email}
+            required
           />
           <textarea
             name="message"
-            id=""
-            cols="30"
             rows="10"
             placeholder="Escribe un mensaje"
             className="form-message"
             onChange={handleChange}
+            value={form.message}
+            required
           ></textarea>
           <input type="submit" value="Enviar mensaje" className="form-button" />
         </form>

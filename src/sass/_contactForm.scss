@@ -16,9 +16,16 @@
       &-email {
         border: 1px solid $color-grey-0;
         border-radius: 8px;
-
+        resize: none;
         padding: 0.5rem;
         width: 100%;
+      }
+
+      &-name:focus,
+      &-message:focus,
+      &-email:focus {
+        outline: none;
+        border: 1px solid $color-principal-100;
       }
 
       &-button {
