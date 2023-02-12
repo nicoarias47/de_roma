@@ -11,6 +11,10 @@
     height: 60vh !important;
   }
 
+  .carousel-inner {
+    padding-top: 0;
+  }
+
   button {
     background-color: $color-principal-200;
     border: none;

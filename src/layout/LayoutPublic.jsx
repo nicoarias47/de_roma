@@ -7,9 +7,9 @@ import NavBarOffcanvas from "../components/NavBarOffcanvas/NavBarOffcanvas";
 const LayoutPublic = () => {
   return (
     <div>
-      {/* <NavBar /> */}
       <NavBarOffcanvas />
-      <main>
+      <main className="header_gradient">
+        <div className="header_gradient-background"></div>
         <Outlet />
       </main>
       <Footer />

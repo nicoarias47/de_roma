@@ -1,45 +1,56 @@
-
 p {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
-    font-size: 84px;
-    font-family: 'Playfair Display', serif;
+  font-size: 84px;
+  font-family: "Playfair Display", serif;
 }
 h2 {
-    font-size: 64px;
-    font-family: 'Playfair Display', serif;
+  font-size: 64px;
+  font-family: "Playfair Display", serif;
 }
 h3 {
-    font-size: 48px;
-    font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
 }
 
 h4 {
-    font-size: 48px;
-    font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
 }
 h5 {
-    font-size: 32px;
-    font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  font-family: "Playfair Display", serif;
 }
 
 .body1 {
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
 }
 .body2 {
- font-size: 18px;
- font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .body3 {
-    font-size: 16px;
-    font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
 }
 
 .body4 {
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header_gradient {
+  position: relative;
+
+  &-background {
+    position: absolute;
+    background: linear-gradient(180deg, #a9b388 26.35%, #7f8c54 100%);
+    height: 14rem;
+    width: 100%;
+    border-radius: 0px 0px 62px 0px;
+  }
 }
