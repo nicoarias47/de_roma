@@ -3,6 +3,7 @@ import Accordion from "react-bootstrap/Accordion";
 import Shipping from "./Shipping";
 import paymentimg2 from "../assets/img/paymentimg2.svg";
 import circlepaymentimg2 from "../assets/img/circlepaymentimg2.svg";
+import Doubts from "../components/Doubts/Doubts";
 
 const Faq = () => {
   return (
@@ -18,7 +19,7 @@ const Faq = () => {
         </div>
         <div class="col-right col-xs-12 col-md-6 col-lg-6 p-3">
           <p className="body2">estas son las preguntas mas frecuentes</p>
-     
+
           <div className="">
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
@@ -113,9 +114,7 @@ const Faq = () => {
           </div>
         </div>
       </div>
-
-      <Shipping />
-
+      <Doubts />
       <div className="circle-container">
         <div className="bg-circle-payment"></div>
         <img className="circle-payment-img" src={circlepaymentimg2}></img>

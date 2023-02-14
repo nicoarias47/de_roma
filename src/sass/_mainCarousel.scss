@@ -1,68 +1,64 @@
-@media (max-width:767px) {
-.carousel-control-prev {
+@media (max-width: 767px) {
+  .carousel-control-prev {
     display: none;
-}
-.carousel-control-next {
+  }
+  .carousel-control-next {
     display: none;
-}
-
+  }
 }
 .carousel-inner {
-    height: 30rem;
-    padding-top: 1rem;
+  height: 30rem;
+  padding-top: 1rem;
 }
 .CarouselPhoto {
-    width: 250px;
-    height: auto;
-    margin: 0 auto;
+  width: 250px;
+  height: auto;
+  margin: 0 auto;
 }
 .ControlledCarousel {
-    z-index: 1;
+  z-index: 1;
 }
 
 .carousel-caption {
-    top: 52%;
-    color: #5f6f52;
-    z-index: 2;
-    display: inline-block;
-    bottom: auto;
-
+  top: 23%;
+  color: #5f6f52;
+  z-index: 2;
+  display: inline-block;
+  bottom: auto;
 }
 .btn-catalogo {
-    display: flex;
-    text-align: center;
-    margin: 0 auto;
-    color: #22A95C;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    border: #22A95C 0.5px solid;
-    border-radius: 8px;
-    box-shadow: 1px 1px 0px 0px #22a95d4e;
- svg {
+  display: flex;
+  text-align: center;
+  margin: 0 auto;
+  color: #22a95c;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: #22a95c 0.5px solid;
+  border-radius: 8px;
+  box-shadow: 1px 1px 0px 0px #22a95d4e;
+  svg {
     width: auto;
-    stroke:$color-green-500!important;  
-}
-    .body4 {
-        margin-bottom: 1px;
-        font-weight: bold;
-        padding: 10px;
-
-    }
- 
+    stroke: $color-green-500 !important;
+  }
+  .body4 {
+    margin-bottom: 1px;
+    font-weight: bold;
+    padding: 10px;
+  }
 }
 .btn-catalogo:hover {
-    border: #22A95C 3px solid;
+  border: #22a95c 3px solid;
 }
 
 .carousel-indicators button {
-    background-color:$color-gray-100 !important;
-     border:none !important;
-    border-radius: 50% !important;
-    width: 12px !important;
-    height: 12px !important;
+  background-color: $color-gray-100 !important;
+  border: none !important;
+  border-radius: 50% !important;
+  width: 12px !important;
+  height: 12px !important;
 }
 
 .carousel-indicators .active {
-    background-color: $color-secondary-200!important;
+  background-color: $color-secondary-200 !important;
 }

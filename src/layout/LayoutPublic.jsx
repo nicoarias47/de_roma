@@ -6,10 +6,10 @@ import NavBarOffcanvas from "../components/NavBarOffcanvas/NavBarOffcanvas";
 // Aqui es donde van los componentes que conforman las paginas
 const LayoutPublic = () => {
   return (
-    <div>
+    <div className="header_gradient">
       <NavBarOffcanvas />
-      <main className="header_gradient">
-        <div className="header_gradient-background"></div>
+      <div className="header_gradient-background"></div>
+      <main>
         <Outlet />
       </main>
       <Footer />

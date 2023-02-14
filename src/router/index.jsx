@@ -39,7 +39,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/preguntas_frecuentes",
-        element: <Faq/>,
+        element: <Faq />,
       },
       {
         path: "/medios_de_pago",

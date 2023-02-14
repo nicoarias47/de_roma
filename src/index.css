@@ -227,7 +227,7 @@ h5 {
 }
 
 .carousel-caption {
-  top: 52%;
+  top: 23%;
   color: #5f6f52;
   z-index: 2;
   display: inline-block;
@@ -238,11 +238,11 @@ h5 {
   display: flex;
   text-align: center;
   margin: 0 auto;
-  color: #22A95C;
+  color: #22a95c;
   align-items: center;
   justify-content: center;
   background-color: white;
-  border: #22A95C 0.5px solid;
+  border: #22a95c 0.5px solid;
   border-radius: 8px;
   box-shadow: 1px 1px 0px 0px rgba(34, 169, 93, 0.3058823529);
 }
@@ -257,7 +257,7 @@ h5 {
 }
 
 .btn-catalogo:hover {
-  border: #22A95C 3px solid;
+  border: #22a95c 3px solid;
 }
 
 .carousel-indicators button {
@@ -379,9 +379,13 @@ h5 {
   justify-content: space-between;
 }
 
+.test-circle {
+  overflow: hidden;
+}
+
 .circle-container {
-  right: -18%;
-  position: absolute;
+  right: -75%;
+  position: relative;
   display: block;
   width: 180px;
 }
@@ -397,7 +401,7 @@ h5 {
 }
 
 .circle-payment-img {
-  position: absolute;
+  position: relative;
   z-index: 3;
 }
 
