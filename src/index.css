@@ -127,11 +127,9 @@ h5 {
   bottom: 0px;
   width: 100%;
   background-color: #ffffff;
-  padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
   color: #737373;
-  margin-top: 5rem;
 }
 
 .site-footer hr {
@@ -329,123 +327,6 @@ h5 {
   gap: 2rem;
 }
 
-.payment-img {
-  background-color: #f2ede7;
-  width: 230px;
-  height: 312px;
-  position: relative;
-  z-index: 2;
-  margin: 1rem;
-}
-
-.payment-rectangule {
-  background-color: white;
-  z-index: 3;
-  position: absolute;
-  width: 215px;
-  height: auto;
-  border-radius: 30px 5px 5px 5px;
-  bottom: 52%;
-  right: 0;
-}
-
-.col-right > .body2 {
-  color: #5f6f52;
-  padding: 1rem;
-}
-
-.body2-title {
-  font-weight: bold;
-}
-
-.payment-rectangule > h5 {
-  font-weight: bold;
-  margin: 10px 25px;
-  color: #5f6f52;
-}
-
-.payment-container {
-  margin-bottom: 8rem;
-}
-
-.sub-col-container {
-  padding: 1.2rem;
-}
-
-.sub-col-header {
-  padding: 0rem 1rem 1rem 0rem;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.test-circle {
-  overflow: hidden;
-}
-
-.circle-container {
-  right: -75%;
-  position: relative;
-  display: block;
-  width: 180px;
-}
-
-.bg-circle-payment {
-  top: -2rem;
-  position: absolute;
-  z-index: 2;
-  width: 170px;
-  height: 170px;
-  border-radius: 50%;
-  background: #a9b388;
-}
-
-.circle-payment-img {
-  position: relative;
-  z-index: 3;
-}
-
-@media (min-width: 767px) {
-  .background-left {
-    text-align: center;
-    border-radius: 0px 0px 80px 0px;
-    padding-bottom: 2rem;
-    margin-right: 1.5rem;
-  }
-  .payment-img {
-    width: 297px;
-    height: 421px;
-  }
-  .payment-rectangule {
-    width: 350px;
-    height: auto;
-    padding-bottom: 1rem;
-    bottom: 40%;
-    right: 42%;
-  }
-  .col-right {
-    margin-top: 15rem;
-  }
-  .sub-col-container {
-    margin-right: 6rem;
-  }
-  .sub-col-header {
-    justify-content: left;
-  }
-  .paymenticon {
-    margin-left: 2rem;
-    margin-bottom: 0.5rem;
-  }
-  .circle-container {
-    right: 18%;
-  }
-  .bg-circle-payment {
-    top: -4rem;
-  }
-  .circle-payment-img {
-    top: -2rem;
-  }
-}
 .showpath {
   width: 100%;
   padding-top: 1rem;
@@ -545,10 +426,151 @@ h5 {
   background-color: white;
 }
 
-.ajustawidthtemp {
-  width: 180px;
+.background-left {
+  padding-bottom: 22rem;
+}
+.background-left .img {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 115px 115px 0 0;
+  width: 14.3rem;
+  height: 19.5rem;
+  top: 7.5rem;
+  filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
+  background-image: url("./assets/img/paymentimg3.svg");
+}
+.background-left .title {
+  position: absolute;
+  top: 18.6rem;
+  left: 8.37rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #5f6f52;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 2rem 0 0 0;
 }
 
+.shipping-img {
+  width: 230px;
+  height: 312px;
+  position: relative;
+  z-index: 2;
+  margin: 1rem;
+}
+
+.shipping-rectangule {
+  background-color: white;
+  z-index: 3;
+  position: absolute;
+  width: 215px;
+  height: auto;
+  border-radius: 30px 5px 5px 5px;
+  top: 18.6rem;
+  right: 0;
+}
+
+.col-right > .body2 {
+  color: #5f6f52;
+  padding: 1rem;
+}
+
+.body2-title {
+  font-weight: bold;
+}
+
+.shipping-rectangule > h5 {
+  font-weight: bold;
+  margin: 10px 25px;
+  color: #5f6f52;
+}
+
+.shipping-container {
+  margin-bottom: 8rem;
+}
+
+.sub-col-container {
+  padding: 1.2rem;
+}
+
+.sub-col-header {
+  padding: 0rem 1rem 1rem 0rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.shipping-footer {
+  position: relative;
+  overflow: hidden;
+  top: -170px;
+  height: 220px;
+  margin-bottom: -13rem;
+}
+.shipping-footer .circle {
+  background-color: #a9b388;
+  width: 10.6rem;
+  height: 10.6rem;
+  border-radius: 100%;
+  top: 0px;
+  position: relative;
+  left: 278px;
+}
+.shipping-footer .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 9.5rem;
+  height: 9.5rem;
+  top: 0px;
+  position: absolute;
+  background-image: url("./assets/img/circlepaymentimg3.svg");
+  height: 200px;
+  width: 200px;
+  left: 250px;
+}
+
+@media (min-width: 767px) {
+  .background-left {
+    text-align: center;
+    border-radius: 0px 0px 80px 0px;
+    padding-bottom: 2rem;
+    margin-right: 1.5rem;
+  }
+  .shipping-img {
+    width: 297px;
+    height: 421px;
+  }
+  .shipping-rectangule {
+    width: 350px;
+    height: auto;
+    padding-bottom: 1rem;
+    bottom: 40%;
+    right: 42%;
+  }
+  .col-right {
+    margin-top: 15rem;
+  }
+  .sub-col-container {
+    margin-right: 6rem;
+  }
+  .sub-col-header {
+    justify-content: left;
+  }
+  .paymenticon {
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .circle-container {
+    right: 18%;
+  }
+  .bg-circle-shipping {
+    top: -4rem;
+  }
+  .circle-shipping-img {
+    top: -2rem;
+  }
+}
 .doubts {
   width: 100%;
   height: 40vh;
@@ -626,10 +648,151 @@ h5 {
   background-color: white;
 }
 
-.ajustawidthtemp {
-  width: 180px;
+.background-left {
+  padding-bottom: 22rem;
+}
+.background-left .img {
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 115px 115px 0 0;
+  width: 14.3rem;
+  height: 19.5rem;
+  top: 7.5rem;
+  filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
+  background-image: url("./assets/img/paymentimg3.svg");
+}
+.background-left .title {
+  position: absolute;
+  top: 18.6rem;
+  left: 8.37rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #5f6f52;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 2rem 0 0 0;
 }
 
+.shipping-img {
+  width: 230px;
+  height: 312px;
+  position: relative;
+  z-index: 2;
+  margin: 1rem;
+}
+
+.shipping-rectangule {
+  background-color: white;
+  z-index: 3;
+  position: absolute;
+  width: 215px;
+  height: auto;
+  border-radius: 30px 5px 5px 5px;
+  top: 18.6rem;
+  right: 0;
+}
+
+.col-right > .body2 {
+  color: #5f6f52;
+  padding: 1rem;
+}
+
+.body2-title {
+  font-weight: bold;
+}
+
+.shipping-rectangule > h5 {
+  font-weight: bold;
+  margin: 10px 25px;
+  color: #5f6f52;
+}
+
+.shipping-container {
+  margin-bottom: 8rem;
+}
+
+.sub-col-container {
+  padding: 1.2rem;
+}
+
+.sub-col-header {
+  padding: 0rem 1rem 1rem 0rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.shipping-footer {
+  position: relative;
+  overflow: hidden;
+  top: -170px;
+  height: 220px;
+  margin-bottom: -13rem;
+}
+.shipping-footer .circle {
+  background-color: #a9b388;
+  width: 10.6rem;
+  height: 10.6rem;
+  border-radius: 100%;
+  top: 0px;
+  position: relative;
+  left: 278px;
+}
+.shipping-footer .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 9.5rem;
+  height: 9.5rem;
+  top: 0px;
+  position: absolute;
+  background-image: url("./assets/img/circlepaymentimg3.svg");
+  height: 200px;
+  width: 200px;
+  left: 250px;
+}
+
+@media (min-width: 767px) {
+  .background-left {
+    text-align: center;
+    border-radius: 0px 0px 80px 0px;
+    padding-bottom: 2rem;
+    margin-right: 1.5rem;
+  }
+  .shipping-img {
+    width: 297px;
+    height: 421px;
+  }
+  .shipping-rectangule {
+    width: 350px;
+    height: auto;
+    padding-bottom: 1rem;
+    bottom: 40%;
+    right: 42%;
+  }
+  .col-right {
+    margin-top: 15rem;
+  }
+  .sub-col-container {
+    margin-right: 6rem;
+  }
+  .sub-col-header {
+    justify-content: left;
+  }
+  .paymenticon {
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .circle-container {
+    right: 18%;
+  }
+  .bg-circle-shipping {
+    top: -4rem;
+  }
+  .circle-shipping-img {
+    top: -2rem;
+  }
+}
 .doubts {
   width: 100%;
   height: 40vh;
@@ -856,25 +1019,33 @@ h5 {
   border-bottom: 1px solid #bdbdbd;
   color: #333333;
 }
+
 .contact_section-footer {
-  padding-bottom: 4rem;
+  position: relative;
+  overflow: hidden;
+  top: 0px;
+  height: 200px;
+  margin-bottom: -2rem;
 }
 .contact_section-footer .circle {
   background-color: #a9b388;
   width: 10.6rem;
   height: 10.6rem;
   border-radius: 100%;
-  left: 280px;
+  top: 0px;
+  position: relative;
+  right: -70%;
 }
 .contact_section-footer .img {
   background-size: contain;
   background-repeat: no-repeat;
   width: 9.5rem;
   height: 9.5rem;
+  top: 0px;
   position: absolute;
   background-image: url("./assets/img/vela.svg");
-  left: 302px;
-  top: 1145px;
+  right: -10%;
+  top: 17%;
 }
 
 /*# sourceMappingURL=index.css.map */

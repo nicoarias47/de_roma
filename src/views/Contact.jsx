@@ -8,34 +8,36 @@ import Suscribe from "../components/Suscribe/Suscribe.jsx";
 
 const Contact = () => {
   return (
-    <Container fluid="lg" className="contact_section">
-      <section className="contact_section-hero">
-        <div className="contact_section-img"></div>
-        <h2 className="contact_section-title">Contáctanos</h2>
-      </section>
-      <section className="contact_section-redes">
-        <div className="row">
-          <div className="col-12 d-flex gap-2 align-items-center">
-            <WspIcon stroke={"#B99470"} />
-            <span>+54 11 6184-5560</span>
+    <>
+      <Container fluid="lg" className="contact_section">
+        <section className="contact_section-hero">
+          <div className="contact_section-img"></div>
+          <h5 className="contact_section-title">Contáctanos</h5>
+        </section>
+        <section className="contact_section-redes">
+          <div className="row">
+            <div className="col-12 d-flex gap-2 align-items-center">
+              <WspIcon stroke={"#B99470"} />
+              <span>+54 11 6184-5560</span>
+            </div>
+            <div className="col-12 d-flex gap-2 align-items-center">
+              <EmailIcon stroke={"#B99470"} />
+              <span>drdecohome@gmail.com</span>
+            </div>
+            <div className="col-12 d-flex gap-2 align-items-center">
+              <InstagramIcon stroke={"#B99470"} fill={"#B99470"} />
+              <span>de.roma_deco</span>
+            </div>
           </div>
-          <div className="col-12 d-flex gap-2 align-items-center">
-            <EmailIcon stroke={"#B99470"} />
-            <span>drdecohome@gmail.com</span>
-          </div>
-          <div className="col-12 d-flex gap-2 align-items-center">
-            <InstagramIcon stroke={"#B99470"} fill={"#B99470"} />
-            <span>de.roma_deco</span>
-          </div>
-        </div>
-      </section>
-      <ContactForm />
-      {/* <Suscribe /> */}
+        </section>
+        <ContactForm />
+        {/* <Suscribe /> */}
+      </Container>
       <section className="contact_section-footer">
         <div className="circle"></div>
         <div className="img"></div>
       </section>
-    </Container>
+    </>
   );
 };
 

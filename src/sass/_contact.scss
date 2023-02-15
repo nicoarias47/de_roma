@@ -17,19 +17,23 @@
     border-bottom: 1px solid $color-grey-0;
     color: $color-black-200;
   }
+}
 
-  &-footer {
-    padding-bottom: 4rem;
+.contact_section-footer {
+  @include circle-father;
+  top: 0px;
+  height: 200px;
+  margin-bottom: -2rem;
 
-    .circle {
-      @include circle;
-    }
+  .circle {
+    @include circle;
+    right: -70%;
+  }
 
-    .img {
-      @include circle-img;
-      background-image: url("./assets/img/vela.svg");
-      left: 302px;
-      top: 1145px;
-    }
+  .img {
+    @include circle-img;
+    background-image: url("./assets/img/vela.svg");
+    right: -10%;
+    top: 17%;
   }
 }

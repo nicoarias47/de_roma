@@ -22,12 +22,20 @@
   border-radius: 2rem 0 0 0;
 }
 
+@mixin circle-father {
+  // use: set position top, set height more than the circle and img,
+  //      set margin bottom to bring the footer (ej: margin-bottom:-5rem)
+  position: relative;
+  overflow: hidden;
+}
+
 @mixin circle {
   background-color: $color-principal-100;
   width: 10.6rem;
   height: 10.6rem;
   border-radius: 100%;
-  left: 280px;
+  top: 0px;
+  position: relative;
 }
 
 @mixin circle-img {
@@ -36,5 +44,6 @@
   background-repeat: no-repeat;
   width: 9.5rem;
   height: 9.5rem;
+  top: 0px;
   position: absolute;
 }

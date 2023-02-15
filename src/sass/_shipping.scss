@@ -1,3 +1,115 @@
-.ajustawidthtemp  {
-    width: 180px;
+.background-left {
+  padding-bottom: 22rem;
+  .img {
+    @include hero-img;
+    background-image: url("./assets/img/paymentimg3.svg");
+  }
+
+  .title {
+    @include hero-title;
+  }
+}
+
+.shipping-img {
+  width: 230px;
+  height: 312px;
+  position: relative;
+  z-index: 2;
+  margin: 1rem;
+}
+.shipping-rectangule {
+  background-color: white;
+  z-index: 3;
+  position: absolute;
+  width: 215px;
+  height: auto;
+  border-radius: 30px 5px 5px 5px;
+  top: 18.6rem;
+  right: 0;
+}
+.col-right > .body2 {
+  color: $color-secundario-green;
+  padding: 1rem;
+}
+.body2-title {
+  font-weight: bold;
+}
+.shipping-rectangule > h5 {
+  font-weight: bold;
+  margin: 10px 25px;
+  color: $color-secundario-green;
+}
+.shipping-container {
+  margin-bottom: 8rem;
+}
+.sub-col-container {
+  padding: 1.2rem;
+}
+.sub-col-header {
+  padding: 0rem 1rem 1rem 0rem;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.shipping-footer {
+  @include circle-father;
+  top: -170px;
+  height: 220px;
+  margin-bottom: -13rem;
+
+  .circle {
+    @include circle;
+    left: 278px;
+  }
+
+  .img {
+    @include circle-img;
+    background-image: url("./assets/img/circlepaymentimg3.svg");
+    height: 200px;
+    width: 200px;
+    left: 250px;
+  }
+}
+
+@media (min-width: 767px) {
+  .background-left {
+    text-align: center;
+    border-radius: 0px 0px 80px 0px;
+    padding-bottom: 2rem;
+    margin-right: 1.5rem;
+  }
+  .shipping-img {
+    width: 297px;
+    height: 421px;
+  }
+  .shipping-rectangule {
+    width: 350px;
+    height: auto;
+    padding-bottom: 1rem;
+    bottom: 40%;
+    right: 42%;
+  }
+  .col-right {
+    margin-top: 15rem;
+  }
+  .sub-col-container {
+    margin-right: 6rem;
+  }
+  .sub-col-header {
+    justify-content: left;
+  }
+  .paymenticon {
+    margin-left: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .circle-container {
+    right: 18%;
+  }
+  .bg-circle-shipping {
+    top: -4rem;
+  }
+  .circle-shipping-img {
+    top: -2rem;
+  }
 }
