@@ -227,7 +227,7 @@ h5 {
 }
 
 .carousel-caption {
-  top: 23%;
+  top: 18%;
   color: #5f6f52;
   z-index: 2;
   display: inline-block;
@@ -248,7 +248,7 @@ h5 {
 }
 .btn-catalogo svg {
   width: auto;
-  stroke: #22A95C !important;
+  stroke: #22a95c !important;
 }
 .btn-catalogo .body4 {
   margin-bottom: 1px;
@@ -743,28 +743,31 @@ h5 {
   display: none;
 }
 
-.contact-form h2 {
+.contact_form {
+  padding-top: 2rem;
+}
+.contact_form h2 {
   font-size: 2rem;
   color: #5f6f52;
 }
-.contact-form .form {
+.contact_form .form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-.contact-form .form-name, .contact-form .form-message, .contact-form .form-email {
+.contact_form .form-name, .contact_form .form-message, .contact_form .form-email {
   border: 1px solid #bdbdbd;
   border-radius: 8px;
   resize: none;
   padding: 0.5rem;
   width: 100%;
 }
-.contact-form .form-name:focus, .contact-form .form-message:focus, .contact-form .form-email:focus {
+.contact_form .form-name:focus, .contact_form .form-message:focus, .contact_form .form-email:focus {
   outline: none;
   border: 1px solid #a9b388;
 }
-.contact-form .form-button {
+.contact_form .form-button {
   background-color: #5f6f52;
   color: #ffffff;
   font-weight: 400;
@@ -774,8 +777,8 @@ h5 {
   border-radius: 0.5rem;
   box-shadow: 1px 2px 6px #a9b388;
 }
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
+.contact_form input::placeholder,
+.contact_form textarea::placeholder {
   color: #828282;
 }
 
@@ -821,6 +824,37 @@ h5 {
 }
 .card_carousel .card-title {
   color: #474747;
+}
+
+.contact_section-img {
+  position: absolute;
+  background-image: url("./assets/img/test-img.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 115px 115px 0 0;
+  width: 14.3rem;
+  height: 19.5rem;
+  top: 7.5rem;
+  filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
+}
+.contact_section-title {
+  position: absolute;
+  top: 18.6rem;
+  left: 8.37rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #5f6f52;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 2rem 0 0 0;
+}
+.contact_section-hero {
+  padding-bottom: 25rem;
+}
+.contact_section-redes {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #bdbdbd;
+  color: #333333;
 }
 
 /*# sourceMappingURL=index.css.map */

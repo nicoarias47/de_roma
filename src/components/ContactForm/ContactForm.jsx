@@ -18,40 +18,38 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="contact">
-      <div className="contact-form">
-        <h2>Déjanos tu mensaje</h2>
-        <form className="form" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Nombre Completo"
-            className="form-name"
-            onChange={handleChange}
-            value={form.name}
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="E-mail"
-            className="form-email"
-            onChange={handleChange}
-            value={form.email}
-            required
-          />
-          <textarea
-            name="message"
-            rows="10"
-            placeholder="Escribe un mensaje"
-            className="form-message"
-            onChange={handleChange}
-            value={form.message}
-            required
-          ></textarea>
-          <input type="submit" value="Enviar mensaje" className="form-button" />
-        </form>
-      </div>
+    <div className="contact_form">
+      <h2>Déjanos tu mensaje</h2>
+      <form className="form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="name"
+          placeholder="Nombre Completo"
+          className="form-name"
+          onChange={handleChange}
+          value={form.name}
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="E-mail"
+          className="form-email"
+          onChange={handleChange}
+          value={form.email}
+          required
+        />
+        <textarea
+          name="message"
+          rows="10"
+          placeholder="Escribe un mensaje"
+          className="form-message"
+          onChange={handleChange}
+          value={form.message}
+          required
+        ></textarea>
+        <input type="submit" value="Enviar mensaje" className="form-button" />
+      </form>
     </div>
   );
 };

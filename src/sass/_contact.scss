@@ -1,0 +1,36 @@
+.contact_section {
+  &-img {
+    position: absolute;
+    background-image: url("./assets/img/test-img.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    //background-position: center;
+    border-radius: 115px 115px 0 0;
+    width: 14.3rem;
+    height: 19.5rem;
+    top: 7.5rem;
+    filter: drop-shadow(2px 2px 11px $color-hero-shadow);
+  }
+
+  &-title {
+    position: absolute;
+    top: 18.6rem;
+    left: 8.37rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: $color-principal-200;
+    padding: 1rem;
+    background-color: $color-white-0;
+    border-radius: 2rem 0 0 0;
+  }
+
+  &-hero {
+    padding-bottom: 25rem;
+  }
+
+  &-redes {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $color-grey-0;
+    color: $color-black-200;
+  }
+}

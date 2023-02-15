@@ -1,48 +1,47 @@
-.contact {
-  &-form {
-    h2 {
-      font-size: 2rem;
-      color: $color-principal-200;
+.contact_form {
+  padding-top: 2rem;
+  h2 {
+    font-size: 2rem;
+    color: $color-principal-200;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    &-name,
+    &-message,
+    &-email {
+      border: 1px solid $color-grey-0;
+      border-radius: 8px;
+      resize: none;
+      padding: 0.5rem;
+      width: 100%;
     }
 
-    .form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-
-      &-name,
-      &-message,
-      &-email {
-        border: 1px solid $color-grey-0;
-        border-radius: 8px;
-        resize: none;
-        padding: 0.5rem;
-        width: 100%;
-      }
-
-      &-name:focus,
-      &-message:focus,
-      &-email:focus {
-        outline: none;
-        border: 1px solid $color-principal-100;
-      }
-
-      &-button {
-        background-color: $color-principal-200;
-        color: $color-white-0;
-        font-weight: 400;
-        font-size: 1.2rem;
-        padding: 0.4rem 1rem;
-        border: 1px solid $color-principal-200;
-        border-radius: 0.5rem;
-        box-shadow: 1px 2px 6px $color-principal-100;
-      }
+    &-name:focus,
+    &-message:focus,
+    &-email:focus {
+      outline: none;
+      border: 1px solid $color-principal-100;
     }
 
-    input::placeholder,
-    textarea::placeholder {
-      color: $color-grey-100;
+    &-button {
+      background-color: $color-principal-200;
+      color: $color-white-0;
+      font-weight: 400;
+      font-size: 1.2rem;
+      padding: 0.4rem 1rem;
+      border: 1px solid $color-principal-200;
+      border-radius: 0.5rem;
+      box-shadow: 1px 2px 6px $color-principal-100;
     }
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: $color-grey-100;
   }
 }
