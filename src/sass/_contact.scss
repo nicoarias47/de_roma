@@ -1,27 +1,11 @@
 .contact_section {
   &-img {
-    position: absolute;
-    background-image: url("./assets/img/test-img.jpeg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    //background-position: center;
-    border-radius: 115px 115px 0 0;
-    width: 14.3rem;
-    height: 19.5rem;
-    top: 7.5rem;
-    filter: drop-shadow(2px 2px 11px $color-hero-shadow);
+    @include hero-img;
+    background-image: url("./assets/img/contact-hero.svg");
   }
 
   &-title {
-    position: absolute;
-    top: 18.6rem;
-    left: 8.37rem;
-    font-size: 2rem;
-    font-weight: 500;
-    color: $color-principal-200;
-    padding: 1rem;
-    background-color: $color-white-0;
-    border-radius: 2rem 0 0 0;
+    @include hero-title;
   }
 
   &-hero {
@@ -32,5 +16,20 @@
     padding-bottom: 2rem;
     border-bottom: 1px solid $color-grey-0;
     color: $color-black-200;
+  }
+
+  &-footer {
+    padding-bottom: 4rem;
+
+    .circle {
+      @include circle;
+    }
+
+    .img {
+      @include circle-img;
+      background-image: url("./assets/img/vela.svg");
+      left: 302px;
+      top: 1145px;
+    }
   }
 }

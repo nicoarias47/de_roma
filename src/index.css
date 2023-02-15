@@ -828,7 +828,6 @@ h5 {
 
 .contact_section-img {
   position: absolute;
-  background-image: url("./assets/img/test-img.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 115px 115px 0 0;
@@ -836,6 +835,7 @@ h5 {
   height: 19.5rem;
   top: 7.5rem;
   filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
+  background-image: url("./assets/img/contact-hero.svg");
 }
 .contact_section-title {
   position: absolute;
@@ -855,6 +855,26 @@ h5 {
   padding-bottom: 2rem;
   border-bottom: 1px solid #bdbdbd;
   color: #333333;
+}
+.contact_section-footer {
+  padding-bottom: 4rem;
+}
+.contact_section-footer .circle {
+  background-color: #a9b388;
+  width: 10.6rem;
+  height: 10.6rem;
+  border-radius: 100%;
+  left: 280px;
+}
+.contact_section-footer .img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 9.5rem;
+  height: 9.5rem;
+  position: absolute;
+  background-image: url("./assets/img/vela.svg");
+  left: 302px;
+  top: 1145px;
 }
 
 /*# sourceMappingURL=index.css.map */
