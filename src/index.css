@@ -127,9 +127,11 @@ h5 {
   bottom: 0px;
   width: 100%;
   background-color: #ffffff;
+  padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
   color: #737373;
+  margin-top: 5rem;
 }
 
 .site-footer hr {
@@ -506,7 +508,7 @@ h5 {
   overflow: hidden;
   top: -170px;
   height: 220px;
-  margin-bottom: -13rem;
+  margin-bottom: -21rem;
 }
 .shipping-footer .circle {
   background-color: #a9b388;
@@ -728,7 +730,7 @@ h5 {
   overflow: hidden;
   top: -170px;
   height: 220px;
-  margin-bottom: -13rem;
+  margin-bottom: -21rem;
 }
 .shipping-footer .circle {
   background-color: #a9b388;
@@ -1025,7 +1027,7 @@ h5 {
   overflow: hidden;
   top: 0px;
   height: 200px;
-  margin-bottom: -2rem;
+  margin-bottom: -9rem;
 }
 .contact_section-footer .circle {
   background-color: #a9b388;
