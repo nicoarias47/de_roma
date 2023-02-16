@@ -1,0 +1,20 @@
+.payment_section-footer {
+  @include circle-father;
+  top: -20px;
+  height: 200px;
+  margin-bottom: -10rem;
+
+  .circle {
+    @include circle;
+    right: -70%;
+  }
+
+  .img {
+    @include circle-img;
+    background-image: url("./assets/img/circlepaymentimg.svg");
+    right: -11%;
+    top: 12%;
+    width: 11.18rem;
+    height: 11.18rem;
+  }
+}
