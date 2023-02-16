@@ -12,7 +12,7 @@ const Shipping = () => {
             <div className="col-left col-xs-12 col-md-6 col-lg-6 p-3">
               <div className="background-left">
                 <div className="img"></div>
-                <h5 className="title">envios</h5>
+                <h5 className="title">Envios</h5>
               </div>
             </div>
 

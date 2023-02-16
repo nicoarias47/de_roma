@@ -10,7 +10,7 @@ const Doubts = () => {
   return (
     <div className="doubts">
       <div className="row row-top">
-        <h5>¿Quedaste con dudas?</h5>
+        <h5>¿Quedaste <br/>con dudas?</h5>
       </div>
       <div className="row row-bottom background-doubts">
           <p className="body3">

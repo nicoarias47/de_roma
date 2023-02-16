@@ -11,10 +11,11 @@
     align-items: center;
     flex-direction: column;
     align-content: center;
+    text-align: center;
 }
 .row-top h5 {
     color: $color-secondary-100;
-    width: 50%;
+    width: 100%;
 }
 .row-bottom {
     text-align: center;
@@ -48,7 +49,7 @@
         height: 50vh;
     }
     .row-top > h5 {
-        width: 30%;
+        width: 50%;
         text-align: center;
     }
     .row-bottom {

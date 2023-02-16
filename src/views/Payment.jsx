@@ -7,10 +7,11 @@ import getnet from "../assets/icon/getnet.svg";
 import efectivo from "../assets/icon/efectivo.svg";
 import transferencia from "../assets/icon/transferencia.svg";
 import circlepaymentimg from "../assets/img/circlepaymentimg.svg";
-
+import { Container } from "react-bootstrap";
 const Payment = () => {
   return (
     <>
+    <Container fluid="lg">
       <div className="payment-container">
         <div className="row">
           <div className="col-left col-xs-12 col-md-6 col-lg-6 p-3">
@@ -83,6 +84,11 @@ const Payment = () => {
         <div className="bg-circle-payment"></div>
         <img className="circle-payment-img" src={circlepaymentimg}></img>
       </div>
+      </Container>
+      <section className="shipping-footer">
+        <figure className="circle"></figure>
+        <div className="img"></div>
+      </section>
     </>
   );
 };
