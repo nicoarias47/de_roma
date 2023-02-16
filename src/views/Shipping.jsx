@@ -1,6 +1,5 @@
 import React from "react";
 import Doubts from "../components/Doubts/Doubts";
-
 import { Container } from "react-bootstrap";
 
 const Shipping = () => {
