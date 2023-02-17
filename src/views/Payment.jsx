@@ -6,21 +6,6 @@ import mercadopago from "../assets/icon/mercadopago.svg";
 import getnet from "../assets/icon/getnet.svg";
 import efectivo from "../assets/icon/efectivo.svg";
 import transferencia from "../assets/icon/transferencia.svg";
-<<<<<<< HEAD
-import circlepaymentimg from "../assets/img/circlepaymentimg.svg";
-import { Container } from "react-bootstrap";
-const Payment = () => {
-  return (
-    <>
-    <Container fluid="lg">
-      <div className="payment-container">
-        <div className="row">
-          <div className="col-left col-xs-12 col-md-6 col-lg-6 p-3">
-            <div className="background-left">
-              <img className="payment-img" src={paymentimg1} />
-              <div className="payment-rectangule">
-                <h5> Medios de Pago </h5>
-=======
 import { Container } from "react-bootstrap";
 
 const Payment = () => {
@@ -35,7 +20,6 @@ const Payment = () => {
                 <div className="payment-rectangule">
                   <h5> Medios de Pago </h5>
                 </div>
->>>>>>> ec8beff0b02641e09db959f52068e01b897f00a4
               </div>
             </div>
             <div className="col-right col-xs-12 col-md-6 col-lg-6 p-3">
@@ -93,8 +77,7 @@ const Payment = () => {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-      </div>
+
 
       <Doubts />
 
@@ -105,12 +88,6 @@ const Payment = () => {
       </Container>
       <section className="shipping-footer">
         <figure className="circle"></figure>
-=======
-        <Doubts />
-      </Container>
-      <section className="payment_section-footer">
-        <div className="circle"></div>
->>>>>>> ec8beff0b02641e09db959f52068e01b897f00a4
         <div className="img"></div>
       </section>
     </>
