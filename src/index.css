@@ -1199,4 +1199,11 @@ h5 {
   top: 17%;
 }
 
+.wpp-button {
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  z-index: 100;
+}
+
 /*# sourceMappingURL=index.css.map */
