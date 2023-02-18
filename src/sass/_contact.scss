@@ -33,7 +33,7 @@
   }
 }
 
-.home_section-footer {
+.contact_section-footer {
   @include circle-father;
   top: -8rem;
   height: 300px;
@@ -48,10 +48,10 @@
 
   .img {
     @include circle-img;
-    background-image: url("./assets/img/circle_home.svg");
-    right: -23%;
-    top: 10%;
-    width: 14rem;
-    height: 14rem;
+    background-image: url("./assets/img/vela.svg");
+    right: -10%;
+    top: 32%;
+    width: 10rem;
+    height: 10rem;
   }
 }
