@@ -1,4 +1,19 @@
-// Muchas de las variables de FAQ se encuentran en payments.scss
+.faq_section {
+  &-img {
+    @include hero-img;
+    background-image: url("./assets/img/faqimg.svg");
+  }
+
+  &-title {
+    @include hero-title;
+  }
+
+  &-hero {
+    padding-bottom: 25rem;
+  }
+}
+.col-right {
+  padding:1.5rem;
 
 .accordion-item {
   border: 1px solid $color-gray-100;
@@ -11,9 +26,8 @@
 .accordion-button:not(.collapsed) {
   color: $color-black-200;
   background-color: white;
-  // background-color: $color-principal-100;
 }
-
+}
 .faq_section-footer {
   @include circle-father;
   top: -15px;

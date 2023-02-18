@@ -1,7 +1,6 @@
 import React from "react";
 import "./style.css";
 import Doubts from "../components/Doubts/Doubts";
-import paymentimg1 from "../assets/img/paymentimg1.svg";
 import mercadopago from "../assets/icon/mercadopago.svg";
 import getnet from "../assets/icon/getnet.svg";
 import efectivo from "../assets/icon/efectivo.svg";
@@ -15,12 +14,13 @@ const Payment = () => {
         <div className="payment-container">
           <div className="row">
             <div className="col-left col-xs-12 col-md-6 col-lg-6 p-3">
-              <div className="background-left">
-                <img className="payment-img" src={paymentimg1} />
-                <div className="payment-rectangule">
-                  <h5> Medios de Pago </h5>
-                </div>
-              </div>
+              <section className="payment_section-hero">
+                <div className="payment_section-img"></div>
+                <h5 className="payment_section-title">
+                  Medios <br />
+                  de Pago
+                </h5>
+              </section>
             </div>
             <div className="col-right col-xs-12 col-md-6 col-lg-6 p-3">
               <p className="body2">

@@ -1,20 +1,34 @@
+.payment_section {
+  &-img {
+    @include hero-img;
+    background-image: url("./assets/img/paymentimg1.svg");
+  }
+
+  &-title {
+    @include hero-title;
+  }
+
+  &-hero {
+    padding-bottom: 25rem;
+  }
+}
+
 .payment_section-footer {
   @include circle-father;
-  top: -20px;
+  top: -2rem;
   height: 200px;
-  margin-bottom: -10rem;
+  margin-bottom: -11rem;
 
   .circle {
     @include circle;
     right: -70%;
+    top: 0%;
   }
 
   .img {
     @include circle-img;
     background-image: url("./assets/img/circlepaymentimg.svg");
-    right: -11%;
-    top: 12%;
-    width: 11.18rem;
-    height: 11.18rem;
+    right: -10%;
+    top: 17%;
   }
 }

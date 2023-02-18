@@ -1,10 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import MainCarousel from "../components/MainCarousel/MainCarousel";
 import SectionCarousel from "../components/SectionCarousel/SectionCarousel";
 import img from "../assets/img/difu.png";
 import envios from "../assets/icon/envios.svg";
 import payments from "../assets/icon/payments.svg";
 import faq from "../assets/icon/faq.svg";
+
 
 const Home = () => {
   const carouselOne = {
@@ -27,23 +29,24 @@ const Home = () => {
       </section>
          <div className="info-icons-container">
         <ul className="info-icons">
+
           <li>
-            <a className="envios" href="#">
+          <Link className="envios" to="/envios">       
             <img className="" src={envios} />
             <p className="body4"> Envíos </p>
-            </a>
+          </Link>  
           </li>
           <li>
-            <a className="pagos" href="#">
+            <Link className="pagos" to="/medios_de_pago">
              <img className="" src={payments} />
-             <p className="body4"> Medios de pago </p> 
-            </a>
-          </li>
+             <p className="body4"> Medios de pago </p>
+             </Link>
+            </li>
           <li>
-            <a className="entregas" href="#">
+            <Link className="entregas" to="/preguntas_frecuentes">
             <img className="" src={faq} />
             <p className="body4"> Preguntas Frecuentes</p>
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
