@@ -30,11 +30,19 @@ const Contact = () => {
             </div>
           </div>
         </section>
-        
+        <section className="contact_section-description">
+          <h6>
+            Tienes alguna pregunta que no hayamos resuelto en la pagina?
+            Escríbenos!
+          </h6>
+          <span>
+            Completá la información y nos contactamos lo más pronto posible ten
+            en cuenta que nuestro horario de atención de de Lunes a Lunes hasta
+            las 21:00 horas.
+          </span>
+        </section>
         <ContactForm />
-       
-        {/* <Suscribe /> */}
-        <Suscribe/>
+        <Suscribe />
       </Container>
       <section className="contact_section-footer">
         <div className="circle"></div>
