@@ -359,10 +359,8 @@ h5 {
   height: 11.18rem;
 }
 
-.showpath {
-  width: 100%;
-  padding-top: 1rem;
-  padding-left: 1rem;
+.about_container header {
+  z-index: 100000;
 }
 
 .about_container .h2,

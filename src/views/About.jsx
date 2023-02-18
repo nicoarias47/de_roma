@@ -1,18 +1,16 @@
 import React from "react";
 import { Container } from "react-bootstrap";
-import Shipping from "../views/Shipping";
 import { InstagramIcon } from "../assets/icon/instagram-icon";
 
 const About = () => {
   return (
     <>
       <Container>
-        <p className="showpath"> Inicio | Quienes Somos </p>
         <div className="about_container">
           <header>
             <i>chicas</i>
             <br />
-            <h2 class="h2">De Roma</h2>
+            <h2 className="h2">De Roma</h2>
           </header>
           <section className="section1 waves">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
