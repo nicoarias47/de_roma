@@ -1,33 +1,38 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <footer className="site-footer">
       <div className="container">
         <div className="row">
-          {/* <div className="col-sm-12 col-md-6">
-            <h6>Sobre Roma</h6>
-            <p className="text-justify">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas
-              dolorum ea praesentium alias, ducimus porro nulla voluptatem
-              repellendus sit tenetur.
-            </p>
-          </div> */}
           <div className="col-xs-6 col-md-3">
             <h6>Navegacion</h6>
             <ul className="footer-links">
               <li>
-                <a href="">Inicio</a>
+                <Link to="/">
+                  <p>Inicio</p>
+                </Link>
               </li>
               <li>
-                <a href="">Ver productos</a>
+                <Link to="/productos">
+                  <p>Ver productos</p>
+                </Link>
               </li>
               <li>
-                <a href="">Envíos</a>
+                <Link to="/envios">
+                  <p>Envíos</p>
+                </Link>
               </li>
               <li>
-                <a href="">Métodos de pago</a>
+                <Link to="/medios_de_pago">
+                  <p>Métodos de pago</p>
+                </Link>
               </li>
               <li>
-                <a href="">Preguntas frecuentes</a>
+                <Link to="/preguntas_frecuentes">
+                  <p>Preguntas frecuentes</p>
+                </Link>
               </li>
             </ul>
           </div>
@@ -35,21 +40,27 @@ const Footer = () => {
             <h6>Contactanos</h6>
             <ul className="footer-links">
               <li>
-                <a href="">+54 11 6184-5560</a>
+                <p> +54 11 6184-5560 </p>
               </li>
               <li>
-                <a href="">deromadeco@gmail.com</a>
+                <p>deromadeco@gmail.com </p>
               </li>
               <li>
-                <a href="">Temperley, Argentina</a>
+                <p>Temperley, Argentina</p>
               </li>
             </ul>
           </div>
           <div className="col-xs-6 col-md-3">
             <h6>Únete a la comunidad</h6>
+            <div>
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.5 22.5C19.2614 22.5 21.5 20.2614 21.5 17.5C21.5 14.7386 19.2614 12.5 16.5 12.5C13.7386 12.5 11.5 14.7386 11.5 17.5C11.5 20.2614 13.7386 22.5 16.5 22.5Z" stroke="black" stroke-width="1.5" stroke-miterlimit="10"/>
+              <path d="M22 6H11C7.68629 6 5 8.68629 5 12V23C5 26.3137 7.68629 29 11 29H22C25.3137 29 28 26.3137 28 23V12C28 8.68629 25.3137 6 22 6Z" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M23 12.5C23.8284 12.5 24.5 11.8284 24.5 11C24.5 10.1716 23.8284 9.5 23 9.5C22.1716 9.5 21.5 10.1716 21.5 11C21.5 11.8284 22.1716 12.5 23 12.5Z" fill="black"/>
+              </svg>
+            </div>
           </div>
         </div>
-        {/* <hr> */}
       </div>
       <div className="container">
         <div className="row">
@@ -59,25 +70,6 @@ const Footer = () => {
               <a href="#"> dERoma</a>.
             </p>
           </div>
-          {/* <div className="col-md-4 col-sm-6 col-xs-12">
-            <ul className="social-icons">
-              <li>
-                <a className="facebook" href="#">
-                  <i className="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a className="instagram" href="#">
-                  <i className="fa fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a className="whatsapp" href="#">
-                  <i className="fa fa-whatsapp"></i>
-                </a>
-              </li>
-            </ul>
-          </div> */}
         </div>
       </div>
     </footer>

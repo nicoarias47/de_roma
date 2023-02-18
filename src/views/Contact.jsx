@@ -4,13 +4,13 @@ import { EmailIcon } from "../assets/icon/email-icon.jsx";
 import { InstagramIcon } from "../assets/icon/instagram-icon.jsx";
 import { WspIcon } from "../assets/icon/wsp-icon.jsx";
 import ContactForm from "../components/ContactForm/ContactForm";
-import Suscribe from "../components/Suscribe/Suscribe.jsx";
+import Suscribe from "../components/Suscribe/Suscribe";
 
 const Contact = () => {
   return (
     <>
       <Container fluid="lg" className="contact_section">
-        <section className="contact_section-hero">
+        <section className="faq_section-hero">
           <div className="contact_section-img"></div>
           <h5 className="contact_section-title">Contáctanos</h5>
         </section>
@@ -30,8 +30,11 @@ const Contact = () => {
             </div>
           </div>
         </section>
+        
         <ContactForm />
+       
         {/* <Suscribe /> */}
+        <Suscribe/>
       </Container>
       <section className="contact_section-footer">
         <div className="circle"></div>

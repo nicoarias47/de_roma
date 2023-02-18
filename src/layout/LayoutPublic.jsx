@@ -8,10 +8,11 @@ import WppButton from "../components/WppButton/WppButton";
 const LayoutPublic = () => {
   return (
     <div className="header_gradient">
-      <WppButton/>
+     
       <NavBarOffcanvas />
       <div className="header_gradient-background"></div>
       <main>
+        <WppButton/>
         <Outlet />
       </main>
       <Footer />
