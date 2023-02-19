@@ -19,7 +19,7 @@ function NavBarOffcanvas() {
                 <Navbar.Toggle
                   aria-controls={`offcanvasNavbar-expand-${expand}`}
                 />
-                <span>Menú</span>
+                <span className="d-md-none">Menú</span>
               </div>
               <Link to="/" className="navbar-brand"></Link>
             </div>
