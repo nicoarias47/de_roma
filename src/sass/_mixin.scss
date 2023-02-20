@@ -27,23 +27,25 @@
   //      set margin bottom to bring the footer (ej: margin-bottom:-5rem)
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 200px;
 }
 
 @mixin circle {
   background-color: $color-principal-100;
   width: 10.6rem;
   height: 10.6rem;
-  border-radius: 100%;
-  top: 0px;
-  position: relative;
+  border-radius: 50%;
+  right: -2.5rem;
 }
 
 @mixin circle-img {
-  // use: set top and left position
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 9.5rem;
-  height: 9.5rem;
-  top: 0px;
+  // use .circle::before, set img url position
+  content: "";
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
 }

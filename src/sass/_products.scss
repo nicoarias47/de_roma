@@ -21,23 +21,19 @@
 
 .products_section-footer {
   @include circle-father;
-  top: -8rem;
+  top: -7rem;
+  margin-bottom: -18rem;
   height: 300px;
-  margin-bottom: -20rem;
-  display: flex;
-  align-items: center;
 
   .circle {
     @include circle;
-    right: -70%;
   }
 
-  .img {
+  .circle::before {
     @include circle-img;
     background-image: url("./assets/img/circle_products.svg");
-    right: -35%;
-    top: 7%;
-    width: 14rem;
-    height: 14rem;
+    right: -45px;
+    bottom: -15px;
+    height: 236px;
   }
 }

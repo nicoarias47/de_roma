@@ -55,21 +55,18 @@
 
 .shipping-footer {
   @include circle-father;
-  top: -170px;
-  height: 220px;
-  margin-bottom: -21rem;
+  top: -10rem;
+  margin-bottom: -19rem;
 
   .circle {
     @include circle;
-    left: 278px;
   }
 
-  .img {
+  .circle::before {
     @include circle-img;
     background-image: url("./assets/img/circlepaymentimg3.svg");
-    height: 200px;
-    width: 200px;
-    left: 250px;
+    right: -5px;
+    bottom: -20px;
   }
 }
 

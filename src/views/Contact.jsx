@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <>
       <Container fluid="lg" className="contact_section">
-        <section className="faq_section-hero">
+        <section className="contact_section-hero">
           <div className="contact_section-img"></div>
           <h5 className="contact_section-title">Contáctanos</h5>
         </section>
@@ -46,7 +46,6 @@ const Contact = () => {
       </Container>
       <section className="contact_section-footer">
         <div className="circle"></div>
-        <div className="img"></div>
       </section>
     </>
   );

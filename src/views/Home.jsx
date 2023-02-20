@@ -59,7 +59,6 @@ const Home = () => {
       </Container>
       <section className="home_section-footer">
         <div className="circle"></div>
-        <div className="img"></div>
       </section>
     </>
   );

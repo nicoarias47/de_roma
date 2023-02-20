@@ -29,22 +29,20 @@
     border-radius: 0.5rem;
   }
 }
+
 .faq_section-footer {
   @include circle-father;
-  top: -15px;
-  height: 200px;
-  margin-bottom: -11rem;
+  top: -5rem;
+  margin-bottom: -14rem;
 
   .circle {
     @include circle;
-    right: -70%;
-    top: 0%;
   }
 
-  .img {
+  .circle::before {
     @include circle-img;
     background-image: url("./assets/img/circlepaymentimg2.svg");
-    right: -7%;
-    top: 17%;
+    right: 10px;
+    bottom: -25px;
   }
 }

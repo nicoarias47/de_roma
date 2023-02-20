@@ -360,33 +360,31 @@ h5 {
 .home_section-footer {
   position: relative;
   overflow: hidden;
-  top: -8rem;
-  height: 300px;
-  margin-bottom: -20rem;
   display: flex;
   align-items: center;
+  height: 200px;
+  top: -7rem;
+  margin-bottom: -19rem;
+  height: 300px;
 }
 .home_section-footer .circle {
   background-color: #a9b388;
   width: 10.6rem;
   height: 10.6rem;
-  border-radius: 100%;
-  top: 0px;
-  position: relative;
-  right: -70%;
+  border-radius: 50%;
+  right: -2.5rem;
 }
-.home_section-footer .img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 9.5rem;
-  height: 9.5rem;
-  top: 0px;
+.home_section-footer .circle::before {
+  content: "";
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
   background-image: url("./assets/img/circle_home.svg");
-  right: -23%;
-  top: 10%;
-  width: 14rem;
-  height: 14rem;
+  right: -5px;
+  bottom: -20px;
+  height: 223px;
 }
 
 .products b {
@@ -409,33 +407,31 @@ h5 {
 .products_section-footer {
   position: relative;
   overflow: hidden;
-  top: -8rem;
-  height: 300px;
-  margin-bottom: -20rem;
   display: flex;
   align-items: center;
+  height: 200px;
+  top: -7rem;
+  margin-bottom: -18rem;
+  height: 300px;
 }
 .products_section-footer .circle {
   background-color: #a9b388;
   width: 10.6rem;
   height: 10.6rem;
-  border-radius: 100%;
-  top: 0px;
-  position: relative;
-  right: -70%;
+  border-radius: 50%;
+  right: -2.5rem;
 }
-.products_section-footer .img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 9.5rem;
-  height: 9.5rem;
-  top: 0px;
+.products_section-footer .circle::before {
+  content: "";
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
   background-image: url("./assets/img/circle_products.svg");
-  right: -35%;
-  top: 7%;
-  width: 14rem;
-  height: 14rem;
+  right: -45px;
+  bottom: -15px;
+  height: 236px;
 }
 
 .payment_section-img {
@@ -467,30 +463,29 @@ h5 {
 .payment_section-footer {
   position: relative;
   overflow: hidden;
-  top: -2rem;
+  display: flex;
+  align-items: center;
   height: 200px;
-  margin-bottom: -11rem;
+  top: -5rem;
+  margin-bottom: -14rem;
 }
 .payment_section-footer .circle {
   background-color: #a9b388;
   width: 10.6rem;
   height: 10.6rem;
-  border-radius: 100%;
-  top: 0px;
-  position: relative;
-  right: -70%;
-  top: 0%;
+  border-radius: 50%;
+  right: -2.5rem;
 }
-.payment_section-footer .img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 9.5rem;
-  height: 9.5rem;
-  top: 0px;
+.payment_section-footer .circle::before {
+  content: "";
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
   background-image: url("./assets/img/circlepaymentimg.svg");
-  right: -10%;
-  top: 17%;
+  right: 5px;
+  bottom: -20px;
 }
 
 .about-title h5 {
@@ -584,33 +579,30 @@ h5 {
 .about_section-footer {
   position: relative;
   overflow: hidden;
-  top: -7rem;
-  height: 250px;
-  margin-bottom: -9rem;
   display: flex;
   align-items: center;
+  height: 200px;
+  top: -7rem;
+  margin-bottom: -16rem;
 }
 .about_section-footer .circle {
   background-color: #a9b388;
   width: 10.6rem;
   height: 10.6rem;
-  border-radius: 100%;
-  top: 0px;
-  position: relative;
-  right: -70%;
+  border-radius: 50%;
+  right: -2.5rem;
 }
-.about_section-footer .img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 9.5rem;
-  height: 9.5rem;
-  top: 0px;
+.about_section-footer .circle::before {
+  content: "";
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
   background-image: url("./assets/img/circle_about.svg");
-  right: -15%;
-  top: -10%;
-  width: 12.3rem;
-  height: 16.3rem;
+  right: 0px;
+  bottom: -30px;
+  height: 250px;
 }
 
 .row-3 {
@@ -681,30 +673,29 @@ h5 {
 .faq_section-footer {
   position: relative;
   overflow: hidden;
-  top: -15px;
+  display: flex;
+  align-items: center;
   height: 200px;
-  margin-bottom: -11rem;
+  top: -5rem;
+  margin-bottom: -14rem;
 }
 .faq_section-footer .circle {
   background-color: #a9b388;
   width: 10.6rem;
   height: 10.6rem;
-  border-radius: 100%;
-  top: 0px;
-  position: relative;
-  right: -70%;
-  top: 0%;
+  border-radius: 50%;
+  right: -2.5rem;
 }
-.faq_section-footer .img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 9.5rem;
-  height: 9.5rem;
-  top: 0px;
+.faq_section-footer .circle::before {
+  content: "";
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
   background-image: url("./assets/img/circlepaymentimg2.svg");
-  right: -7%;
-  top: 17%;
+  right: 10px;
+  bottom: -25px;
 }
 
 .background-left {
@@ -786,30 +777,29 @@ h5 {
 .shipping-footer {
   position: relative;
   overflow: hidden;
-  top: -170px;
-  height: 220px;
-  margin-bottom: -21rem;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  top: -10rem;
+  margin-bottom: -19rem;
 }
 .shipping-footer .circle {
   background-color: #a9b388;
   width: 10.6rem;
   height: 10.6rem;
-  border-radius: 100%;
-  top: 0px;
-  position: relative;
-  left: 278px;
+  border-radius: 50%;
+  right: -2.5rem;
 }
-.shipping-footer .img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 9.5rem;
-  height: 9.5rem;
-  top: 0px;
+.shipping-footer .circle::before {
+  content: "";
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
   background-image: url("./assets/img/circlepaymentimg3.svg");
-  height: 200px;
-  width: 200px;
-  left: 250px;
+  right: -5px;
+  bottom: -20px;
 }
 
 @media (min-width: 767px) {
@@ -962,30 +952,29 @@ h5 {
 .faq_section-footer {
   position: relative;
   overflow: hidden;
-  top: -15px;
+  display: flex;
+  align-items: center;
   height: 200px;
-  margin-bottom: -11rem;
+  top: -5rem;
+  margin-bottom: -14rem;
 }
 .faq_section-footer .circle {
   background-color: #a9b388;
   width: 10.6rem;
   height: 10.6rem;
-  border-radius: 100%;
-  top: 0px;
-  position: relative;
-  right: -70%;
-  top: 0%;
+  border-radius: 50%;
+  right: -2.5rem;
 }
-.faq_section-footer .img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 9.5rem;
-  height: 9.5rem;
-  top: 0px;
+.faq_section-footer .circle::before {
+  content: "";
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
   background-image: url("./assets/img/circlepaymentimg2.svg");
-  right: -7%;
-  top: 17%;
+  right: 10px;
+  bottom: -25px;
 }
 
 .background-left {
@@ -1067,30 +1056,29 @@ h5 {
 .shipping-footer {
   position: relative;
   overflow: hidden;
-  top: -170px;
-  height: 220px;
-  margin-bottom: -21rem;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  top: -10rem;
+  margin-bottom: -19rem;
 }
 .shipping-footer .circle {
   background-color: #a9b388;
   width: 10.6rem;
   height: 10.6rem;
-  border-radius: 100%;
-  top: 0px;
-  position: relative;
-  left: 278px;
+  border-radius: 50%;
+  right: -2.5rem;
 }
-.shipping-footer .img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 9.5rem;
-  height: 9.5rem;
-  top: 0px;
+.shipping-footer .circle::before {
+  content: "";
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
   background-image: url("./assets/img/circlepaymentimg3.svg");
-  height: 200px;
-  width: 200px;
-  left: 250px;
+  right: -5px;
+  bottom: -20px;
 }
 
 @media (min-width: 767px) {
@@ -1384,33 +1372,29 @@ h5 {
 .contact_section-footer {
   position: relative;
   overflow: hidden;
-  top: -8rem;
-  height: 300px;
-  margin-bottom: -20rem;
   display: flex;
   align-items: center;
+  height: 200px;
+  top: -5rem;
+  margin-bottom: -14rem;
 }
 .contact_section-footer .circle {
   background-color: #a9b388;
   width: 10.6rem;
   height: 10.6rem;
-  border-radius: 100%;
-  top: 0px;
-  position: relative;
-  right: -70%;
+  border-radius: 50%;
+  right: -2.5rem;
 }
-.contact_section-footer .img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 9.5rem;
-  height: 9.5rem;
-  top: 0px;
+.contact_section-footer .circle::before {
+  content: "";
   position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
   background-image: url("./assets/img/vela.svg");
-  right: -10%;
-  top: 32%;
-  width: 10rem;
-  height: 10rem;
+  right: -5px;
+  bottom: -20px;
 }
 
 .wpp-button {

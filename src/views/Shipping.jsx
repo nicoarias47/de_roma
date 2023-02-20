@@ -68,8 +68,7 @@ const Shipping = () => {
         </div>
       </Container>
       <section className="shipping-footer">
-        <figure className="circle"></figure>
-        <div className="img"></div>
+        <div className="circle"></div>
       </section>
     </>
   );

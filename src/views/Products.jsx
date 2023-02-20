@@ -35,7 +35,6 @@ const Products = () => {
       </Container>
       <section className="products_section-footer">
         <div className="circle"></div>
-        <div className="img"></div>
       </section>
     </>
   );
