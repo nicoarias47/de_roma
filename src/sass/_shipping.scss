@@ -1,13 +1,13 @@
 .background-left {
-  padding-bottom: 22rem;
-  .img {
+  @include hero-father;
+
+  &-img {
     @include hero-img;
     background-image: url("./assets/img/paymentimg3.svg");
   }
 
-  .title {
+  &-title {
     @include hero-title;
-    font-weight: bold;
   }
 }
 

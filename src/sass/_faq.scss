@@ -1,4 +1,8 @@
 .faq_section {
+  &-hero {
+    @include hero-father;
+  }
+
   &-img {
     @include hero-img;
     background-image: url("./assets/img/faqimg.svg");
@@ -6,10 +10,6 @@
 
   &-title {
     @include hero-title;
-  }
-
-  &-hero {
-    padding-bottom: 25rem;
   }
 }
 .col-right {

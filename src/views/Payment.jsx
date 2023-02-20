@@ -16,10 +16,11 @@ const Payment = () => {
             <div className="col-left col-xs-12 col-md-6 col-lg-6 p-3">
               <section className="payment_section-hero">
                 <div className="payment_section-img"></div>
-                <h5 className="payment_section-title">
-                  Medios <br />
-                  de Pago
-                </h5>
+                <div className="row d-flex justify-content-center payment_section-description ">
+                  <h5 className="col-8 payment_section-title ">
+                    Medios de Pago
+                  </h5>
+                </div>
               </section>
             </div>
             <div className="col-right col-xs-12 col-md-6 col-lg-6 p-3">

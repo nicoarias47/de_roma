@@ -12,7 +12,9 @@ const Contact = () => {
       <Container fluid="lg" className="contact_section">
         <section className="contact_section-hero">
           <div className="contact_section-img"></div>
-          <h5 className="contact_section-title">Contáctanos</h5>
+          <div className="row d-flex justify-content-center contact_section-description ">
+            <h5 className="col-8 contact_section-title ">Contáctanos</h5>
+          </div>
         </section>
         <section className="contact_section-redes">
           <div className="row">

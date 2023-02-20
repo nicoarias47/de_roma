@@ -1,4 +1,8 @@
 .payment_section {
+  &-hero {
+    @include hero-father;
+  }
+
   &-img {
     @include hero-img;
     background-image: url("./assets/img/paymentimg1.svg");
@@ -6,10 +10,6 @@
 
   &-title {
     @include hero-title;
-  }
-
-  &-hero {
-    padding-bottom: 25rem;
   }
 }
 

@@ -11,7 +11,11 @@ const Faq = () => {
           <div className="col-left col-xs-12 col-md-6 col-lg-6">
             <section className="faq_section-hero">
               <div className="faq_section-img"></div>
-              <h5 className="faq_section-title">Preguntas Frecuentes</h5>
+              <div className="row d-flex justify-content-center faq_section-description ">
+                <h5 className="col-8 faq_section-title ">
+                  Preguntas Frecuentes
+                </h5>
+              </div>
             </section>
           </div>
           <div className="col-right col-xs-12 col-md-6 col-lg-6">
