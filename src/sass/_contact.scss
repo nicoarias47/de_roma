@@ -1,4 +1,8 @@
 .contact_section {
+  &-hero {
+    @include hero-father;
+  }
+
   &-img {
     @include hero-img;
     background-image: url("./assets/img/contact-hero.svg");
@@ -8,32 +12,111 @@
     @include hero-title;
   }
 
-  &-hero {
-    padding-bottom: 25rem;
-  }
-
   &-redes {
     padding-bottom: 2rem;
     border-bottom: 1px solid $color-grey-0;
     color: $color-black-200;
   }
+
+  &-description {
+    padding-top: 2rem;
+    h6 {
+      font-size: 1.2rem;
+      font-weight: 400;
+    }
+
+    span {
+      font-size: 1rem;
+      font-weight: 300;
+      padding-bottom: 2rem;
+    }
+  }
 }
 
 .contact_section-footer {
   @include circle-father;
-  top: -4rem;
-  height: 200px;
-  margin-bottom: -9rem;
+  top: -5rem;
+  margin-bottom: -14rem;
 
   .circle {
     @include circle;
-    right: -70%;
   }
 
-  .img {
+  .circle::before {
     @include circle-img;
     background-image: url("./assets/img/vela.svg");
-    right: -10%;
-    top: 17%;
+    right: -5px;
+    bottom: -20px;
   }
 }
+
+// @media (min-width: 768px) {
+//   .contact_section {
+//     padding-top: 15rem;
+
+//     &-img {
+//       top: 15rem;
+//       width: 19.3rem;
+//       height: 26.9rem;
+//       filter: none;
+//       background-color: red;
+//       background-size: contain;
+//       padding: 10rem;
+//     }
+
+//     &-title {
+//       @include hero-title;
+//       left: 20rem;
+//       width: 100%;
+//       border-bottom: 1px solid $color-black-100;
+//     }
+
+//     &-hero {
+//       padding-bottom: 25rem;
+//       height: 30rem;
+//     }
+
+//     &-redes {
+//       padding-bottom: 2rem;
+//       border-bottom: 1px solid $color-grey-0;
+//       color: $color-black-200;
+//     }
+
+//     &-description {
+//       padding-top: 2rem;
+//       h6 {
+//         font-size: 1.2rem;
+//         font-weight: 400;
+//       }
+
+//       span {
+//         font-size: 1rem;
+//         font-weight: 300;
+//         padding-bottom: 2rem;
+//       }
+//     }
+//   }
+
+//   .contact_section-footer {
+//     @include circle-father;
+//     top: -8rem;
+//     height: 300px;
+//     margin-bottom: -20rem;
+//     display: flex;
+//     align-items: center;
+
+//     .circle {
+//       @include circle;
+//       right: -70%;
+//     }
+
+//     .img {
+//       @include circle-img;
+//       background-image: url("./assets/img/vela.svg");
+//       right: -10%;
+//       top: 32%;
+//       width: 10rem;
+//       height: 10rem;
+//     }
+//   }
+// }

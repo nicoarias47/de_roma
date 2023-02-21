@@ -3,7 +3,6 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
-import { render } from "react-dom";
 import { Link } from "react-router-dom";
 import { useNavbar } from "../../hooks/useNavbar";
 
@@ -20,7 +19,7 @@ function NavBarOffcanvas() {
                 <Navbar.Toggle
                   aria-controls={`offcanvasNavbar-expand-${expand}`}
                 />
-                <span>Menú</span>
+                <span className="d-md-none">Menú</span>
               </div>
               <Link to="/" className="navbar-brand"></Link>
             </div>

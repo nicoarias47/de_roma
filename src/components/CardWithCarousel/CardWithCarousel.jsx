@@ -18,7 +18,7 @@ const CardWithCarousel = ({ data }) => {
             <Carousel
               activeIndex={index}
               onSelect={handleSelect}
-              indicators={false}
+              indicators={true}
             >
               <Carousel.Item>
                 <img className="d-block w-100" src={el.img} alt={el.title} />
@@ -28,8 +28,11 @@ const CardWithCarousel = ({ data }) => {
               </Carousel.Item>
             </Carousel>
             <Card.Body>
-              <Card.Title>{el.title}</Card.Title>
-              <Card.Text>{el.description}</Card.Text>
+              <ul>
+                {el.list.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
               <Button>Ver catalogo</Button>
             </Card.Body>
           </Card>

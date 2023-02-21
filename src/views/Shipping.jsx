@@ -10,11 +10,12 @@ const Shipping = () => {
           <div className="row">
             <div className="col-left col-xs-12 col-md-6 col-lg-6 p-3">
               <div className="background-left">
-                <div className="img"></div>
-                <h5 className="title">Envios</h5>
+                <div className="background-left-img"></div>
+                <div className="row d-flex justify-content-center background-left-description ">
+                  <h5 className="col-8 background-left-title ">Envios</h5>
+                </div>
               </div>
             </div>
-
             <div className="col-right col-xs-12 col-md-6 col-lg-6 p-3">
               <p className="body2">
                 Realizamos envíos a nivel nacional por medio de Correo Argentino
@@ -68,8 +69,7 @@ const Shipping = () => {
         </div>
       </Container>
       <section className="shipping-footer">
-        <figure className="circle"></figure>
-        <div className="img"></div>
+        <div className="circle"></div>
       </section>
     </>
   );

@@ -10,9 +10,11 @@ const Contact = () => {
   return (
     <>
       <Container fluid="lg" className="contact_section">
-        <section className="faq_section-hero">
+        <section className="contact_section-hero">
           <div className="contact_section-img"></div>
-          <h5 className="contact_section-title">Contáctanos</h5>
+          <div className="row d-flex justify-content-center contact_section-description ">
+            <h5 className="col-8 contact_section-title ">Contáctanos</h5>
+          </div>
         </section>
         <section className="contact_section-redes">
           <div className="row">
@@ -30,15 +32,22 @@ const Contact = () => {
             </div>
           </div>
         </section>
-        
+        <section className="contact_section-description">
+          <h6>
+            Tienes alguna pregunta que no hayamos resuelto en la pagina?
+            Escríbenos!
+          </h6>
+          <span>
+            Completá la información y nos contactamos lo más pronto posible ten
+            en cuenta que nuestro horario de atención de de Lunes a Lunes hasta
+            las 21:00 horas.
+          </span>
+        </section>
         <ContactForm />
-       
-        {/* <Suscribe /> */}
-        <Suscribe/>
+        <Suscribe />
       </Container>
       <section className="contact_section-footer">
         <div className="circle"></div>
-        <div className="img"></div>
       </section>
     </>
   );

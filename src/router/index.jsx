@@ -9,7 +9,6 @@ import Payment from "../views/Payment";
 import Products from "../views/Products";
 import Shipping from "../views/Shipping";
 
-// Aqui van las rutas de las paginas del proyecto
 export const router = createBrowserRouter([
   {
     path: "/",

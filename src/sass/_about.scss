@@ -11,12 +11,14 @@
 .section-left {
   padding-bottom: 22rem;
   text-align: center;
+
   .img-about {
     @include hero-img;
-    border-radius: 0px;
     border: solid white 5px;
     border-radius: 40px 15px 15px 15px;
     left: 17%;
+    width: 19rem;
+    width: 15rem;
   }
   .about-title {
     color: $color-white-0;
@@ -62,7 +64,7 @@
 .section4 {
   text-align: center;
   width: 90%;
-  margin:2rem 5%;
+  margin: 2rem 5%;
   color: #5f6f52;
   background-color: $color-secondary-400;
   border-radius: 2rem 0.5rem 2rem 0.5rem;
@@ -80,23 +82,18 @@
 .about_section-footer {
   @include circle-father;
   top: -7rem;
-  height: 250px;
-  margin-bottom: -9rem;
-  display: flex;
-  align-items: center;
+  margin-bottom: -16rem;
 
   .circle {
     @include circle;
-    right: -70%;
   }
 
-  .img {
+  .circle::before {
     @include circle-img;
     background-image: url("./assets/img/circle_about.svg");
-    right: -15%;
-    top: -10%;
-    width: 12.3rem;
-    height: 16.3rem;
+    right: 0px;
+    bottom: -30px;
+    height: 250px;
   }
 }
 
@@ -107,16 +104,16 @@
 
   .section-right-3 {
     // margin-top: 2 rem;
-    padding: 0rem 2rem ;
-   h5 { width: 60%;
-    margin-bottom: 1.5rem;
-    color: $color-principal-200;
+    padding: 0rem 2rem;
+    h5 {
+      width: 60%;
+      margin-bottom: 1.5rem;
+      color: $color-principal-200;
+    }
   }
-}
 
   .background-rectangule {
     background-color: $color-secondary-400;
-    
   }
 
   .section-Left-3 {

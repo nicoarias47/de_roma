@@ -8,10 +8,10 @@
     display: none;
   }
 
- section {
+  section {
     align-items: center;
     margin-bottom: 1rem;
-}
+  }
   b {
     text-align: center;
     display: block;
@@ -22,15 +22,14 @@
 .info-icons-container {
   // border-top: 2px solid $color-black-100;
   width: 100%;
-  padding: 1rem ;
+  padding: 1rem;
 }
 
-.info-icons  {
+.info-icons {
   display: flex;
   padding: 0px;
-  margin:0px;
+  margin: 0px;
   justify-content: space-around;
-  
 
   li {
     display: flex;
@@ -49,4 +48,21 @@
   }
 }
 
+.home_section-footer {
+  @include circle-father;
+  top: -7rem;
+  margin-bottom: -19rem;
+  height: 300px;
 
+  .circle {
+    @include circle;
+  }
+
+  .circle::before {
+    @include circle-img;
+    background-image: url("./assets/img/circle_home.svg");
+    right: -5px;
+    bottom: -20px;
+    height: 223px;
+  }
+}

@@ -2,7 +2,11 @@
   width: 85%;
   border-radius: 32px 8px;
   border: none;
-  filter: drop-shadow(0px 2px 7px #00000025);
+  // filter: drop-shadow(0px 2px 7px #00000025);
+
+  .carousel-indicators {
+    bottom: -10%;
+  }
 
   img {
     border-radius: 32px 8px 0px 0px;
@@ -40,11 +44,16 @@
     height: 2.5rem;
   }
 
-  .card-text {
-    color: $color-grey-100;
-  }
+  .card-body {
+    padding: 0;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
 
-  .card-title {
-    color: $color-black-100;
+    ul {
+      display: grid;
+      grid-template-columns: auto auto;
+      column-gap: 1rem;
+    }
   }
 }

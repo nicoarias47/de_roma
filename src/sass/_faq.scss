@@ -1,4 +1,8 @@
 .faq_section {
+  &-hero {
+    @include hero-father;
+  }
+
   &-img {
     @include hero-img;
     background-image: url("./assets/img/faqimg.svg");
@@ -7,43 +11,38 @@
   &-title {
     @include hero-title;
   }
-
-  &-hero {
-    padding-bottom: 25rem;
-  }
 }
 .col-right {
-  padding:1.5rem;
+  padding: 1.5rem;
 
-.accordion-item {
-  border: 1px solid $color-gray-100;
-  margin-bottom: 1rem;
+  .accordion-item {
+    border: 1px solid $color-gray-100;
+    margin-bottom: 1rem;
+  }
+
+  .accordion-header {
+    border-top: 1px solid $color-gray-100;
+  }
+  .accordion-button:not(.collapsed) {
+    color: $color-black-200;
+    background-color: white;
+    border-radius: 0.5rem;
+  }
 }
 
-.accordion-header {
-  border-top: 1px solid $color-gray-100;
-}
-.accordion-button:not(.collapsed) {
-  color: $color-black-200;
-  background-color: white;
-}
-}
 .faq_section-footer {
   @include circle-father;
-  top: -15px;
-  height: 200px;
-  margin-bottom: -11rem;
+  top: -5rem;
+  margin-bottom: -14rem;
 
   .circle {
     @include circle;
-    right: -70%;
-    top: 0%;
   }
 
-  .img {
+  .circle::before {
     @include circle-img;
     background-image: url("./assets/img/circlepaymentimg2.svg");
-    right: -7%;
-    top: 17%;
+    right: 10px;
+    bottom: -25px;
   }
 }

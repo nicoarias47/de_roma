@@ -1,4 +1,8 @@
 .payment_section {
+  &-hero {
+    @include hero-father;
+  }
+
   &-img {
     @include hero-img;
     background-image: url("./assets/img/paymentimg1.svg");
@@ -7,28 +11,21 @@
   &-title {
     @include hero-title;
   }
-
-  &-hero {
-    padding-bottom: 25rem;
-  }
 }
 
 .payment_section-footer {
   @include circle-father;
-  top: -2rem;
-  height: 200px;
-  margin-bottom: -11rem;
+  top: -5rem;
+  margin-bottom: -14rem;
 
   .circle {
     @include circle;
-    right: -70%;
-    top: 0%;
   }
 
-  .img {
+  .circle::before {
     @include circle-img;
     background-image: url("./assets/img/circlepaymentimg.svg");
-    right: -10%;
-    top: 17%;
+    right: 5px;
+    bottom: -20px;
   }
 }

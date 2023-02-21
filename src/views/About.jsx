@@ -4,6 +4,7 @@ import { InstagramIcon } from "../assets/icon/instagram-icon";
 import aboutimg from "../assets/img/aboutimg.svg";
 import aboutimg2 from "../assets/img/aboutimg2.svg";
 import aboutimg3 from "../assets/img/aboutimg3.svg";
+
 const About = () => {
   return (
     <>
@@ -11,7 +12,7 @@ const About = () => {
         <div className="row">
           <div className="col-left col-xs-12 col-md-6 col-lg-6">
             <section className="section-left">
-              <div className>
+              <div className="">
                 <img className="img-about" src={aboutimg} />
               </div>
               <div className="about-title">
@@ -69,7 +70,6 @@ const About = () => {
       </section>
       <section className="about_section-footer">
         <div className="circle"></div>
-        <div className="img"></div>
       </section>
     </>
   );
