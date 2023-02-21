@@ -6,9 +6,12 @@ import img from "../assets/img/difu.png";
 import envios from "../assets/icon/envios.svg";
 import payments from "../assets/icon/payments.svg";
 import faq from "../assets/icon/faq.svg";
+import Advertising from "../components/Advertising/Advertising";
 
 
 const Home = () => {
+
+
   const carouselOne = {
     img1: img,
     title1: "Living & Deco",
@@ -17,10 +20,12 @@ const Home = () => {
     img3: img,
     title3: "Baño",
   };
-
-  return (
+  return (<>
+     <Advertising/>
     <div className="home">
+      
       <MainCarousel />
+   
       <section>
       <b className="body3"> Living & Deco / Aromatizantes / Baño </b>
       <SectionCarousel data={carouselOne} />
@@ -52,6 +57,7 @@ const Home = () => {
       </div>
 
     </div>
+    </>
   );
 };
 
