@@ -495,7 +495,7 @@ h5 {
   .payment_section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 0.5fr 0.5fr;
     grid-template-areas: "hero hero" "x cont" "doubts doubts";
   }
   .payment_section-hero {
@@ -1362,8 +1362,8 @@ h5 {
   .contact_section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr 0.8fr;
-    grid-template-areas: "hero hero" "redes form" "sus sus";
+    grid-template-rows: 1fr 0.5fr 0.5fr 0.8fr;
+    grid-template-areas: "hero hero" "redes form" "x form" "sus sus";
   }
   .contact_section-hero {
     grid-area: hero;
