@@ -19,7 +19,7 @@ const ContactForm = () => {
 
   return (
     <div className="contact_form">
-      <h2>Déjanos tu mensaje</h2>
+      <h2 className="d-md-none">Déjanos tu mensaje</h2>
       <form className="form" onSubmit={handleSubmit}>
         <input
           type="text"

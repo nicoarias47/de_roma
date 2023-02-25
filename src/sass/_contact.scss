@@ -50,73 +50,60 @@
   }
 }
 
-// @media (min-width: 768px) {
-//   .contact_section {
-//     padding-top: 15rem;
+@media (min-width: 768px) {
+  .contact_section {
+    &-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 0.5fr 0.8fr;
+      grid-template-areas:
+        "hero hero"
+        "redes form"
+        "sus sus";
+    }
+    &-hero {
+      grid-area: hero;
+      padding-bottom: 0rem;
+    }
 
-//     &-img {
-//       top: 15rem;
-//       width: 19.3rem;
-//       height: 26.9rem;
-//       filter: none;
-//       background-color: red;
-//       background-size: contain;
-//       padding: 10rem;
-//     }
+    &-title {
+      @include hero-title;
+      top: 100px;
+      padding: 0.5rem;
+      border-bottom: 1px solid $color-black-100;
+      width: 100%;
+      left: 150px;
+    }
 
-//     &-title {
-//       @include hero-title;
-//       left: 20rem;
-//       width: 100%;
-//       border-bottom: 1px solid $color-black-100;
-//     }
+    &-redes {
+      border: none;
+      grid-area: redes;
+    }
 
-//     &-hero {
-//       padding-bottom: 25rem;
-//       height: 30rem;
-//     }
+    &-description {
+      margin-top: -16rem;
+      grid-area: form;
+    }
 
-//     &-redes {
-//       padding-bottom: 2rem;
-//       border-bottom: 1px solid $color-grey-0;
-//       color: $color-black-200;
-//     }
+    &-suscribe {
+      grid-area: sus;
+    }
+  }
 
-//     &-description {
-//       padding-top: 2rem;
-//       h6 {
-//         font-size: 1.2rem;
-//         font-weight: 400;
-//       }
-
-//       span {
-//         font-size: 1rem;
-//         font-weight: 300;
-//         padding-bottom: 2rem;
-//       }
-//     }
-//   }
-
-//   .contact_section-footer {
-//     @include circle-father;
-//     top: -8rem;
-//     height: 300px;
-//     margin-bottom: -20rem;
-//     display: flex;
-//     align-items: center;
-
-//     .circle {
-//       @include circle;
-//       right: -70%;
-//     }
-
-//     .img {
-//       @include circle-img;
-//       background-image: url("./assets/img/vela.svg");
-//       right: -10%;
-//       top: 32%;
-//       width: 10rem;
-//       height: 10rem;
-//     }
-//   }
-// }
+  .contact_section-footer {
+    .circle {
+      @include circle;
+      right: 4rem;
+      top: 0rem;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .contact_section-footer {
+    .circle {
+      @include circle;
+      right: 6rem;
+      top: 0rem;
+    }
+  }
+}

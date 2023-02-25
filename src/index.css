@@ -1414,6 +1414,64 @@ h5 {
   bottom: -20px;
 }
 
+@media (min-width: 768px) {
+  .contact_section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 0.8fr;
+    grid-template-areas: "hero hero" "redes form" "sus sus";
+  }
+  .contact_section-hero {
+    grid-area: hero;
+    padding-bottom: 0rem;
+  }
+  .contact_section-title {
+    position: absolute;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #5f6f52;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-radius: 2rem 0 0 0;
+    top: 240px;
+    top: 100px;
+    padding: 0.5rem;
+    border-bottom: 1px solid #474747;
+    width: 100%;
+    left: 150px;
+  }
+  .contact_section-redes {
+    border: none;
+    grid-area: redes;
+  }
+  .contact_section-description {
+    margin-top: -16rem;
+    grid-area: form;
+  }
+  .contact_section-suscribe {
+    grid-area: sus;
+  }
+  .contact_section-footer .circle {
+    background-color: #a9b388;
+    width: 10.6rem;
+    height: 10.6rem;
+    border-radius: 50%;
+    right: -2.5rem;
+    right: 4rem;
+    top: 0rem;
+  }
+}
+@media (min-width: 992px) {
+  .contact_section-footer .circle {
+    background-color: #a9b388;
+    width: 10.6rem;
+    height: 10.6rem;
+    border-radius: 50%;
+    right: -2.5rem;
+    right: 6rem;
+    top: 0rem;
+  }
+}
 .wpp-button {
   position: fixed;
   bottom: 10%;
