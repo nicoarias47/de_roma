@@ -9,7 +9,7 @@ import Suscribe from "../components/Suscribe/Suscribe";
 const Contact = () => {
   return (
     <>
-      <Container fluid="md" className="contact_section">
+      <Container fluid="lg" className="contact_section">
         <div className="row contact_section-grid">
           <section className="col-12 contact_section-hero">
             <div className="contact_section-img"></div>

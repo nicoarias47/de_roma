@@ -67,7 +67,6 @@
     }
 
     &-title {
-      @include hero-title;
       top: 100px;
       padding: 0.5rem;
       border-bottom: 1px solid $color-black-100;

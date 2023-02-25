@@ -660,18 +660,17 @@ h5 {
   border-radius: 2rem 0 0 0;
   top: 240px;
 }
-
-.col-right {
+.faq_section-accordion {
   padding: 1.5rem;
 }
-.col-right .accordion-item {
+.faq_section-accordion .accordion-item {
   border: 1px solid #bdbdbd;
   margin-bottom: 1rem;
 }
-.col-right .accordion-header {
+.faq_section-accordion .accordion-header {
   border-top: 1px solid #bdbdbd;
 }
-.col-right .accordion-button:not(.collapsed) {
+.faq_section-accordion .accordion-button:not(.collapsed) {
   color: #333333;
   background-color: white;
   border-radius: 0.5rem;
@@ -705,6 +704,31 @@ h5 {
   bottom: -25px;
 }
 
+@media (min-width: 768px) {
+  .faq_section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.6fr;
+    grid-template-areas: "hero hero" "x accordion" "doubts doubts";
+  }
+  .faq_section-title {
+    top: 100px;
+    padding: 0.5rem;
+    border-bottom: 1px solid #474747;
+    width: 100%;
+    left: 150px;
+  }
+  .faq_section-hero {
+    grid-area: hero;
+  }
+  .faq_section-accordion {
+    grid-area: accordion;
+    margin-top: -12rem;
+  }
+  .faq_section-doubts {
+    grid-area: doubts;
+  }
+}
 .background-left {
   position: relative;
   padding-bottom: 25rem;
@@ -944,18 +968,17 @@ h5 {
   border-radius: 2rem 0 0 0;
   top: 240px;
 }
-
-.col-right {
+.faq_section-accordion {
   padding: 1.5rem;
 }
-.col-right .accordion-item {
+.faq_section-accordion .accordion-item {
   border: 1px solid #bdbdbd;
   margin-bottom: 1rem;
 }
-.col-right .accordion-header {
+.faq_section-accordion .accordion-header {
   border-top: 1px solid #bdbdbd;
 }
-.col-right .accordion-button:not(.collapsed) {
+.faq_section-accordion .accordion-button:not(.collapsed) {
   color: #333333;
   background-color: white;
   border-radius: 0.5rem;
@@ -989,6 +1012,31 @@ h5 {
   bottom: -25px;
 }
 
+@media (min-width: 768px) {
+  .faq_section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.6fr;
+    grid-template-areas: "hero hero" "x accordion" "doubts doubts";
+  }
+  .faq_section-title {
+    top: 100px;
+    padding: 0.5rem;
+    border-bottom: 1px solid #474747;
+    width: 100%;
+    left: 150px;
+  }
+  .faq_section-hero {
+    grid-area: hero;
+  }
+  .faq_section-accordion {
+    grid-area: accordion;
+    margin-top: -12rem;
+  }
+  .faq_section-doubts {
+    grid-area: doubts;
+  }
+}
 .background-left {
   position: relative;
   padding-bottom: 25rem;
@@ -1426,14 +1474,6 @@ h5 {
     padding-bottom: 0rem;
   }
   .contact_section-title {
-    position: absolute;
-    font-size: 2rem;
-    font-weight: 500;
-    color: #5f6f52;
-    padding: 1rem;
-    background-color: #ffffff;
-    border-radius: 2rem 0 0 0;
-    top: 240px;
     top: 100px;
     padding: 0.5rem;
     border-bottom: 1px solid #474747;

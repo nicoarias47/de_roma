@@ -6,19 +6,15 @@ import { Container } from "react-bootstrap";
 const Faq = () => {
   return (
     <>
-      <Container fluid="lg" className="">
-        <div className="row">
-          <div className="col-left col-xs-12 col-md-6 col-lg-6">
-            <section className="faq_section-hero">
-              <div className="faq_section-img"></div>
-              <div className="row d-flex justify-content-center faq_section-description ">
-                <h5 className="col-8 faq_section-title ">
-                  Preguntas Frecuentes
-                </h5>
-              </div>
-            </section>
-          </div>
-          <div className="col-right col-xs-12 col-md-6 col-lg-6">
+      <Container fluid="lg" className="faq_section">
+        <div className="row faq_section-grid">
+          <section className="col-12 faq_section-hero">
+            <div className="faq_section-img"></div>
+            <div className="row d-flex justify-content-center faq_section-description ">
+              <h5 className="col-8 faq_section-title ">Preguntas Frecuentes</h5>
+            </div>
+          </section>
+          <section className="faq_section-accordion col-12">
             <p className="body2">estas son las preguntas mas frecuentes</p>
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
@@ -110,9 +106,17 @@ const Faq = () => {
                 </Accordion.Body>
               </Accordion.Item>
             </Accordion>
+          </section>
+          <div className="col-12 faq_section-doubts">
+            <div className="row">
+              <div className="col"></div>
+              <div className="col-sm-12 col-md-12">
+                <Doubts />
+              </div>
+              <div className="col"></div>
+            </div>
           </div>
         </div>
-        <Doubts />
       </Container>
       <section className="faq_section-footer">
         <div className="circle"></div>

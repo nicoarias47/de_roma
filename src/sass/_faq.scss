@@ -11,22 +11,23 @@
   &-title {
     @include hero-title;
   }
-}
-.col-right {
-  padding: 1.5rem;
 
-  .accordion-item {
-    border: 1px solid $color-gray-100;
-    margin-bottom: 1rem;
-  }
+  &-accordion {
+    padding: 1.5rem;
 
-  .accordion-header {
-    border-top: 1px solid $color-gray-100;
-  }
-  .accordion-button:not(.collapsed) {
-    color: $color-black-200;
-    background-color: white;
-    border-radius: 0.5rem;
+    .accordion-item {
+      border: 1px solid $color-gray-100;
+      margin-bottom: 1rem;
+    }
+
+    .accordion-header {
+      border-top: 1px solid $color-gray-100;
+    }
+    .accordion-button:not(.collapsed) {
+      color: $color-black-200;
+      background-color: white;
+      border-radius: 0.5rem;
+    }
   }
 }
 
@@ -44,5 +45,39 @@
     background-image: url("./assets/img/circlepaymentimg2.svg");
     right: 10px;
     bottom: -25px;
+  }
+}
+
+@media (min-width: 768px) {
+  .faq_section {
+    &-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.1fr 0.1fr 0.6fr;
+      grid-template-areas:
+        "hero hero"
+        "x accordion"
+        "doubts doubts";
+    }
+    &-title {
+      top: 100px;
+      padding: 0.5rem;
+      border-bottom: 1px solid $color-black-100;
+      width: 100%;
+      left: 150px;
+    }
+
+    &-hero {
+      grid-area: hero;
+    }
+
+    &-accordion {
+      grid-area: accordion;
+      margin-top: -12rem;
+    }
+
+    &-doubts {
+      grid-area: doubts;
+    }
   }
 }
