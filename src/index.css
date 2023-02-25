@@ -491,6 +491,32 @@ h5 {
   bottom: -20px;
 }
 
+@media (min-width: 768px) {
+  .payment_section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr;
+    grid-template-areas: "hero hero" "x cont" "doubts doubts";
+  }
+  .payment_section-hero {
+    grid-area: hero;
+    padding-bottom: 0rem;
+  }
+  .payment_section-title {
+    top: 100px;
+    padding: 0.5rem;
+    border-bottom: 1px solid #474747;
+    width: 100%;
+    left: 150px;
+  }
+  .payment_section-content {
+    margin-top: -16rem;
+    grid-area: cont;
+  }
+  .payment_section-doubts {
+    grid-area: doubts;
+  }
+}
 .about-title h5 {
   background-color: #5f6f52;
   display: inline-block;
