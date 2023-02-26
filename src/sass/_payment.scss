@@ -5,11 +5,23 @@
 
   &-img {
     @include hero-img;
-    background-image: url("./assets/img/paymentimg3.svg");
+    background-image: url("./assets/img/hero-payment.svg");
   }
 
   &-title {
     @include hero-title;
+  }
+
+  .payment_content {
+    &-title,
+    &-subtitle {
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    &-description {
+      font-weight: 400;
+    }
   }
 }
 
@@ -47,7 +59,7 @@
 
     &-title {
       top: 100px;
-      padding: 0.5rem;
+
       border-bottom: 1px solid $color-black-100;
       width: 100%;
       left: 150px;

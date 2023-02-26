@@ -37,11 +37,22 @@
       border: 1px solid $color-principal-200;
       border-radius: 0.5rem;
       box-shadow: 1px 2px 6px $color-principal-100;
+      width: 100%;
     }
   }
 
   input::placeholder,
   textarea::placeholder {
     color: $color-grey-100;
+  }
+}
+
+@media (min-width: 768px) {
+  .contact_form {
+    .form {
+      &-button {
+        width: 70%;
+      }
+    }
   }
 }

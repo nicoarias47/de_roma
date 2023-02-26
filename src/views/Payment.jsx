@@ -29,7 +29,7 @@ const Payment = () => {
                   <img src={imgMp} alt="" className="px-5" />
                 </div>
                 <div className="col-12">
-                  <span>
+                  <span className="payment_content-description">
                     Una vez elijas los productos que vayas a comprar, comunícate
                     con nosotros por WhatsApp y te enviaremos el detalle con el
                     monto y el link a Mercado Pago para poder completar tu
@@ -44,7 +44,7 @@ const Payment = () => {
                   <img src={imgSantander} alt="" className="px-5" />
                 </div>
                 <div className="col-12">
-                  <span>
+                  <span className="payment_content-description">
                     Una vez elijas los productos que vayas a comprar, comunícate
                     con nosotros por WhatsApp y te enviaremos el detalle con el
                     monto y el link a Genet para poder completar tu compra.
@@ -60,7 +60,7 @@ const Payment = () => {
                   <img src={imgEfectivo} alt="" className="px-5" />
                 </div>
                 <div className="col-12">
-                  <span>
+                  <span className="payment_content-description">
                     Podes pagar con efectivo al momento de retirar tu producto
                     con previa coordinación.
                   </span>
@@ -73,7 +73,7 @@ const Payment = () => {
                   <img src={imgTransferencia} alt="" className="px-5" />
                 </div>
                 <div className="col-12">
-                  <span>
+                  <span className="payment_content-description">
                     Una vez elijas los productos que vayas a comprar, comunícate
                     con nosotros por WhatsApp y te enviaremos el detalle con el
                     monto y los datos necesarios para que puedas completar tu
