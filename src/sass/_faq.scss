@@ -73,11 +73,57 @@
 
     &-accordion {
       grid-area: accordion;
-      margin-top: -12rem;
+      margin-top: -14rem;
     }
 
     &-doubts {
       grid-area: doubts;
+    }
+  }
+
+  .faq_section-footer {
+    .circle {
+      @include circle;
+      right: 8%;
+      top: 0rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .faq_section-footer {
+    .circle {
+      @include circle;
+      right: 14%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  // .faq_section {
+  //   &-grid {
+  //     display: grid;
+  //     grid-template-columns: 1fr 1fr;
+  //     grid-template-rows: 0.1fr 0.1fr 0.6fr;
+  //     grid-template-areas:
+  //       "hero hero"
+  //       "x accordion"
+  //       "doubts doubts";
+  //   }
+  // }
+  .faq_section-footer {
+    .circle {
+      @include circle;
+      right: 16%;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .faq_section-footer {
+    .circle {
+      @include circle;
+      right: 20%;
     }
   }
 }

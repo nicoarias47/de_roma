@@ -81,7 +81,7 @@
     }
 
     &-description {
-      margin-top: -14rem;
+      margin-top: -13rem;
       grid-area: form;
     }
 
@@ -93,17 +93,35 @@
   .contact_section-footer {
     .circle {
       @include circle;
-      right: 4rem;
+      right: 8%;
       top: 0rem;
     }
   }
 }
+
 @media (min-width: 992px) {
   .contact_section-footer {
     .circle {
       @include circle;
-      right: 6rem;
-      top: 0rem;
+      right: 14%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact_section-footer {
+    .circle {
+      @include circle;
+      right: 16%;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .contact_section-footer {
+    .circle {
+      @include circle;
+      right: 20%;
     }
   }
 }

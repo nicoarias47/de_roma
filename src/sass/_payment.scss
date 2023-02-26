@@ -35,7 +35,7 @@
     &-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 0.5fr 0.5fr;
+      grid-template-rows: 1fr 0.4fr 0.5fr;
       grid-template-areas:
         "hero hero"
         "x cont"
@@ -55,12 +55,47 @@
     }
 
     &-content {
-      margin-top: -16rem;
+      margin-top: -35rem;
       grid-area: cont;
     }
 
     &-doubts {
       grid-area: doubts;
+    }
+  }
+
+  .payment_section-footer {
+    .circle {
+      @include circle;
+      right: 8%;
+      top: 0rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .payment_section-footer {
+    .circle {
+      @include circle;
+      right: 14%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .payment_section-footer {
+    .circle {
+      @include circle;
+      right: 16%;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .payment_section-footer {
+    .circle {
+      @include circle;
+      right: 20%;
     }
   }
 }
