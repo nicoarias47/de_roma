@@ -15,19 +15,20 @@
   &-redes {
     padding-bottom: 2rem;
     border-bottom: 1px solid $color-grey-0;
+    font-size: 1rem;
     color: $color-black-200;
   }
 
   &-description {
     padding-top: 2rem;
     h6 {
-      font-size: 1.2rem;
-      font-weight: 400;
+      font-size: 1.1rem;
+      font-weight: 500;
     }
 
     span {
       font-size: 1rem;
-      font-weight: 300;
+      font-weight: 400;
       padding-bottom: 2rem;
     }
   }
@@ -68,11 +69,8 @@
     }
 
     &-title {
-      top: 100px;
-      padding: 0.5rem;
       border-bottom: 1px solid $color-black-100;
       width: 100%;
-      left: 150px;
     }
 
     &-redes {
@@ -109,6 +107,23 @@
 }
 
 @media (min-width: 1200px) {
+  .contact_section {
+    &-grid {
+      grid-template-rows: 1.7fr 0.5fr 0.5fr 0.8fr;
+    }
+
+    &-description {
+      margin-top: -22rem;
+      grid-area: form;
+    }
+
+    &-background {
+      @include background;
+    }
+    &-background::before {
+      @include background-icon;
+    }
+  }
   .contact_section-footer {
     .circle {
       @include circle;

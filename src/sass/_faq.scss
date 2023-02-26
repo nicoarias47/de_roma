@@ -15,6 +15,12 @@
   &-accordion {
     padding: 1.5rem;
 
+    .body2 {
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding-bottom: 2rem;
+    }
+
     .accordion-item {
       border: 1px solid $color-gray-100;
       margin-bottom: 1rem;
@@ -61,7 +67,6 @@
     }
     &-title {
       top: 100px;
-      padding: 0.5rem;
       border-bottom: 1px solid $color-black-100;
       width: 100%;
       left: 150px;

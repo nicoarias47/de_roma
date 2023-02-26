@@ -18,10 +18,26 @@
 
     &-title {
       padding-bottom: 2rem;
+      font-weight: 500;
+      font-size: 1.1rem;
+    }
+
+    &-subtitle {
+      font-weight: 500;
+      font-size: 1.1rem;
     }
 
     &-description {
       padding-bottom: 1rem;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+
+    &-link {
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #2f80ed;
     }
   }
 }
@@ -48,7 +64,7 @@
     &-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.5fr 0.5fr 0.8fr;
+      grid-template-rows: 0.5fr 0.5fr 1fr;
       grid-template-areas:
         "hero hero"
         "x cont"
@@ -73,6 +89,7 @@
 
     &-doubts {
       grid-area: doubts;
+      margin-top: -27rem;
     }
   }
 

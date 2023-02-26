@@ -15,17 +15,61 @@
   height: 19.5rem;
   top: 4rem;
   filter: drop-shadow(2px 2px 11px $color-hero-shadow);
+
+  @media (min-width: 1200px) {
+    width: 19.3rem;
+    height: 26.9rem;
+
+    filter: drop-shadow(2px 2px 21px $color-hero-shadow);
+  }
+}
+
+@mixin background {
+  position: absolute;
+  top: 2rem;
+  border-radius: 204px 204px 8px 8px;
+  z-index: -1;
+  background-color: #f6ede6;
+  width: 25rem;
+  height: 32.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin background-icon {
+  // use: set background::before
+  content: "";
+  background-image: url("./assets/img/hero-icon.svg");
+  position: absolute;
+  width: 9.3rem;
+  height: 17.1rem;
+  z-index: -1;
+  left: -75px;
+  bottom: 50px;
 }
 
 @mixin hero-title {
   position: absolute;
+  font-family: "Playfair Display", serif;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 600;
   color: $color-principal-200;
-  padding: 1rem;
+  padding: 0.5rem;
+  padding-left: 3rem;
   background-color: $color-white-0;
   border-radius: 2rem 0 0 0;
   top: 240px;
+
+  @media (min-width: 768px) {
+    top: 100px;
+    left: 150px;
+  }
+
+  @media (min-width: 1200px) {
+    top: 150px;
+    left: 280px;
+  }
 }
 
 @mixin circle-father {

@@ -49,7 +49,9 @@ const Shipping = () => {
                 Si deseas saber más sobre los costos de despacho dale click en
                 el siguiente enlace.
               </span>
-              <Link>Ver costos de despacho</Link>
+              <Link className="shipping_content-link">
+                Ver costos de despacho
+              </Link>
             </div>
           </section>
         </div>

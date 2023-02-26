@@ -15,7 +15,7 @@ const Faq = () => {
             </div>
           </section>
           <section className="faq_section-accordion col-12">
-            <p className="body2">estas son las preguntas mas frecuentes</p>
+            <p className="body2">Estas son las preguntas mas frecuentes</p>
             <Accordion defaultActiveKey="0">
               <Accordion.Item eventKey="0">
                 <Accordion.Header>
