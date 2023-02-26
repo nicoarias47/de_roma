@@ -37,3 +37,40 @@
     height: 236px;
   }
 }
+
+@media (min-width: 768px) {
+  .products_section-footer {
+    .circle {
+      @include circle;
+      right: 8%;
+      top: 0rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .products_section-footer {
+    .circle {
+      @include circle;
+      right: 14%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .products_section-footer {
+    .circle {
+      @include circle;
+      right: 16%;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .products_section-footer {
+    .circle {
+      @include circle;
+      right: 20%;
+    }
+  }
+}

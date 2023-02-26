@@ -35,7 +35,7 @@
     &-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 0.5fr 0.8fr;
+      grid-template-rows: 0.5fr 0.5fr 0.8fr;
       grid-template-areas:
         "hero hero"
         "x cont"
@@ -55,11 +55,46 @@
 
     &-content {
       grid-area: cont;
-      margin-top: -16rem;
+      margin-top: -13rem;
     }
 
     &-doubts {
       grid-area: doubts;
+    }
+  }
+
+  .shipping-footer {
+    .circle {
+      @include circle;
+      right: 8%;
+      top: 0rem;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .shipping-footer {
+    .circle {
+      @include circle;
+      right: 14%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .shipping-footer {
+    .circle {
+      @include circle;
+      right: 16%;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .shipping-footer {
+    .circle {
+      @include circle;
+      right: 20%;
     }
   }
 }
