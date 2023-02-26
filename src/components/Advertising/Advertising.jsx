@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import modalimg from '../../assets/img/carrouselphoto1.svg';
+import modalimg from '../../assets/img/advertisingimg.svg';
 import logo from '../../assets/icon/roma-logo.svg';
 
 const Advertising = () => {
@@ -41,13 +41,12 @@ const Advertising = () => {
 
     <Modal id="modal" show={show} onHide={handleClose} >
       <Modal.Header className="w-100" closeButton ></Modal.Header>
-
       <div className='row'>
-        <div class="modal-col-left col-xs-12 col-md-4 col-lg-4">
+        <div className="modal-col-left col-xs-12 col-md-4 col-lg-4">
           <img className="img-logo-mobile" src={logo} />
           <img src={modalimg} />
         </div>
-        <div class="modal-col-right col-xs-12 col-md-8 col-lg-8">
+        <div className="modal-col-right col-xs-12 col-md-8 col-lg-8">
         <img className="img-logo-mobile2" src={logo} />
           <p className='body1'>Suscríbete a nuestro newsletter y recibe un  <b>10%  de descuento</b> en tu primera compra </p>
           <form className="suscribe-form-modal" onSubmit={handleSubmit}>

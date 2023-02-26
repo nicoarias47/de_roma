@@ -1,14 +1,13 @@
-import "./style.css";
 import Carousel from "react-bootstrap/Carousel";
 import ControlledCarousel from "./ControlledCarousel.jsx";
-import WspIcon from "../../assets/icon/wsp-icon.svg";
+
 
 function MainCarousel() {
   return (
-    <>
+    <><div className="main-carousel">
       <ControlledCarousel />
-      <Carousel.Caption>
-        <h5>Enamorate deROMA</h5>
+      <Carousel.Caption >
+        <h5>Mira el catálogo y enamórate DeROMA</h5>
 
         <button className="btn-catalogo">
           {/* <img className="CarouselPhoto" src={WspIcon} alt="whatsapp" /> */}
@@ -37,6 +36,7 @@ function MainCarousel() {
           <p className="body4"> Ver todo el catálogo</p>
         </button>
       </Carousel.Caption>
+      </div>
     </>
   );
 }
