@@ -5,6 +5,8 @@ margin: 5rem 1rem;
 .img-logo-mobile2 {
     display: none;
 }
+.modal-content {
+    border-radius: 32px 8px 32px 8px;
 }
 .modal-col-left {
     padding: 0.5rem;
@@ -18,7 +20,7 @@ margin: 5rem 1rem;
         width: 120px;
     }
     img {
-    width: 170px;
+    width: 210px;
     }
 }
 
@@ -73,7 +75,7 @@ margin: 5rem 1rem;
       }
 }
 
-
+}
 @media (min-width:767px) {
 #modal{
     
@@ -85,12 +87,14 @@ margin: 5rem 1rem;
         &2{ display: initial;
         }
     }
+    .modal-content {
+        width: 600px;
+        top: 4rem;
+
+       }
 }
-.modal-content {
- width: 600px;
- top: 4rem;
- padding-top: 1rem;
-}
+
+
 }
 .modal-col-left {
 justify-content: center;
