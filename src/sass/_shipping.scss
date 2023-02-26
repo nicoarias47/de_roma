@@ -11,6 +11,19 @@
   &-title {
     @include hero-title;
   }
+
+  .shipping_content {
+    display: flex;
+    flex-direction: column;
+
+    &-title {
+      padding-bottom: 2rem;
+    }
+
+    &-description {
+      padding-bottom: 1rem;
+    }
+  }
 }
 
 .shipping-footer {

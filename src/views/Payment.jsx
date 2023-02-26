@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.css";
 import Doubts from "../components/Doubts/Doubts";
-import mercadopago from "../assets/icon/mercadopago.svg";
-import getnet from "../assets/icon/getnet.svg";
-import efectivo from "../assets/icon/efectivo.svg";
-import transferencia from "../assets/icon/transferencia.svg";
 import { Container } from "react-bootstrap";
+import imgMp from "../assets/icon/mercadopago.svg";
+import imgEfectivo from "../assets/icon/efectivo.svg";
+import imgSantander from "../assets/icon/santander.svg";
+import imgTransferencia from "../assets/icon/transferencia.svg";
 
 const Payment = () => {
   return (
@@ -15,62 +15,75 @@ const Payment = () => {
           <section className="col-12 payment_section-hero">
             <div className="payment_section-img"></div>
             <div className="row d-flex justify-content-center payment_section-description ">
-              <h5 className="col-8 payment_section-title ">Medios de Pago</h5>
+              <h5 className="col-8 payment_section-title ">Medios de pago</h5>
             </div>
           </section>
-          <section className="col-12 payment_section-content">
-            <p className="body2">
+          <section className="col-12 payment_section-content ">
+            <h6 className="payment_content-title">
               Estos son los medios de pago que te ofrecemos
-            </p>
+            </h6>
+            <div className="row payment_content">
+              <div className="col-12 py-4">
+                <div className="col-12 py-2 d-flex justify-content-between">
+                  <h6 className="payment_content-subtitle">Mercado Pago</h6>
+                  <img src={imgMp} alt="" className="px-5" />
+                </div>
+                <div className="col-12">
+                  <span>
+                    Una vez elijas los productos que vayas a comprar, comunícate
+                    con nosotros por WhatsApp y te enviaremos el detalle con el
+                    monto y el link a Mercado Pago para poder completar tu
+                    compra.
+                  </span>
+                </div>
+              </div>
 
-            <div className="sub-col-container">
-              <div className="sub-col-header col-12">
-                <p className="body2-title">Mercado Pago</p>
-                <img className="paymenticon" src={mercadopago} />
+              <div className="col-12  py-4">
+                <div className="col-12 py-2 d-flex justify-content-between">
+                  <h6 className="payment_content-subtitle">Santander</h6>
+                  <img src={imgSantander} alt="" className="px-5" />
+                </div>
+                <div className="col-12">
+                  <span>
+                    Una vez elijas los productos que vayas a comprar, comunícate
+                    con nosotros por WhatsApp y te enviaremos el detalle con el
+                    monto y el link a Genet para poder completar tu compra.
+                    Además aprovecha los descuentos que te ofrecen por día al
+                    pagar con este medio.
+                  </span>
+                </div>
               </div>
-              <p className="col-12 body3">
-                Una vez elijas los productos que vayas a comprar, comunícate con
-                nosotros por WhatsApp y te enviaremos el detalle con el monto y
-                el link a Mercado Pago para poder completar tu compra.{" "}
-              </p>
-            </div>
-            <div className="sub-col-container">
-              <div className="sub-col-header col-12">
-                <p className="body2-title"> Santander </p>
-                <img className="paymenticon" src={getnet} />
+
+              <div className="col-12  py-4">
+                <div className="col-12 py-2 d-flex justify-content-between">
+                  <h6 className="payment_content-subtitle">Efectivo</h6>
+                  <img src={imgEfectivo} alt="" className="px-5" />
+                </div>
+                <div className="col-12">
+                  <span>
+                    Podes pagar con efectivo al momento de retirar tu producto
+                    con previa coordinación.
+                  </span>
+                </div>
               </div>
-              <p className="body3">
-                Una vez elijas los productos que vayas a comprar, comunícate con
-                nosotros por WhatsApp y te enviaremos el detalle con el monto y
-                el link a Genet para poder completar tu compra.
-                <br />
-                Aprovecha los descuentos que te ofrecen por día al pagar con
-                este medio.
-              </p>
-            </div>
-            <div className="sub-col-container">
-              <div className="sub-col-header col-12">
-                <p className="body2-title"> Efectivo </p>
-                <img className="paymenticon" src={efectivo} />
+
+              <div className="col-12  py-4">
+                <div className="col-12 py-2 d-flex justify-content-between">
+                  <h6 className="payment_content-subtitle">Transferencia</h6>
+                  <img src={imgTransferencia} alt="" className="px-5" />
+                </div>
+                <div className="col-12">
+                  <span>
+                    Una vez elijas los productos que vayas a comprar, comunícate
+                    con nosotros por WhatsApp y te enviaremos el detalle con el
+                    monto y los datos necesarios para que puedas completar tu
+                    compra.
+                  </span>
+                </div>
               </div>
-              <p className="body3">
-                Podes pagar con efectivo al momento de retirar tu producto con
-                previa coordinación.
-              </p>
-            </div>
-            <div className="sub-col-container">
-              <div className="sub-col-header col-12">
-                <p className="body2-title"> Transferencia </p>
-                <img className="paymenticon" src={transferencia} />
-              </div>
-              <p className="body3">
-                Una vez elijas los productos que vayas a comprar, comunícate con
-                nosotros por WhatsApp y te enviaremos el detalle con el monto y
-                los datos necesarios para que puedas completar tu compra.
-              </p>
             </div>
           </section>
-          <div className="col-12 payment_section-doubts">
+          <div className="col-12 py-5 payment_section-doubts">
             <div className="row">
               <div className="col"></div>
               <div className="col-sm-12 col-md-12">
