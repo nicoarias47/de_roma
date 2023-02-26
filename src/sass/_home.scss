@@ -17,6 +17,9 @@
     display: block;
     margin-bottom: 2rem;
   }
+  .body3-mobile{
+    display: none;
+  }
 }
 
 .info-icons-container {
@@ -29,7 +32,7 @@
   display: flex;
   padding: 0px;
   margin: 0px;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   li {
     display: flex;
@@ -64,5 +67,13 @@
     right: -5px;
     bottom: -20px;
     height: 223px;
+  }
+}
+@media (min-width: 767px) {
+  .body3-desktop{
+    color: $color-grey-100;
+    margin-top: 1rem;
+    font-size:28px;
+    display: none;
   }
 }

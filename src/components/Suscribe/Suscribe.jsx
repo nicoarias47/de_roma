@@ -18,7 +18,7 @@ const Suscribe = () => {
   return <>
       <section className="suscribe-container">
         <h5>Suscribete a nuestra lista</h5>
-        <p className="body3">Y entérate de todas la <b>novedades</b> y <b>descuentos</b> que tenemos para ti.</p>
+        <p className="body3">Y entérate de todas la <strong>novedades</strong> y <strong>descuentos</strong> que tenemos para ti.</p>
         <form className="suscribe-form" onSubmit={handleSubmit}>
         <input
           type="email"

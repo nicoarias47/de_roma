@@ -7,7 +7,7 @@ function MainCarousel() {
     <><div className="main-carousel">
       <ControlledCarousel />
       <Carousel.Caption >
-        <h5>Mira el catálogo y enamórate DeROMA</h5>
+        <h3>Mira el catálogo y enamórate DeROMA</h3>
 
         <button className="btn-catalogo">
           {/* <img className="CarouselPhoto" src={WspIcon} alt="whatsapp" /> */}

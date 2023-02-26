@@ -23,8 +23,8 @@
   }
 
   img {
-    width: 16rem;
-    height: 16rem;
+    width: 17.5rem;
+    height: 17.5rem;
     border-radius: 32px 8px 32px 8px;
     position: relative;
     filter: drop-shadow(0px 2px 7px #00000020);
@@ -35,18 +35,21 @@
     height: 16rem;
     border-radius: 32px 8px 32px 8px;
     position: absolute;
-    background-image: linear-gradient(
-      to bottom,
-      #33333380,
-      #28282860,
-      #1d1d1d20,
-      #12121200,
-      #00000000
-    );
   }
 
   // hidden scroll bar
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+@media (min-width: 767px) {
+  .section_carousel {
+    justify-content: center;
+    align-items: center;
+}
+.section_carousel-item:hover {
+  scale: 1.1;
+  transition: 0.6s;
+}
 }
