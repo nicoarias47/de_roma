@@ -50,7 +50,7 @@ const Contact = () => {
           <div className="col-12 contact_section-suscribe">
             <div className="row">
               <div className="col"></div>
-              <div className="col-sm-12 col-md-7">
+              <div className="col-sm-12 col-md-8 col-lg-6">
                 <Suscribe />
               </div>
               <div className="col"></div>

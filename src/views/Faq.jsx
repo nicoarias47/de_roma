@@ -9,7 +9,9 @@ const Faq = () => {
       <Container fluid="lg" className="faq_section">
         <div className="row faq_section-grid">
           <section className="col-12 faq_section-hero">
-            <div className="faq_section-img"></div>
+            <div className="faq_section-background">
+              <div className="faq_section-img"></div>
+            </div>
             <div className="row d-flex justify-content-center faq_section-description ">
               <h5 className="col-8 faq_section-title ">Preguntas Frecuentes</h5>
             </div>
@@ -110,7 +112,7 @@ const Faq = () => {
           <div className="col-12 faq_section-doubts">
             <div className="row">
               <div className="col"></div>
-              <div className="col-sm-12 col-md-12">
+              <div className="col-sm-12 col-md-8 col-lg-6">
                 <Doubts />
               </div>
               <div className="col"></div>

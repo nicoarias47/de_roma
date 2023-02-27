@@ -5,7 +5,7 @@
 
   &-img {
     @include hero-img;
-    background-image: url("./assets/img/contact-hero.svg");
+    background-image: url("./assets/img/hero-contact.svg");
   }
 
   &-title {
@@ -56,7 +56,7 @@
     &-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 0.5fr 0.5fr 0.8fr;
+      grid-template-rows: 0.9fr 0.5fr 0.5fr 0.8fr;
       grid-template-areas:
         "hero hero"
         "redes form"
@@ -79,7 +79,7 @@
     }
 
     &-description {
-      margin-top: -13rem;
+      margin-top: -14rem;
       grid-area: form;
     }
 
@@ -109,12 +109,11 @@
 @media (min-width: 1200px) {
   .contact_section {
     &-grid {
-      grid-template-rows: 1.7fr 0.5fr 0.5fr 0.8fr;
+      grid-template-rows: 1.6fr 0.5fr 0.5fr 0.8fr;
     }
 
     &-description {
       margin-top: -22rem;
-      grid-area: form;
     }
 
     &-background {

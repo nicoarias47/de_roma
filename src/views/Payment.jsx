@@ -13,7 +13,9 @@ const Payment = () => {
       <Container fluid="lg" className="payment_section">
         <div className="row payment_section-grid">
           <section className="col-12 payment_section-hero">
-            <div className="payment_section-img"></div>
+            <div className="payment_section-background">
+              <div className="payment_section-img"></div>
+            </div>
             <div className="row d-flex justify-content-center payment_section-description ">
               <h5 className="col-8 payment_section-title ">Medios de pago</h5>
             </div>
@@ -86,7 +88,7 @@ const Payment = () => {
           <div className="col-12 py-5 payment_section-doubts">
             <div className="row">
               <div className="col"></div>
-              <div className="col-sm-12 col-md-12">
+              <div className="col-sm-12 col-md-8 col-lg-6">
                 <Doubts />
               </div>
               <div className="col"></div>

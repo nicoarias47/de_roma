@@ -5,7 +5,7 @@
 
   &-img {
     @include hero-img;
-    background-image: url("./assets/img/faqimg.svg");
+    background-image: url("./assets/img/hero-faq.svg");
   }
 
   &-title {
@@ -59,17 +59,15 @@
     &-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.1fr 0.1fr 0.6fr;
+      grid-template-rows: 1fr 0.1fr 0.6fr;
       grid-template-areas:
         "hero hero"
         "x accordion"
         "doubts doubts";
     }
     &-title {
-      top: 100px;
       border-bottom: 1px solid $color-black-100;
       width: 100%;
-      left: 150px;
     }
 
     &-hero {
@@ -78,7 +76,7 @@
 
     &-accordion {
       grid-area: accordion;
-      margin-top: -14rem;
+      margin-top: -19rem;
     }
 
     &-doubts {
@@ -105,17 +103,23 @@
 }
 
 @media (min-width: 1200px) {
-  // .faq_section {
-  //   &-grid {
-  //     display: grid;
-  //     grid-template-columns: 1fr 1fr;
-  //     grid-template-rows: 0.1fr 0.1fr 0.6fr;
-  //     grid-template-areas:
-  //       "hero hero"
-  //       "x accordion"
-  //       "doubts doubts";
-  //   }
-  // }
+  .faq_section {
+    &-grid {
+      grid-template-rows: 1.5fr 0.1fr 0.6fr;
+    }
+
+    &-accordion {
+      grid-area: accordion;
+      margin-top: -22rem;
+    }
+
+    &-background {
+      @include background;
+    }
+    &-background::before {
+      @include background-icon;
+    }
+  }
   .faq_section-footer {
     .circle {
       @include circle;

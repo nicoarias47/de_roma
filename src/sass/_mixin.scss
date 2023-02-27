@@ -24,6 +24,29 @@
   }
 }
 
+@mixin hero-title {
+  position: absolute;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: $color-principal-200;
+  padding: 0.5rem;
+  padding-left: 3rem;
+  background-color: $color-white-0;
+  border-radius: 2rem 0 0 0;
+  top: 240px;
+
+  @media (min-width: 768px) {
+    top: 100px;
+    left: 150px;
+  }
+
+  @media (min-width: 1200px) {
+    top: 150px;
+    left: 280px;
+  }
+}
+
 @mixin background {
   position: absolute;
   top: 2rem;
@@ -47,29 +70,6 @@
   z-index: -1;
   left: -75px;
   bottom: 50px;
-}
-
-@mixin hero-title {
-  position: absolute;
-  font-family: "Playfair Display", serif;
-  font-size: 2rem;
-  font-weight: 600;
-  color: $color-principal-200;
-  padding: 0.5rem;
-  padding-left: 3rem;
-  background-color: $color-white-0;
-  border-radius: 2rem 0 0 0;
-  top: 240px;
-
-  @media (min-width: 768px) {
-    top: 100px;
-    left: 150px;
-  }
-
-  @media (min-width: 1200px) {
-    top: 150px;
-    left: 280px;
-  }
 }
 
 @mixin circle-father {

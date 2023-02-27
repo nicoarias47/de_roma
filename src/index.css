@@ -111,6 +111,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
   #navbar .container .menu-toggle {
     display: flex;
@@ -610,21 +611,19 @@ body {
   .payment_section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 0.8fr;
+    grid-template-rows: 1fr 0.5fr 0.8fr;
     grid-template-areas: "hero hero" "x cont" "doubts doubts";
   }
   .payment_section-hero {
     grid-area: hero;
   }
   .payment_section-title {
-    top: 100px;
     border-bottom: 1px solid #474747;
     width: 100%;
-    left: 150px;
   }
   .payment_section-content {
     grid-area: cont;
-    margin-top: -13rem;
+    margin-top: -19rem;
   }
   .payment_section-doubts {
     grid-area: doubts;
@@ -650,6 +649,34 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .payment_section-grid {
+    grid-template-rows: 1.3fr 0.5fr 0.8fr;
+  }
+  .payment_section-content {
+    margin-top: -17rem;
+  }
+  .payment_section-background {
+    position: absolute;
+    top: 2rem;
+    border-radius: 204px 204px 8px 8px;
+    z-index: -1;
+    background-color: #f6ede6;
+    width: 25rem;
+    height: 32.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .payment_section-background::before {
+    content: "";
+    background-image: url("./assets/img/hero-icon.svg");
+    position: absolute;
+    width: 9.3rem;
+    height: 17.1rem;
+    z-index: -1;
+    left: -75px;
+    bottom: 50px;
+  }
   .payment_section-footer .circle {
     background-color: #a9b388;
     width: 10.6rem;
@@ -833,7 +860,7 @@ body {
   height: 19.5rem;
   top: 4rem;
   filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
-  background-image: url("./assets/img/faqimg.svg");
+  background-image: url("./assets/img/hero-faq.svg");
 }
 @media (min-width: 1200px) {
   .faq_section-img {
@@ -919,21 +946,19 @@ body {
   .faq_section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.6fr;
+    grid-template-rows: 1fr 0.1fr 0.6fr;
     grid-template-areas: "hero hero" "x accordion" "doubts doubts";
   }
   .faq_section-title {
-    top: 100px;
     border-bottom: 1px solid #474747;
     width: 100%;
-    left: 150px;
   }
   .faq_section-hero {
     grid-area: hero;
   }
   .faq_section-accordion {
     grid-area: accordion;
-    margin-top: -14rem;
+    margin-top: -19rem;
   }
   .faq_section-doubts {
     grid-area: doubts;
@@ -959,6 +984,35 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .faq_section-grid {
+    grid-template-rows: 1.5fr 0.1fr 0.6fr;
+  }
+  .faq_section-accordion {
+    grid-area: accordion;
+    margin-top: -22rem;
+  }
+  .faq_section-background {
+    position: absolute;
+    top: 2rem;
+    border-radius: 204px 204px 8px 8px;
+    z-index: -1;
+    background-color: #f6ede6;
+    width: 25rem;
+    height: 32.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .faq_section-background::before {
+    content: "";
+    background-image: url("./assets/img/hero-icon.svg");
+    position: absolute;
+    width: 9.3rem;
+    height: 17.1rem;
+    z-index: -1;
+    left: -75px;
+    bottom: 50px;
+  }
   .faq_section-footer .circle {
     background-color: #a9b388;
     width: 10.6rem;
@@ -994,7 +1048,7 @@ body {
   height: 19.5rem;
   top: 4rem;
   filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
-  background-image: url("./assets/img/paymentimg3.svg");
+  background-image: url("./assets/img/hero-shipping.svg");
 }
 @media (min-width: 1200px) {
   .shipping_section-img {
@@ -1084,26 +1138,22 @@ body {
   .shipping_section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 1fr;
+    grid-template-rows: 1fr 0.5fr 0.1fr;
     grid-template-areas: "hero hero" "x cont" "doubts doubts";
   }
   .shipping_section-hero {
     grid-area: hero;
   }
   .shipping_section-title {
-    top: 100px;
-    padding: 0.5rem;
     border-bottom: 1px solid #474747;
     width: 100%;
-    left: 150px;
   }
   .shipping_section-content {
     grid-area: cont;
-    margin-top: -13rem;
+    margin-top: -14rem;
   }
   .shipping_section-doubts {
     grid-area: doubts;
-    margin-top: -27rem;
   }
   .shipping-footer .circle {
     background-color: #a9b388;
@@ -1126,6 +1176,34 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .shipping_section-grid {
+    grid-template-rows: 1.7fr 0.5fr 0.1fr;
+  }
+  .shipping_section-content {
+    margin-top: -26rem;
+  }
+  .shipping_section-background {
+    position: absolute;
+    top: 2rem;
+    border-radius: 204px 204px 8px 8px;
+    z-index: -1;
+    background-color: #f6ede6;
+    width: 25rem;
+    height: 32.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shipping_section-background::before {
+    content: "";
+    background-image: url("./assets/img/hero-icon.svg");
+    position: absolute;
+    width: 9.3rem;
+    height: 17.1rem;
+    z-index: -1;
+    left: -75px;
+    bottom: 50px;
+  }
   .shipping-footer .circle {
     background-color: #a9b388;
     width: 10.6rem;
@@ -1190,28 +1268,6 @@ body {
   box-shadow: 0px 0px 15px 9px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 768px) {
-  .doubts {
-    margin: 0 auto;
-    width: 50%;
-    height: 50vh;
-  }
-  .row-top > h5 {
-    width: 50%;
-    text-align: center;
-  }
-  .row-bottom {
-    padding: 1rem 1rem;
-  }
-  .row-bottom > p {
-    padding-bottom: 2rem;
-    width: 60%;
-    margin: 0 auto;
-  }
-  .social-doubts > img {
-    margin: 0rem 1rem;
-  }
-}
 .faq_section-hero {
   position: relative;
   padding-bottom: 25rem;
@@ -1228,7 +1284,7 @@ body {
   height: 19.5rem;
   top: 4rem;
   filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
-  background-image: url("./assets/img/faqimg.svg");
+  background-image: url("./assets/img/hero-faq.svg");
 }
 @media (min-width: 1200px) {
   .faq_section-img {
@@ -1314,21 +1370,19 @@ body {
   .faq_section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.1fr 0.1fr 0.6fr;
+    grid-template-rows: 1fr 0.1fr 0.6fr;
     grid-template-areas: "hero hero" "x accordion" "doubts doubts";
   }
   .faq_section-title {
-    top: 100px;
     border-bottom: 1px solid #474747;
     width: 100%;
-    left: 150px;
   }
   .faq_section-hero {
     grid-area: hero;
   }
   .faq_section-accordion {
     grid-area: accordion;
-    margin-top: -14rem;
+    margin-top: -19rem;
   }
   .faq_section-doubts {
     grid-area: doubts;
@@ -1354,6 +1408,35 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .faq_section-grid {
+    grid-template-rows: 1.5fr 0.1fr 0.6fr;
+  }
+  .faq_section-accordion {
+    grid-area: accordion;
+    margin-top: -22rem;
+  }
+  .faq_section-background {
+    position: absolute;
+    top: 2rem;
+    border-radius: 204px 204px 8px 8px;
+    z-index: -1;
+    background-color: #f6ede6;
+    width: 25rem;
+    height: 32.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .faq_section-background::before {
+    content: "";
+    background-image: url("./assets/img/hero-icon.svg");
+    position: absolute;
+    width: 9.3rem;
+    height: 17.1rem;
+    z-index: -1;
+    left: -75px;
+    bottom: 50px;
+  }
   .faq_section-footer .circle {
     background-color: #a9b388;
     width: 10.6rem;
@@ -1389,7 +1472,7 @@ body {
   height: 19.5rem;
   top: 4rem;
   filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
-  background-image: url("./assets/img/paymentimg3.svg");
+  background-image: url("./assets/img/hero-shipping.svg");
 }
 @media (min-width: 1200px) {
   .shipping_section-img {
@@ -1479,26 +1562,22 @@ body {
   .shipping_section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.5fr 0.5fr 1fr;
+    grid-template-rows: 1fr 0.5fr 0.1fr;
     grid-template-areas: "hero hero" "x cont" "doubts doubts";
   }
   .shipping_section-hero {
     grid-area: hero;
   }
   .shipping_section-title {
-    top: 100px;
-    padding: 0.5rem;
     border-bottom: 1px solid #474747;
     width: 100%;
-    left: 150px;
   }
   .shipping_section-content {
     grid-area: cont;
-    margin-top: -13rem;
+    margin-top: -14rem;
   }
   .shipping_section-doubts {
     grid-area: doubts;
-    margin-top: -27rem;
   }
   .shipping-footer .circle {
     background-color: #a9b388;
@@ -1521,6 +1600,34 @@ body {
   }
 }
 @media (min-width: 1200px) {
+  .shipping_section-grid {
+    grid-template-rows: 1.7fr 0.5fr 0.1fr;
+  }
+  .shipping_section-content {
+    margin-top: -26rem;
+  }
+  .shipping_section-background {
+    position: absolute;
+    top: 2rem;
+    border-radius: 204px 204px 8px 8px;
+    z-index: -1;
+    background-color: #f6ede6;
+    width: 25rem;
+    height: 32.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .shipping_section-background::before {
+    content: "";
+    background-image: url("./assets/img/hero-icon.svg");
+    position: absolute;
+    width: 9.3rem;
+    height: 17.1rem;
+    z-index: -1;
+    left: -75px;
+    bottom: 50px;
+  }
   .shipping-footer .circle {
     background-color: #a9b388;
     width: 10.6rem;
@@ -1585,28 +1692,6 @@ body {
   box-shadow: 0px 0px 15px 9px rgba(0, 0, 0, 0.1);
 }
 
-@media (min-width: 768px) {
-  .doubts {
-    margin: 0 auto;
-    width: 50%;
-    height: 50vh;
-  }
-  .row-top > h5 {
-    width: 50%;
-    text-align: center;
-  }
-  .row-bottom {
-    padding: 1rem 1rem;
-  }
-  .row-bottom > p {
-    padding-bottom: 2rem;
-    width: 60%;
-    margin: 0 auto;
-  }
-  .social-doubts > img {
-    margin: 0rem 1rem;
-  }
-}
 .circle {
   position: absolute;
   background-image: url("./assets/background/circle.svg");
@@ -1778,7 +1863,7 @@ body {
   height: 19.5rem;
   top: 4rem;
   filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
-  background-image: url("./assets/img/contact-hero.svg");
+  background-image: url("./assets/img/hero-contact.svg");
 }
 @media (min-width: 1200px) {
   .contact_section-img {
@@ -1862,7 +1947,7 @@ body {
   .contact_section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.5fr 0.5fr 0.8fr;
+    grid-template-rows: 0.9fr 0.5fr 0.5fr 0.8fr;
     grid-template-areas: "hero hero" "redes form" "x form" "sus sus";
   }
   .contact_section-hero {
@@ -1878,7 +1963,7 @@ body {
     grid-area: redes;
   }
   .contact_section-description {
-    margin-top: -13rem;
+    margin-top: -14rem;
     grid-area: form;
   }
   .contact_section-suscribe {
@@ -1906,11 +1991,10 @@ body {
 }
 @media (min-width: 1200px) {
   .contact_section-grid {
-    grid-template-rows: 1.7fr 0.5fr 0.5fr 0.8fr;
+    grid-template-rows: 1.6fr 0.5fr 0.5fr 0.8fr;
   }
   .contact_section-description {
     margin-top: -22rem;
-    grid-area: form;
   }
   .contact_section-background {
     position: absolute;
@@ -1965,7 +2049,7 @@ body {
   width: 94%;
   margin: 4rem 3% 0rem 3%;
   color: #5f6f52;
-  background-color: #EEE7DF;
+  background-color: #eee7df;
   border-radius: 2rem 0.5rem 2rem 0.5rem;
   padding: 3rem 1rem;
   display: flex;
@@ -2019,26 +2103,6 @@ textarea::placeholder {
   color: #828282;
 }
 
-@media (min-width: 767px) {
-  .suscribe-container {
-    position: relative;
-    left: 25%;
-    width: 50%;
-    margin: 4rem;
-  }
-  .suscribe-container h5 {
-    width: 50%;
-  }
-  .suscribe-container p {
-    width: 60%;
-  }
-  .suscribe-container .suscribe-form {
-    width: 60%;
-  }
-  .suscribe-container .suscribe-form .suscribe-button {
-    width: 100%;
-  }
-}
 #modal {
   margin: 5rem 1rem;
 }

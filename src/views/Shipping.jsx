@@ -9,7 +9,9 @@ const Shipping = () => {
       <Container fluid="lg" className="shipping_section">
         <div className="row shipping_section-grid">
           <section className="col-12 payment_section-hero">
-            <div className="payment_section-img"></div>
+            <div className="shipping_section-background">
+              <div className="shipping_section-img"></div>
+            </div>
             <div className="row d-flex justify-content-center shipping_section-description ">
               <h5 className="col-8 payment_section-title ">Envios</h5>
             </div>
@@ -54,14 +56,14 @@ const Shipping = () => {
               </Link>
             </div>
           </section>
-        </div>
-        <div className="col-12 py-5 shipping_section-doubts">
-          <div className="row">
-            <div className="col"></div>
-            <div className="col-sm-12 col-md-12">
-              <Doubts />
+          <div className="col-12 py-5 shipping_section-doubts">
+            <div className="row">
+              <div className="col"></div>
+              <div className="col-sm-12 col-md-8 col-lg-6">
+                <Doubts />
+              </div>
+              <div className="col"></div>
             </div>
-            <div className="col"></div>
           </div>
         </div>
       </Container>

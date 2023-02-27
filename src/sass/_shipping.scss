@@ -5,7 +5,7 @@
 
   &-img {
     @include hero-img;
-    background-image: url("./assets/img/paymentimg3.svg");
+    background-image: url("./assets/img/hero-shipping.svg");
   }
 
   &-title {
@@ -64,7 +64,7 @@
     &-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.5fr 0.5fr 1fr;
+      grid-template-rows: 1fr 0.5fr 0.1fr;
       grid-template-areas:
         "hero hero"
         "x cont"
@@ -75,21 +75,17 @@
     }
 
     &-title {
-      top: 100px;
-      padding: 0.5rem;
       border-bottom: 1px solid $color-black-100;
       width: 100%;
-      left: 150px;
     }
 
     &-content {
       grid-area: cont;
-      margin-top: -13rem;
+      margin-top: -14rem;
     }
 
     &-doubts {
       grid-area: doubts;
-      margin-top: -27rem;
     }
   }
 
@@ -112,6 +108,23 @@
 }
 
 @media (min-width: 1200px) {
+  .shipping_section {
+    &-grid {
+      grid-template-rows: 1.7fr 0.5fr 0.1fr;
+    }
+
+    &-content {
+      margin-top: -26rem;
+    }
+
+    &-background {
+      @include background;
+    }
+
+    &-background::before {
+      @include background-icon;
+    }
+  }
   .shipping-footer {
     .circle {
       @include circle;
