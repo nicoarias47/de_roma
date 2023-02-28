@@ -1792,6 +1792,10 @@ body {
 }
 
 @media (min-width: 768px) {
+  .contact_form {
+    z-index: 2;
+    position: relative;
+  }
   .contact_form .form-button {
     width: 70%;
   }

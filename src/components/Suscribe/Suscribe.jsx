@@ -1,19 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
+import emailjs from '@emailjs/browser';
 
-const initialState = {
-  email: ""
-};
 
 const Suscribe = () => {
-  const [form, setForm] = useState(initialState);
-  //const [error, setError] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-  const handleChange = ({ target: { name, value } }) => {
-    setForm({ ...form, [name]: value });
-  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    //aca se captura(serviceID, templateID, el evento , el key public)
+    emailjs.sendForm('service_rfj0nyn','template_vle88oo', event.target,'T7D63srxE6X0p2-bi')
+    .then(response => console.log(response))
+    .catch(error => console.log(error))
+    event.target.reset();
+  }
 
   return <>
       <section className="suscribe-container">
@@ -22,11 +20,9 @@ const Suscribe = () => {
         <form className="suscribe-form" onSubmit={handleSubmit}>
         <input
           type="email"
-          name="email"
+          name="suscribe_email"
           placeholder="Email"
           className="form-email"
-          onChange={handleChange}
-          value={form.email}
           required
         />
         <input type="submit" value="Suscribirme" className="suscribe-button" />

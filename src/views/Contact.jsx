@@ -3,7 +3,8 @@ import { Container } from "react-bootstrap";
 import { EmailIcon } from "../assets/icon/email-icon.jsx";
 import { InstagramIcon } from "../assets/icon/instagram-icon.jsx";
 import { WspIcon } from "../assets/icon/wsp-icon.jsx";
-import ContactForm from "../components/ContactForm/ContactForm";
+// import ContactForm from "../components/ContactForm/ContactForm";
+import ContactForm2 from "../components/ContactForm/ContactForm2";
 import Suscribe from "../components/Suscribe/Suscribe";
 
 const Contact = () => {
@@ -45,7 +46,8 @@ const Contact = () => {
               ten en cuenta que nuestro horario de atención de de Lunes a Lunes
               hasta las 21:00 horas.
             </span>
-            <ContactForm />
+            {/* <ContactForm /> */}
+            <ContactForm2 />
           </section>
           <div className="col-12 contact_section-suscribe">
             <div className="row">
