@@ -20,6 +20,10 @@
   .body3-mobile{
     display: none;
   }
+  .suscribe-container{
+    margin: 0 auto;
+        width: 45%;
+      } 
 }
 
 .info-icons-container {
@@ -69,6 +73,7 @@
     height: 223px;
   }
 }
+
 @media (min-width: 767px) {
   .body3-desktop{
     color: $color-grey-100;

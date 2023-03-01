@@ -273,10 +273,11 @@ body {
 }
 .main-carousel .carousel-inner {
   height: 25rem;
+  top: 8%;
 }
 .main-carousel .CarouselPhoto {
   margin: 0 auto;
-  height: 1020px;
+  height: 362px;
   display: block;
   width: 75%;
 }
@@ -312,6 +313,7 @@ body {
   }
   .main-carousel .carousel-inner {
     height: auto;
+    top: 65%;
   }
   .main-carousel .carousel-control-prev {
     display: none;
@@ -326,12 +328,12 @@ body {
     width: 90%;
   }
   .main-carousel .carousel-caption h3 {
-    font-size: 32px;
+    font-size: 28px;
   }
   .main-carousel .carousel-indicators {
     bottom: -58%;
   }
-  .CarouselPhoto {
+  .main-carousel .CarouselPhoto {
     margin: 0 auto;
     height: 320px;
     display: block;
@@ -367,6 +369,10 @@ body {
 }
 .home .body3-mobile {
   display: none;
+}
+.home .suscribe-container {
+  margin: 0 auto;
+  width: 45%;
 }
 
 .info-icons-container {

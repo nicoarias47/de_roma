@@ -27,23 +27,9 @@ const Advertising = () => {
       .then(response => console.log(response))
       .catch(error => console.log(error))
     event.target.reset();
-
-    
   }
-
-//para que cambie el modal al suscribirse 
-const [isSubscribed, setIsSubscribed] = useState(false);
-
-  const handleClick = () => {
-    setIsSubscribed(true);
-  }
-
-  const handleFormSubmit = (event) => {
-    handleSubmit(event);
-    handleClick();
-    
-  };
   
+//para que cambie el modal al suscribirse 
   return (<>
 
     <Modal id="modal" show={show} onHide={handleClose} >
@@ -54,12 +40,9 @@ const [isSubscribed, setIsSubscribed] = useState(false);
           <img src={modalimg} />
         </div>
         <div className="modal-col-right col-xs-12 col-md-8 col-lg-8">
-
           <img className="img-logo-mobile2" src={logo} />
-          <form className="suscribe-form-modal" onSubmit={handleFormSubmit}>
-        {isSubscribed ? (
-          <div>
           <p className='body1'>Suscríbete a nuestro newsletter y recibe un  <b>10%  de descuento</b> en tu primera compra </p>
+          <form className="suscribe-form-modal" onSubmit={handleSubmit}>
             <input
               type="email"
               name="email"
@@ -68,10 +51,6 @@ const [isSubscribed, setIsSubscribed] = useState(false);
               required
             />
             <input type="submit" value="Suscribirme" className="suscribe-button-modal" />
-            </div>
-             ) : (
-              <p className='body1'>¡Gracias! Ya sos parte de la familia <strong>De Roma Deco.</strong></p>
-              )}
           </form>
         </div>
       </div>
