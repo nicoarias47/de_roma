@@ -1958,7 +1958,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.9fr 0.5fr 0.5fr 0.8fr;
-    grid-template-areas: "hero hero" "redes form" "x form" "sus sus";
+    grid-template-areas: "hero hero" "redes form" "deco form" "sus sus";
   }
   .contact_section-hero {
     grid-area: hero;
@@ -2001,7 +2001,7 @@ body {
 }
 @media (min-width: 1200px) {
   .contact_section-grid {
-    grid-template-rows: 1.6fr 0.5fr 0.5fr 0.8fr;
+    grid-template-rows: 1.7fr 0.5fr 1fr 0.8fr;
   }
   .contact_section-description {
     margin-top: -22rem;
@@ -2027,6 +2027,64 @@ body {
     z-index: -1;
     left: -75px;
     bottom: 50px;
+  }
+  .contact_section .contact_decoration {
+    grid-area: deco;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding-right: 7rem;
+  }
+  .contact_section .contact_decoration-img {
+    background-image: url("./assets/img/deco-contact.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 18rem;
+    right: 0;
+  }
+  .contact_section .contact_decoration-img::before {
+    content: "";
+    position: absolute;
+    background-image: url("./assets/img/hero-icon.svg");
+    width: 10rem;
+    height: 18rem;
+    rotate: -29deg;
+    right: 275px;
+    bottom: 50px;
+    z-index: -1;
+  }
+  .contact_section .contact_decoration-img::after {
+    content: "";
+    position: absolute;
+    background-image: url("./assets/img/hero-icon.svg");
+    width: 10rem;
+    height: 18rem;
+    rotate: 150deg;
+    right: 75px;
+    bottom: -55px;
+    z-index: -1;
+  }
+  .contact_section .contact_decoration-rectangletop {
+    position: absolute;
+    background-color: #f6ede6;
+    width: 12rem;
+    height: 11rem;
+    border-radius: 62px 0 62px 0;
+    z-index: -2;
+    right: 125px;
+    bottom: 115px;
+    mix-blend-mode: multiply;
+  }
+  .contact_section .contact_decoration-rectanglebot {
+    position: absolute;
+    background-color: #f6ede6;
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 62px 0 62px 0;
+    z-index: -3;
+    right: 230px;
+    bottom: 45px;
   }
   .contact_section-footer .circle {
     background-color: #a9b388;

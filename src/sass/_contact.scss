@@ -60,7 +60,7 @@
       grid-template-areas:
         "hero hero"
         "redes form"
-        "x form"
+        "deco form"
         "sus sus";
     }
     &-hero {
@@ -109,7 +109,7 @@
 @media (min-width: 1200px) {
   .contact_section {
     &-grid {
-      grid-template-rows: 1.6fr 0.5fr 0.5fr 0.8fr;
+      grid-template-rows: 1.7fr 0.5fr 1fr 0.8fr;
     }
 
     &-description {
@@ -121,6 +121,71 @@
     }
     &-background::before {
       @include background-icon;
+    }
+
+    .contact_decoration {
+      grid-area: deco;
+      position: relative;
+      display: flex;
+      justify-content: end;
+      padding-right: 7rem;
+
+      &-img {
+        //position: absolute;
+        background-image: url("./assets/img/deco-contact.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 15rem;
+        height: 18rem;
+        right: 0;
+      }
+
+      &-img::before {
+        content: "";
+        position: absolute;
+        background-image: url("./assets/img/hero-icon.svg");
+        width: 10rem;
+        height: 18rem;
+        rotate: (-29deg);
+        right: 275px;
+        bottom: 50px;
+        z-index: -1;
+      }
+
+      &-img::after {
+        content: "";
+        position: absolute;
+        background-image: url("./assets/img/hero-icon.svg");
+        width: 10rem;
+        height: 18rem;
+        rotate: (150deg);
+        right: 75px;
+        bottom: -55px;
+        z-index: -1;
+      }
+
+      &-rectangletop {
+        position: absolute;
+        background-color: #f6ede6;
+        width: 12rem;
+        height: 11rem;
+        border-radius: 62px 0 62px 0;
+        z-index: -2;
+        right: 125px;
+        bottom: 115px;
+        mix-blend-mode: multiply;
+      }
+
+      &-rectanglebot {
+        position: absolute;
+        background-color: #f6ede6;
+        width: 9.6rem;
+        height: 9.6rem;
+        border-radius: 62px 0 62px 0;
+        z-index: -3;
+        right: 230px;
+        bottom: 45px;
+      }
     }
   }
   .contact_section-footer {

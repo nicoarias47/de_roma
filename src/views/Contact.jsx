@@ -49,6 +49,11 @@ const Contact = () => {
             {/* <ContactForm /> */}
             <ContactForm2 />
           </section>
+          <section className="contact_decoration">
+            <div className="contact_decoration-img"></div>
+            <div className="contact_decoration-rectangletop"></div>
+            <div className="contact_decoration-rectanglebot"></div>
+          </section>
           <div className="col-12 contact_section-suscribe">
             <div className="row">
               <div className="col"></div>
