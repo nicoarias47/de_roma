@@ -67,7 +67,7 @@
       grid-template-rows: 1fr 0.5fr 0.1fr;
       grid-template-areas:
         "hero hero"
-        "x cont"
+        "deco cont"
         "doubts doubts";
     }
     &-hero {
@@ -123,6 +123,34 @@
 
     &-background::before {
       @include background-icon;
+    }
+
+    .shipping_decoration {
+      @include deco;
+
+      &-img {
+        background-image: url("./assets/img/deco-shipping.svg");
+      }
+
+      &-img::before {
+        rotate: (-29deg);
+        right: 260px;
+        bottom: 115px;
+      }
+
+      &-img::after {
+        display: none;
+      }
+
+      &-rectangletop {
+        right: 125px;
+        bottom: 170px;
+      }
+
+      &-rectanglebot {
+        right: 230px;
+        bottom: 80px;
+      }
     }
   }
   .shipping-footer {

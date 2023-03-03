@@ -85,6 +85,11 @@ const Payment = () => {
               </div>
             </div>
           </section>
+          <section className="payment_decoration">
+            <div className="payment_decoration-img"></div>
+            <div className="payment_decoration-rectangletop"></div>
+            <div className="payment_decoration-rectanglebot"></div>
+          </section>
           <div className="col-12 py-5 payment_section-doubts">
             <div className="row">
               <div className="col"></div>

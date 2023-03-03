@@ -109,6 +109,11 @@ const Faq = () => {
               </Accordion.Item>
             </Accordion>
           </section>
+          <section className="faq_decoration">
+            <div className="faq_decoration-img"></div>
+            <div className="faq_decoration-rectangletop"></div>
+            <div className="faq_decoration-rectanglebot"></div>
+          </section>
           <div className="col-12 faq_section-doubts">
             <div className="row">
               <div className="col"></div>

@@ -56,6 +56,11 @@ const Shipping = () => {
               </Link>
             </div>
           </section>
+          <section className="shipping_decoration">
+            <div className="shipping_decoration-img"></div>
+            <div className="shipping_decoration-rectangletop"></div>
+            <div className="shipping_decoration-rectanglebot"></div>
+          </section>
           <div className="col-12 py-5 shipping_section-doubts">
             <div className="row">
               <div className="col"></div>

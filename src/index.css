@@ -618,7 +618,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.5fr 0.8fr;
-    grid-template-areas: "hero hero" "x cont" "doubts doubts";
+    grid-template-areas: "hero hero" "deco cont" "doubts doubts";
   }
   .payment_section-hero {
     grid-area: hero;
@@ -682,6 +682,84 @@ body {
     z-index: -1;
     left: -75px;
     bottom: 50px;
+  }
+  .payment_section .payment_decoration {
+    grid-area: deco;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding-right: 7rem;
+    align-items: center;
+  }
+  .payment_section .payment_decoration-img {
+    background-image: url("./assets/img/deco-contact.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 18rem;
+    right: 0;
+  }
+  .payment_section .payment_decoration-img::before {
+    content: "";
+    position: absolute;
+    background-image: url("./assets/img/hero-icon.svg");
+    width: 10rem;
+    height: 18rem;
+    rotate: -29deg;
+    right: 275px;
+    bottom: 50px;
+    z-index: -1;
+  }
+  .payment_section .payment_decoration-img::after {
+    content: "";
+    position: absolute;
+    background-image: url("./assets/img/hero-icon.svg");
+    width: 10rem;
+    height: 18rem;
+    rotate: 150deg;
+    right: 75px;
+    bottom: -55px;
+    z-index: -1;
+  }
+  .payment_section .payment_decoration-rectangletop {
+    position: absolute;
+    background-color: #f6ede6;
+    width: 12rem;
+    height: 11rem;
+    border-radius: 62px 0 62px 0;
+    z-index: -2;
+    right: 125px;
+    bottom: 115px;
+    mix-blend-mode: multiply;
+  }
+  .payment_section .payment_decoration-rectanglebot {
+    position: absolute;
+    background-color: #f6ede6;
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 62px 0 62px 0;
+    z-index: -3;
+    right: 230px;
+    bottom: 45px;
+  }
+  .payment_section .payment_decoration-img {
+    background-image: url("./assets/img/deco-payment.svg");
+  }
+  .payment_section .payment_decoration-img::before {
+    rotate: -29deg;
+    right: 295px;
+    bottom: 115px;
+  }
+  .payment_section .payment_decoration-img::after {
+    display: none;
+  }
+  .payment_section .payment_decoration-rectangletop {
+    right: 150px;
+    bottom: 150px;
+  }
+  .payment_section .payment_decoration-rectanglebot {
+    right: 270px;
+    bottom: 100px;
   }
   .payment_section-footer .circle {
     background-color: #a9b388;
@@ -953,7 +1031,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.1fr 0.6fr;
-    grid-template-areas: "hero hero" "x accordion" "doubts doubts";
+    grid-template-areas: "hero hero" "deco accordion" "doubts doubts";
   }
   .faq_section-title {
     border-bottom: 1px solid #474747;
@@ -991,7 +1069,7 @@ body {
 }
 @media (min-width: 1200px) {
   .faq_section-grid {
-    grid-template-rows: 1.5fr 0.1fr 0.6fr;
+    grid-template-rows: 1.5fr 1fr 0.6fr;
   }
   .faq_section-accordion {
     grid-area: accordion;
@@ -1018,6 +1096,88 @@ body {
     z-index: -1;
     left: -75px;
     bottom: 50px;
+  }
+  .faq_section .faq_decoration {
+    grid-area: deco;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding-right: 7rem;
+    align-items: center;
+  }
+  .faq_section .faq_decoration-img {
+    background-image: url("./assets/img/deco-contact.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 18rem;
+    right: 0;
+  }
+  .faq_section .faq_decoration-img::before {
+    content: "";
+    position: absolute;
+    background-image: url("./assets/img/hero-icon.svg");
+    width: 10rem;
+    height: 18rem;
+    rotate: -29deg;
+    right: 275px;
+    bottom: 50px;
+    z-index: -1;
+  }
+  .faq_section .faq_decoration-img::after {
+    content: "";
+    position: absolute;
+    background-image: url("./assets/img/hero-icon.svg");
+    width: 10rem;
+    height: 18rem;
+    rotate: 150deg;
+    right: 75px;
+    bottom: -55px;
+    z-index: -1;
+  }
+  .faq_section .faq_decoration-rectangletop {
+    position: absolute;
+    background-color: #f6ede6;
+    width: 12rem;
+    height: 11rem;
+    border-radius: 62px 0 62px 0;
+    z-index: -2;
+    right: 125px;
+    bottom: 115px;
+    mix-blend-mode: multiply;
+  }
+  .faq_section .faq_decoration-rectanglebot {
+    position: absolute;
+    background-color: #f6ede6;
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 62px 0 62px 0;
+    z-index: -3;
+    right: 230px;
+    bottom: 45px;
+  }
+  .faq_section .faq_decoration-img {
+    background-image: url("./assets/img/deco-faq.svg");
+    width: 13.4rem;
+    height: 10.6rem;
+  }
+  .faq_section .faq_decoration-img::before {
+    rotate: -29deg;
+    right: 230px;
+    bottom: 100px;
+  }
+  .faq_section .faq_decoration-img::after {
+    rotate: 50deg;
+    right: 70px;
+    bottom: 180px;
+  }
+  .faq_section .faq_decoration-rectangletop {
+    right: 100px;
+    bottom: 150px;
+  }
+  .faq_section .faq_decoration-rectanglebot {
+    right: 210px;
+    bottom: 80px;
   }
   .faq_section-footer .circle {
     background-color: #a9b388;
@@ -1145,7 +1305,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.5fr 0.1fr;
-    grid-template-areas: "hero hero" "x cont" "doubts doubts";
+    grid-template-areas: "hero hero" "deco cont" "doubts doubts";
   }
   .shipping_section-hero {
     grid-area: hero;
@@ -1209,6 +1369,83 @@ body {
     z-index: -1;
     left: -75px;
     bottom: 50px;
+  }
+  .shipping_section .shipping_decoration {
+    grid-area: deco;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding-right: 7rem;
+  }
+  .shipping_section .shipping_decoration-img {
+    background-image: url("./assets/img/deco-contact.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 18rem;
+    right: 0;
+  }
+  .shipping_section .shipping_decoration-img::before {
+    content: "";
+    position: absolute;
+    background-image: url("./assets/img/hero-icon.svg");
+    width: 10rem;
+    height: 18rem;
+    rotate: -29deg;
+    right: 275px;
+    bottom: 50px;
+    z-index: -1;
+  }
+  .shipping_section .shipping_decoration-img::after {
+    content: "";
+    position: absolute;
+    background-image: url("./assets/img/hero-icon.svg");
+    width: 10rem;
+    height: 18rem;
+    rotate: 150deg;
+    right: 75px;
+    bottom: -55px;
+    z-index: -1;
+  }
+  .shipping_section .shipping_decoration-rectangletop {
+    position: absolute;
+    background-color: #f6ede6;
+    width: 12rem;
+    height: 11rem;
+    border-radius: 62px 0 62px 0;
+    z-index: -2;
+    right: 125px;
+    bottom: 115px;
+    mix-blend-mode: multiply;
+  }
+  .shipping_section .shipping_decoration-rectanglebot {
+    position: absolute;
+    background-color: #f6ede6;
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 62px 0 62px 0;
+    z-index: -3;
+    right: 230px;
+    bottom: 45px;
+  }
+  .shipping_section .shipping_decoration-img {
+    background-image: url("./assets/img/deco-shipping.svg");
+  }
+  .shipping_section .shipping_decoration-img::before {
+    rotate: -29deg;
+    right: 260px;
+    bottom: 115px;
+  }
+  .shipping_section .shipping_decoration-img::after {
+    display: none;
+  }
+  .shipping_section .shipping_decoration-rectangletop {
+    right: 125px;
+    bottom: 170px;
+  }
+  .shipping_section .shipping_decoration-rectanglebot {
+    right: 230px;
+    bottom: 80px;
   }
   .shipping-footer .circle {
     background-color: #a9b388;
@@ -1377,7 +1614,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.1fr 0.6fr;
-    grid-template-areas: "hero hero" "x accordion" "doubts doubts";
+    grid-template-areas: "hero hero" "deco accordion" "doubts doubts";
   }
   .faq_section-title {
     border-bottom: 1px solid #474747;
@@ -1415,7 +1652,7 @@ body {
 }
 @media (min-width: 1200px) {
   .faq_section-grid {
-    grid-template-rows: 1.5fr 0.1fr 0.6fr;
+    grid-template-rows: 1.5fr 1fr 0.6fr;
   }
   .faq_section-accordion {
     grid-area: accordion;
@@ -1442,6 +1679,88 @@ body {
     z-index: -1;
     left: -75px;
     bottom: 50px;
+  }
+  .faq_section .faq_decoration {
+    grid-area: deco;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding-right: 7rem;
+    align-items: center;
+  }
+  .faq_section .faq_decoration-img {
+    background-image: url("./assets/img/deco-contact.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 18rem;
+    right: 0;
+  }
+  .faq_section .faq_decoration-img::before {
+    content: "";
+    position: absolute;
+    background-image: url("./assets/img/hero-icon.svg");
+    width: 10rem;
+    height: 18rem;
+    rotate: -29deg;
+    right: 275px;
+    bottom: 50px;
+    z-index: -1;
+  }
+  .faq_section .faq_decoration-img::after {
+    content: "";
+    position: absolute;
+    background-image: url("./assets/img/hero-icon.svg");
+    width: 10rem;
+    height: 18rem;
+    rotate: 150deg;
+    right: 75px;
+    bottom: -55px;
+    z-index: -1;
+  }
+  .faq_section .faq_decoration-rectangletop {
+    position: absolute;
+    background-color: #f6ede6;
+    width: 12rem;
+    height: 11rem;
+    border-radius: 62px 0 62px 0;
+    z-index: -2;
+    right: 125px;
+    bottom: 115px;
+    mix-blend-mode: multiply;
+  }
+  .faq_section .faq_decoration-rectanglebot {
+    position: absolute;
+    background-color: #f6ede6;
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 62px 0 62px 0;
+    z-index: -3;
+    right: 230px;
+    bottom: 45px;
+  }
+  .faq_section .faq_decoration-img {
+    background-image: url("./assets/img/deco-faq.svg");
+    width: 13.4rem;
+    height: 10.6rem;
+  }
+  .faq_section .faq_decoration-img::before {
+    rotate: -29deg;
+    right: 230px;
+    bottom: 100px;
+  }
+  .faq_section .faq_decoration-img::after {
+    rotate: 50deg;
+    right: 70px;
+    bottom: 180px;
+  }
+  .faq_section .faq_decoration-rectangletop {
+    right: 100px;
+    bottom: 150px;
+  }
+  .faq_section .faq_decoration-rectanglebot {
+    right: 210px;
+    bottom: 80px;
   }
   .faq_section-footer .circle {
     background-color: #a9b388;
@@ -1569,7 +1888,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 0.5fr 0.1fr;
-    grid-template-areas: "hero hero" "x cont" "doubts doubts";
+    grid-template-areas: "hero hero" "deco cont" "doubts doubts";
   }
   .shipping_section-hero {
     grid-area: hero;
@@ -1633,6 +1952,83 @@ body {
     z-index: -1;
     left: -75px;
     bottom: 50px;
+  }
+  .shipping_section .shipping_decoration {
+    grid-area: deco;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    padding-right: 7rem;
+  }
+  .shipping_section .shipping_decoration-img {
+    background-image: url("./assets/img/deco-contact.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15rem;
+    height: 18rem;
+    right: 0;
+  }
+  .shipping_section .shipping_decoration-img::before {
+    content: "";
+    position: absolute;
+    background-image: url("./assets/img/hero-icon.svg");
+    width: 10rem;
+    height: 18rem;
+    rotate: -29deg;
+    right: 275px;
+    bottom: 50px;
+    z-index: -1;
+  }
+  .shipping_section .shipping_decoration-img::after {
+    content: "";
+    position: absolute;
+    background-image: url("./assets/img/hero-icon.svg");
+    width: 10rem;
+    height: 18rem;
+    rotate: 150deg;
+    right: 75px;
+    bottom: -55px;
+    z-index: -1;
+  }
+  .shipping_section .shipping_decoration-rectangletop {
+    position: absolute;
+    background-color: #f6ede6;
+    width: 12rem;
+    height: 11rem;
+    border-radius: 62px 0 62px 0;
+    z-index: -2;
+    right: 125px;
+    bottom: 115px;
+    mix-blend-mode: multiply;
+  }
+  .shipping_section .shipping_decoration-rectanglebot {
+    position: absolute;
+    background-color: #f6ede6;
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 62px 0 62px 0;
+    z-index: -3;
+    right: 230px;
+    bottom: 45px;
+  }
+  .shipping_section .shipping_decoration-img {
+    background-image: url("./assets/img/deco-shipping.svg");
+  }
+  .shipping_section .shipping_decoration-img::before {
+    rotate: -29deg;
+    right: 260px;
+    bottom: 115px;
+  }
+  .shipping_section .shipping_decoration-img::after {
+    display: none;
+  }
+  .shipping_section .shipping_decoration-rectangletop {
+    right: 125px;
+    bottom: 170px;
+  }
+  .shipping_section .shipping_decoration-rectanglebot {
+    right: 230px;
+    bottom: 80px;
   }
   .shipping-footer .circle {
     background-color: #a9b388;
