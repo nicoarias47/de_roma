@@ -16,10 +16,7 @@ import faq from "../assets/icon/faq.svg";
 import Advertising from "../components/Advertising/Advertising";
 import Suscribe from "../components/Suscribe/Suscribe";
 
-
 const Home = () => {
-
-
   const carouselOne = {
     img1: living,
     // title1: "Living & Deco",
@@ -36,47 +33,52 @@ const Home = () => {
     img3: contenedores,
     // title3: "Contenedores",
   };
-  return (<>
-     <Advertising/>
-    <div className="home">
-      
-      <MainCarousel />
-   
-      <section>
-      <b className="body3 body3-desktop"> PRODUCTOS </b>
-      <b className="body3 body3-mobile"> Living & Deco / Aromatizantes / Baño </b>
-      <SectionCarousel data={carouselOne} />
-      <b className="body3 body3-mobile"> Textiles / Jardín / Organización </b>
-      <SectionCarousel data={carouselTwo} />
-      </section>
-         <div className="info-icons-container">
-        <ul className="info-icons">
+  return (
+    <>
+      <Advertising />
+      <div className="home">
+        <MainCarousel />
 
-          <li>
-          <Link className="envios" to="/envios">       
-            <img className="" src={envios} />
-            <p className="body4"> Envíos </p>
-          </Link>  
-          </li>
-          <li>
-            <Link className="pagos" to="/medios_de_pago">
-             <img className="" src={payments} />
-             <p className="body4"> Medios de pago </p>
-             </Link>
+        <section>
+          <b className="body3 body3-desktop"> PRODUCTOS </b>
+          <b className="body3 body3-mobile">
+            {" "}
+            Living & Deco / Aromatizantes / Baño{" "}
+          </b>
+          <SectionCarousel data={carouselOne} />
+          <b className="body3 body3-mobile">
+            {" "}
+            Textiles / Jardín / Organización{" "}
+          </b>
+          <SectionCarousel data={carouselTwo} />
+        </section>
+        <div className="info-icons-container">
+          <ul className="info-icons">
+            <li>
+              <Link className="envios" to="/envios">
+                <img className="" src={envios} />
+                <p className="body4"> Envíos </p>
+              </Link>
             </li>
-          <li>
-            <Link className="entregas" to="/preguntas_frecuentes">
-            <img className="" src={faq} />
-            <p className="body4"> Preguntas Frecuentes</p>
-            </Link>
-          </li>
-        </ul>
+            <li>
+              <Link className="pagos" to="/medios_de_pago">
+                <img className="" src={payments} />
+                <p className="body4"> Medios de pago </p>
+              </Link>
+            </li>
+            <li>
+              <Link className="entregas" to="/preguntas_frecuentes">
+                <img className="" src={faq} />
+                <p className="body4"> Preguntas Frecuentes</p>
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <Suscribe />
+        <section className="contact_section-footer">
+          <div className="circle"></div>
+        </section>
       </div>
-      <Suscribe/>
-      <section className="contact_section-footer">
-        <div className="circle"></div>
-      </section>
-    </div>
     </>
   );
 };
