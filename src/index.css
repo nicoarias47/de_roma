@@ -787,6 +787,9 @@ body {
   display: flex;
   justify-content: center;
 }
+.about_section-img {
+  filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
+}
 .about_section-background {
   background-color: #ffffff;
   display: inline-block;
@@ -804,7 +807,7 @@ body {
 .about_section-title {
   background-color: #5f6f52;
   font-family: "Playfair Display", serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   padding: 0rem 0;
   width: 70%;
@@ -812,12 +815,15 @@ body {
 .about_section h5 {
   color: #5f6f52;
   font-family: "Playfair Display", serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   padding: 2rem 0 1rem 0;
 }
 .about_section span {
-  font-size: 1rem;
+  font-size: 1.1rem;
+}
+.about_section-different {
+  margin-top: 2rem;
 }
 .about_section-different .different-description {
   background-color: #eee7df;
@@ -853,9 +859,8 @@ body {
 }
 
 .section4 {
+  width: 100%;
   text-align: center;
-  width: 90%;
-  margin: 2rem 5%;
   color: #5f6f52;
   background-color: #eee7df;
   border-radius: 2rem 0.5rem 2rem 0.5rem;
@@ -863,8 +868,11 @@ body {
 }
 .section4 h5 {
   font-family: "Playfair Display", serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 400;
+}
+.section4 span {
+  font-size: 1.1rem;
 }
 .section4-social {
   background-color: #ffffff;
@@ -875,6 +883,181 @@ body {
   box-shadow: 1px 1px 6px rgba(142, 142, 142, 0.2509803922);
 }
 
+@media (min-width: 768px) {
+  .about_section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.1fr 1.2fr 1fr 0.1fr;
+    grid-template-areas: "hero who" "dif dif" "bec bec" "sus sus";
+    gap: 2rem;
+  }
+  .about_section-hero {
+    grid-area: hero;
+    margin-left: 1.2rem;
+  }
+  .about_section-img {
+    border-radius: 154px 154px 36px 4px;
+    border: 10px solid #ffffff;
+  }
+  .about_section-description {
+    bottom: 55%;
+    right: -10%;
+  }
+  .about_section-background {
+    position: absolute;
+    top: 2rem;
+    border-radius: 204px 204px 8px 8px;
+    z-index: -1;
+    background-color: #f6ede6;
+    width: 25rem;
+    height: 32.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0rem;
+    border-radius: 204px 204px 8px 8px;
+    z-index: -1;
+  }
+  .about_section-background::before {
+    content: "";
+    background-image: url("./assets/img/hero-icon.svg");
+    position: absolute;
+    width: 9.3rem;
+    height: 17.1rem;
+    z-index: -1;
+    left: -75px;
+    bottom: 50px;
+    left: -70px;
+    bottom: 110px;
+  }
+  .about_section-who {
+    grid-area: who;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10rem;
+  }
+  .about_section-different {
+    grid-area: dif;
+    display: flex;
+    align-items: center;
+  }
+  .about_section-different .different-description {
+    padding: 2rem 4rem 2rem 2rem;
+  }
+  .about_section-different .different-img {
+    margin-top: 12rem;
+    margin-left: -4rem;
+  }
+  .about_section-because {
+    grid-area: bec;
+    display: flex;
+    flex-flow: row-reverse;
+    padding: 0rem;
+    align-items: center;
+  }
+  .about_section-because .becasuse-description {
+    padding: 4rem;
+    padding-left: 7rem;
+  }
+  .about_section-because .because-background {
+    width: 100%;
+    height: 22rem;
+  }
+  .about_section-because .becasuse-img {
+    padding-top: 4rem;
+  }
+  .about_section-because .becasuse-img img {
+    width: 22.3rem;
+    height: 19.5rem;
+  }
+  .about_section .section4 {
+    grid-area: sus;
+  }
+}
+@media (min-width: 1200px) {
+  .about_section-grid {
+    grid-template-rows: 1fr 1fr 1fr 0.1fr;
+  }
+  .about_section-hero {
+    margin-left: 0;
+  }
+  .about_section-img {
+    width: 20.5rem;
+    height: 26.9rem;
+    filter: drop-shadow(2px 2px 21px rgba(95, 111, 82, 0.1882352941));
+  }
+  .about_section-description {
+    bottom: 50%;
+    right: -12%;
+  }
+  .about_section-background::before {
+    content: "";
+    background-image: url("./assets/img/hero-icon.svg");
+    position: absolute;
+    width: 9.3rem;
+    height: 17.1rem;
+    z-index: -1;
+    left: -75px;
+    bottom: 50px;
+    left: -105px;
+    bottom: 60px;
+  }
+  .about_section-different .different-description {
+    padding-right: 15rem;
+    padding-bottom: 4rem;
+  }
+  .about_section-different .different-img img {
+    height: 24rem;
+  }
+  .about_section-because {
+    position: relative;
+  }
+  .about_section-because .because-background {
+    bottom: 10%;
+    height: 28rem;
+    width: 90%;
+    z-index: -1;
+  }
+  .about_section-because .because-background::before {
+    content: "";
+    background-image: url("./assets/img/hero-icon.svg");
+    position: absolute;
+    width: 9.3rem;
+    height: 17.1rem;
+    z-index: -1;
+    left: -75px;
+    bottom: 50px;
+    background-repeat: no-repeat;
+    width: 100%;
+    left: -170px;
+    bottom: 205px;
+    rotate: -5deg;
+  }
+  .about_section-because .becasuse-img::before {
+    content: "";
+    background-image: url("./assets/img/hero-icon.svg");
+    position: absolute;
+    width: 9.3rem;
+    height: 17.1rem;
+    z-index: -1;
+    left: -75px;
+    bottom: 50px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    left: 100px;
+    bottom: 215px;
+    rotate: -140deg;
+    z-index: -2;
+  }
+  .about_section-because .becasuse-img {
+    padding-top: 16rem;
+  }
+  .about_section-because .becasuse-img img {
+    width: 26rem;
+  }
+}
 .faq_section-hero {
   position: relative;
   padding-bottom: 25rem;
