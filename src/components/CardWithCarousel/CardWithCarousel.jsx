@@ -30,8 +30,8 @@ const CardWithCarousel = ({ data }) => {
             </Carousel>
             <Card.Body>
               <ul>
-                {products.list.map(({ title, i }) => (
-                  <li key={i}>{title}</li>
+                {products.list.map(({ title }) => (
+                  <li key={title}>{title}</li>
                 ))}
               </ul>
               <Button>Ver catalogo</Button>

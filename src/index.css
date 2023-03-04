@@ -2,6 +2,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+h4 {
+  font-size: 48px;
+  font-family: "Playfair Display", serif;
+}
+
 h5 {
   font-size: 32px;
   font-family: "Playfair Display", serif;
@@ -458,12 +463,15 @@ h5 {
   align-items: center;
   gap: 2rem;
 }
-.products_list h1 {
-  z-index: 1;
-  font-size: 2.5rem;
-  color: #f2f2f2;
-  font-family: "Playfair Display", serif;
-  font-weight: 300;
+.products_list .carousel-indicators button {
+  background-color: #bdbdbd !important;
+  border: none !important;
+  border-radius: 50% !important;
+  width: 12px !important;
+  height: 12px !important;
+}
+.products_list .carousel-indicators .active {
+  background-color: #c4661f !important;
 }
 
 .products_section-footer {
@@ -2356,6 +2364,7 @@ h5 {
 }
 .card_carousel img {
   border-radius: 32px 8px 0px 0px;
+  max-height: 550px;
 }
 .card_carousel .carousel {
   height: 60vh !important;
@@ -2830,6 +2839,50 @@ textarea::placeholder {
 
 .modal-col-right {
   justify-content: center;
+}
+
+.card_products h4 {
+  color: #a9b388;
+}
+.card_products-item {
+  width: 25%;
+  position: relative;
+}
+.card_products-item img {
+  max-width: 100%;
+  height: 14rem;
+  object-fit: cover;
+  border-radius: 8px 32px 8px 32px;
+}
+.card_products-item span {
+  background-color: #a9b388;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  opacity: 0.9;
+  border-radius: 0 0 10px 32px;
+  padding-bottom: 3px;
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .card_products span {
+    width: 91.5%;
+    opacity: 0.9;
+    border-radius: 0 0 10px 32px;
+    padding-bottom: 3px;
+    text-align: center;
+  }
+}
+@media (min-width: 1400px) {
+  .card_products span {
+    width: 93%;
+    opacity: 0.9;
+    border-radius: 0 0 10px 32px;
+    padding-bottom: 3px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

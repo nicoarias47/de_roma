@@ -20,7 +20,7 @@ const paths = {
       },
       bathroom: {
         name: "Baño",
-        path: "/baño",
+        path: "/banio",
       },
       textile: {
         name: "Textil",
@@ -30,9 +30,9 @@ const paths = {
         name: "Jardín",
         path: "/jardin",
       },
-      organization: {
-        name: "Organización",
-        path: "/organizacion",
+      container: {
+        name: "Contenedores",
+        path: "/contenedores",
       },
     },
   },

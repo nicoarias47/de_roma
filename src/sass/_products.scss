@@ -9,12 +9,18 @@
     align-items: center;
     gap: 2rem;
 
-    h1 {
-      z-index: 1;
-      font-size: 2.5rem;
-      color: $color-white-400;
-      font-family: "Playfair Display", serif;
-      font-weight: 300;
+    .carousel-indicators {
+      button {
+        background-color: #bdbdbd !important;
+        border: none !important;
+        border-radius: 50% !important;
+        width: 12px !important;
+        height: 12px !important;
+      }
+
+      .active {
+        background-color: #c4661f !important;
+      }
     }
   }
 }

@@ -1,0 +1,54 @@
+.card_products {
+  h4 {
+    color: $color-principal-100;
+  }
+  &-item {
+    width: 25%;
+    position: relative;
+    //height: 14.6rem;
+
+    img {
+      max-width: 100%;
+      height: 14rem;
+      // height: 14.6rem;
+      object-fit: cover;
+      border-radius: 8px 32px 8px 32px;
+    }
+
+    span {
+      background-color: #a9b388;
+      display: inline-block;
+      position: absolute;
+      bottom: 0;
+      width: 90%;
+      opacity: 0.9;
+      border-radius: 0 0 10px 32px;
+      padding-bottom: 3px;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: "1200px") {
+  .card_products {
+    span {
+      width: 91.5%;
+      opacity: 0.9;
+      border-radius: 0 0 10px 32px;
+      padding-bottom: 3px;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: "1400px") {
+  .card_products {
+    span {
+      width: 93%;
+      opacity: 0.9;
+      border-radius: 0 0 10px 32px;
+      padding-bottom: 3px;
+      text-align: center;
+    }
+  }
+}
