@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import carrouselphoto1 from "../../assets/img/carrouselphoto1.svg";
-import carrouselphoto2 from "../../assets/img/carrouselphoto2.svg";
-import carrouselphoto3 from "../../assets/img/carrouselphoto3.svg";
+import carrouselphoto1 from "../../assets/JPG/bannersprincipales/1.jpg";
+import carrouselphoto2 from "../../assets/JPG/bannersprincipales/2.jpg";
+import carrouselphoto3 from "../../assets/JPG/bannersprincipales/3.jpg";
 
 
 function ControlledCarousel() {

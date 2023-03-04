@@ -1,50 +1,39 @@
-import React, { useState } from "react";
+import React from "react";
+import emailjs from '@emailjs/browser';
 
-const initialState = {
-  name: "",
-  email: "",
-  message: "",
-};
 
 const ContactForm = () => {
-  const [form, setForm] = useState(initialState);
-  //const [error, setError] = useState(false);
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-  };
-  const handleChange = ({ target: { name, value } }) => {
-    setForm({ ...form, [name]: value });
-  };
-
+  const sendEmail = (event) => {
+    event.preventDefault();
+    //aca se captura(serviceID, templateID, el evento , el key public)
+    emailjs.sendForm('service_rfj0nyn','template_3sbdega', event.target,'T7D63srxE6X0p2-bi')
+    .then(response => console.log(response))
+    .catch(error => console.log(error))
+    event.target.reset();
+  }
   return (
     <div className="contact_form">
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="form title-form" onSubmit={sendEmail}>
         <input
           type="text"
-          name="name"
+          name="user_name"
           placeholder="Nombre Completo"
           className="form-name"
-          onChange={handleChange}
-          value={form.name}
           required
         />
         <input
           type="email"
-          name="email"
-          placeholder="E-mail"
+          name="user_email"
+          placeholder="E-mail"  
           className="form-email"
-          onChange={handleChange}
-          value={form.email}
           required
         />
         <textarea
-          name="message"
+          name="user_message"
           rows="10"
           placeholder="Escribe un mensaje"
           className="form-message"
-          onChange={handleChange}
-          value={form.message}
           required
         ></textarea>
         <input type="submit" value="Enviar mensaje" className="form-button" />

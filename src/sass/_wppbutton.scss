@@ -2,5 +2,11 @@
     position: fixed;
     bottom: 10%;
     right: 5%;
-    z-index: 100;
-}   
+    z-index: 1000;
+}  
+
+@media (min-width: 768px) {
+    .wpp-button {
+        scale: 1.2;
+    }
+}

@@ -5,14 +5,15 @@
   color: #5f6f52;
   background-color: #eee7df;
   border-radius: 2rem 0.5rem 2rem 0.5rem;
-  padding: 3rem 1rem;
+  padding: 4rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
   h5 {
-    margin-bottom: 1.5rem;
+    width: 70%;
+    margin-bottom: 2rem;
   }
   strong {
     // margin-bottom:1rem;
@@ -21,7 +22,7 @@
   .suscribe-form {
     width: 80%;
     .suscribe-button {
-      width: 60%;
+      width: 70%;
     }
   }
 }
@@ -59,23 +60,14 @@ input::placeholder,
 textarea::placeholder {
   color: $color-grey-100;
 }
-// @media (min-width: 767px) {
-//   .suscribe-container {
-//     position: relative;
-//     left: 25%;
-//     width: 50%;
-//     margin: 4rem;
-//     h5 {
-//       width: 50%;
-//     }
-//     p {
-//       width: 60%;
-//     }
-//     .suscribe-form {
-//       width: 60%;
-//       .suscribe-button {
-//         width: 100%;
-//       }
-//     }
-//   }
-// }
+@media (min-width: 768px) {
+  .suscribe-container {
+    p{
+      width: 60%;
+    }
+    h5 {
+      width: 50%;
+    }
+  }
+}
+
