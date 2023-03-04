@@ -1,5 +1,24 @@
 import velas from "../assets/JPG/subCategorias/aromatizantes/velas.jpg";
 import difusores from "../assets/JPG/subCategorias/aromatizantes/difusores.jpg";
+import cruceDeBañeras from "../assets/JPG/subCategorias/baño/cruce_de_bañera.jpg";
+import dispenser from "../assets/JPG/subCategorias/baño/cruce_de_bañera.jpg";
+import jaboneras from "../assets/JPG/subCategorias/baño/jaboneras.jpg";
+import portaCepillos from "../assets/JPG/subCategorias/baño/porta_cepillos.jpg";
+import alfombras from "../assets/JPG/subCategorias/textiles/alfombras.jpg";
+import macrame from "../assets/JPG/subCategorias/textiles/macrame.jpg";
+import mantas from  "../assets/JPG/subCategorias/textiles/mantas.jpg";
+import pieDeCama from "../assets/JPG/subCategorias/textiles/pie_de_cama.jpg";
+import bandejas from "../assets/JPG/subCategorias/living_y_deco/bandejas.jpg";
+import centrosDeMesa from "../assets/JPG/subCategorias/living_y_deco/centros_de_mesa.jpg";
+import ceramica from "../assets/JPG/subCategorias/living_y_deco/ceramica.jpg";
+import cuadros from "../assets/JPG/subCategorias/living_y_deco/cuadros.jpg";
+import lamparas from "../assets/JPG/subCategorias/living_y_deco/lamparas.jpg";
+import relojes from "../assets/JPG/subCategorias/living_y_deco/relojes.jpeg";
+import macetas from "../assets/JPG/subCategorias/jardin/macetas.jpg";
+import portaMacetas from "../assets/JPG/subCategorias/jardin/porta_macetero.jpg";
+import contenedoresDeVidrio from "../assets/JPG/subCategorias/contenedores/contenedores_vidrio.jpg";
+import dispenser2 from "../assets/JPG/subCategorias/contenedores/dispenser.jpg";
+import envasesDeCocina from  "../assets/JPG/subCategorias/contenedores/envases_cocina.jpg";
 
 export const db = {
   aromatizantes: [
@@ -25,19 +44,19 @@ export const db = {
       list: [
         {
           title: "Cruce de bañeras",
-          img: "./assets/JPG/subCategorias/baño/cruce_de_bañera.jpg",
+          img: cruceDeBañeras,
         },
         {
-          title: "dispensar",
-          img: "./assets/JPG/subCategorias/baño/cruce_de_bañera.jpg",
+          title: "Dispenser",
+          img: dispenser,
         },
         {
           title: "Jaboneras",
-          img: "./assets/JPG/subCategorias/baño/jaboneras.jpg",
+          img: jaboneras,
         },
         {
           title: "Porta cepillos",
-          img: "./assets/JPG/subCategorias/baño/porta_cepillos.jpg",
+          img: portaCepillos,
         },
       ],
     },
@@ -49,19 +68,19 @@ export const db = {
       list: [
         {
           title: "Alfombras",
-          img: "./assets/JPG/subCategorias/textiles/alfombras.jpg",
+          img: alfombras,
         },
         {
           title: "Macrame",
-          img: "./assets/JPG/subCategorias/textiles/macrame.jpg",
+          img: macrame,
         },
         {
           title: "Mantas",
-          img: "./assets/JPG/subCategorias/textiles/mantas.jpg",
+          img: mantas,
         },
         {
           title: "Pie de cama",
-          img: "./assets/JPG/subCategorias/textiles/pie_de_cama.jpg",
+          img: pieDeCama,
         },
       ],
     },
@@ -73,27 +92,27 @@ export const db = {
       list: [
         {
           title: "Bandejas",
-          img: "./assets/JPG/subCategorias/living_y_deco/bandejas.jpg",
+          img: bandejas,
         },
         {
           title: "Centros de mesa",
-          img: "./assets/JPG/subCategorias/living_y_deco/centros_de_mesa.jpg",
+          img: centrosDeMesa,
         },
         {
           title: "Ceramica",
-          img: "./assets/JPG/subCategorias/living_y_deco/ceramica.jpg",
+          img: ceramica,
         },
         {
           title: "Cuadros",
-          img: "./assets/JPG/subCategorias/living_y_deco/cuadros.jpg",
+          img: cuadros,
         },
         {
           title: "Lamparas",
-          img: "./assets/JPG/subCategorias/living_y_deco/lamparas.jpg",
+          img: lamparas,
         },
         {
           title: "Relojes",
-          img: "./assets/JPG/subCategorias/living_y_deco/relojes.jpg",
+          img: relojes,
         },
       ],
     },
@@ -105,11 +124,11 @@ export const db = {
       list: [
         {
           title: "Macetas",
-          img: "./assets/JPG/subCategorias/jardin/macetas.jpg",
+          img: macetas,
         },
         {
-          title: "Porta macetero",
-          img: "./assets/JPG/subCategorias/jardin/porta_macetero.jpg",
+          title: "Porta macetas",
+          img: portaMacetas,
         },
       ],
     },
@@ -121,15 +140,15 @@ export const db = {
       list: [
         {
           title: "Contenedores de vidrio",
-          img: "./assets/JPG/subCategorias/contenedores/contenedores_vidrio.jpg",
+          img: contenedoresDeVidrio,
         },
         {
           title: "dispenser",
-          img: "./assets/JPG/subCategorias/contenedores/dispenser.jpg",
+          img: dispenser2,
         },
         {
           title: "Envases de cocina",
-          img: "./assets/JPG/subCategorias/contenedores/envases_cocina.jpg",
+          img: envasesDeCocina,
         },
       ],
     },
