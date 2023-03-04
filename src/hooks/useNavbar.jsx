@@ -3,7 +3,7 @@ import { useMatch } from "react-router-dom";
 
 const paths = {
   home: {
-    name: "Home",
+    name: "Inicio",
     path: "/",
   },
   products: {

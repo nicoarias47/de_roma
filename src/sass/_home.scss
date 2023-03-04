@@ -12,18 +12,21 @@
     align-items: center;
     margin-bottom: 1rem;
   }
+
   b {
     text-align: center;
     display: block;
     margin-bottom: 2rem;
   }
-  .body3-mobile{
+
+  .body3-mobile {
     display: none;
   }
-  .suscribe-container{
-    margin: 0 auto;
-        width: 45%;
-      } 
+
+  .suscribe-container {
+    margin: auto;
+    width: 92%;
+  }
 }
 
 .info-icons-container {
@@ -48,6 +51,7 @@
     flex-direction: column;
     justify-content: space-around;
   }
+
   a {
     text-decoration: none;
     text-align: center;
@@ -75,10 +79,17 @@
 }
 
 @media (min-width: 767px) {
-  .body3-desktop{
+  .home {
+    .suscribe-container {
+      margin: 0 auto;
+      width: 45%;
+    }
+  }
+
+  .body3-desktop {
     color: $color-grey-100;
     margin-top: 1rem;
-    font-size:28px;
+    font-size: 28px;
     display: none;
   }
 }

@@ -20,14 +20,14 @@
   }
 
   &-description {
-    padding-top: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     h6 {
-      font-size: 1.1rem;
+      font-size: 18px;
       font-weight: 500;
     }
 
     span {
-      font-size: 1rem;
+      font-size: 18px;
       font-weight: 400;
       padding-bottom: 2rem;
     }
@@ -45,7 +45,7 @@
 
   .circle::before {
     @include circle-img;
-    background-image: url("./assets/img/vela.svg");
+    background-image: url("./assets/PNG/foot/vela.png");
     right: -5px;
     bottom: -20px;
   }
@@ -80,6 +80,7 @@
 
     &-description {
       margin-top: -14rem;
+      padding-right: 8rem;
       grid-area: form;
     }
 
@@ -140,6 +141,11 @@
     .circle {
       @include circle;
       right: 20%;
+    }
+  }
+  .contact_section {
+    &-description {
+      margin-top: -32rem;
     }
   }
 }
