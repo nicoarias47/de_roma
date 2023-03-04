@@ -8,69 +8,66 @@ import aboutimg3 from "../assets/img/aboutimg3.svg";
 const About = () => {
   return (
     <>
-      <Container className="about_container" fluid="lg">
-        <div className="row">
-          <div className="col-left col-xs-12 col-md-6 col-lg-6">
-            <section className="section-left">
-              <div className="">
-                <img className="img-about" src={aboutimg} />
-              </div>
-              <div className="about-title">
-                <h5>Chicas</h5>
-                <h5>DeRoma</h5>
-              </div>
-            </section>
-          </div>
-          <div className="col-right col-xs-12 col-md-6 col-lg-6"></div>
-          <section className="section-right">
+      <Container className="about_section" fluid="lg">
+        <div className="row about_section-grid">
+          <section className="col-12 about_section-hero">
+            <div className="about_section-background">
+              <img className="about_section-img" src={aboutimg} />
+            </div>
+            <div className="row d-flex justify-content-center about_section-description ">
+              <h4 className="col-8 about_section-title ">Chicas</h4>
+              <h4 className="col-8 about_section-title ">DeRoma</h4>
+            </div>
+          </section>
+          <section className="about_section-who">
             <h5> ¿Quienes somos? </h5>
-            <p className="body3">
+            <span>
               Aca hay un poco de todo, hermanas, amigas y socias, Anto y Marijo,
               vivimos en la Provincia de Buenos Aires y este proyecto comenzó
               con la idea de poder crear espacios únicos y llegar a todos los
               hogares de Argentina.
-            </p>
+            </span>
           </section>
-        </div>
-        <div className="row row-2">
-          <div className="section-Left-2">
-            <h5>¿En qué nos diferenciamos?</h5>
-            <p className="body3">
-              Traemos y seleccionamos productos que están fuera de lo común, eso
-              que ves en todos lados repetido acá no lo vas a encontrar, ya que
-              nuestra misión es poder hacer de tus espacios algo único, que
-              reflejen quien sos.
-            </p>
-          </div>
-          <div className="section-right-2">
-            <img className="imgabout2" src={aboutimg2} />
-          </div>
-        </div>
-
-        <div className="row row-3">
-          <div className="section-Left-3">
-            <img className="imgabout3" src={aboutimg3} />
-          </div>
-          <div className="background-rectangule"></div>
-          <div className="section-right-3">
-            <h5>¿Por qué lo hacemos?</h5>
-            <p className="body3">
-              Lo hacemos por pasión. Queremos ser un referente a la hora en que
-              los argentinos se pregunten: ¿Y donde puedo comprar decoración de
-              calidad, útil, única y de buen gusto? Y la respuesta sea De Roma.
-            </p>
-          </div>
+          <section className="about_section-different">
+            <div className="different-description">
+              <h5>¿En qué nos diferenciamos?</h5>
+              <span>
+                Traemos y seleccionamos productos que están fuera de lo común,
+                eso que ves en todos lados repetido acá no lo vas a encontrar,
+                ya que nuestra misión es poder hacer de tus espacios algo único,
+                que reflejen quien sos.
+              </span>
+            </div>
+            <div className="different-img">
+              <img className="imgabout2" src={aboutimg2} />
+            </div>
+          </section>
+          <section className="about_section-because">
+            <div className="because-background"></div>
+            <div className="becasuse-description">
+              <h5>¿Por qué lo hacemos?</h5>
+              <span>
+                Lo hacemos por pasión. Queremos ser un referente a la hora en
+                que los argentinos se pregunten: ¿Y donde puedo comprar
+                decoración de calidad, útil, única y de buen gusto? Y la
+                respuesta sea De Roma.
+              </span>
+            </div>
+            <div className="becasuse-img">
+              <img className="imgabout3" src={aboutimg3} />
+            </div>
+          </section>
         </div>
       </Container>
       <section className="section4">
-        <h5>Seguínos y se parte de esta comunidad</h5>
+        <h5>Síguenos y se parte de esta comunidad</h5>
         <div className="section4-social">
           <InstagramIcon stroke={"#B99470"} fill={"#B99470"} />
         </div>
       </section>
-      <section className="about_section-footer">
+      {/* <section className="about_section-footer">
         <div className="circle"></div>
-      </section>
+      </section> */}
     </>
   );
 };

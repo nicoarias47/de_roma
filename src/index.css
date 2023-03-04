@@ -780,83 +780,76 @@ body {
     right: 20%;
   }
 }
-.about-title h5 {
-  background-color: #5f6f52;
-  display: inline-block;
+.about_section-hero {
   position: relative;
-  left: 1rem;
-  top: -11rem;
-  margin: 3px;
-}
-
-.section-left {
-  padding-bottom: 22rem;
-  text-align: center;
-}
-.section-left .img-about {
-  position: absolute;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 115px 115px 0 0;
-  width: 14.3rem;
-  height: 19.5rem;
-  top: 4rem;
-  filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
-  border: solid white 5px;
-  border-radius: 40px 15px 15px 15px;
-  left: 17%;
-  width: 19rem;
-  width: 15rem;
-}
-@media (min-width: 1200px) {
-  .section-left .img-about {
-    width: 19.3rem;
-    height: 26.9rem;
-    filter: drop-shadow(2px 2px 21px rgba(95, 111, 82, 0.1882352941));
-  }
-}
-.section-left .about-title {
-  color: #ffffff;
+  padding-bottom: 2rem;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
+}
+.about_section-background {
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 0.5rem;
+  margin-top: 3rem;
+  border-radius: 2rem 0.5rem 2rem 0.5rem;
+}
+.about_section-description {
   position: absolute;
-  top: 10%;
+  color: #ffffff;
+  letter-spacing: 1px;
+  bottom: 62%;
+  right: 50%;
 }
-.section-left .about-title h5 {
-  padding: 0.2rem 0.5rem;
+.about_section-title {
+  background-color: #5f6f52;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 0rem 0;
+  width: 70%;
 }
-
-.section-right {
-  margin-top: 2rem;
-  padding: 1.5rem;
+.about_section h5 {
+  color: #5f6f52;
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 2rem 0 1rem 0;
 }
-.section-right h5 {
-  width: 50%;
-  margin-bottom: 1rem;
+.about_section span {
+  font-size: 1rem;
 }
-
-.section-Left-2 {
-  padding: 1.5rem 1.5rem 5rem 1.5rem;
-  width: 90%;
-  margin: 5%;
+.about_section-different .different-description {
   background-color: #eee7df;
-  border-radius: 40px 15px 40px 15px;
+  border-radius: 32px 8px 32px 8px;
+  padding: 1rem 1rem 10rem 1rem;
 }
-.section-Left-2 h5 {
-  color: #474747;
-  margin-bottom: 1.5rem;
+.about_section-different .different-img {
+  display: flex;
+  justify-content: center;
+  margin-top: -9rem;
 }
-
-.section-right-2 {
-  text-align: center;
-}
-.section-right-2 .imgabout2 {
+.about_section-because {
   position: relative;
-  top: -6rem;
-  width: 19rem;
-  height: 19rem;
+  overflow: hidden;
+}
+.about_section-because .becasuse-description {
+  padding-bottom: 1rem;
+}
+.about_section-because .because-background {
+  position: absolute;
+  background-color: #eee7df;
+  width: 22rem;
+  height: 18rem;
+  z-index: -1;
+  border-radius: 62px 0 0 0;
+  width: 100%;
+  right: -120px;
+  bottom: 10%;
+}
+.about_section-because .becasuse-img {
+  display: flex;
+  justify-content: center;
 }
 
 .section4 {
@@ -868,64 +861,18 @@ body {
   border-radius: 2rem 0.5rem 2rem 0.5rem;
   padding: 4rem 1rem;
 }
+.section4 h5 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 400;
+}
 .section4-social {
   background-color: #ffffff;
   display: inline-block;
   padding: 0.5rem;
   border-radius: 0.5rem;
   margin-top: 2rem;
-}
-
-.about_section-footer {
-  position: relative;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  height: 200px;
-  top: -7rem;
-  margin-bottom: -16rem;
-}
-.about_section-footer .circle {
-  background-color: #a9b388;
-  width: 10.6rem;
-  height: 10.6rem;
-  border-radius: 50%;
-  right: -2.5rem;
-}
-.about_section-footer .circle::before {
-  content: "";
-  position: absolute;
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 100%;
-  height: 100%;
-  background-image: url("./assets/img/circle_about.svg");
-  right: 0px;
-  bottom: -30px;
-  height: 250px;
-}
-
-.row-3 {
-  flex-direction: column-reverse;
-  top: -2rem;
-  position: relative;
-}
-.row-3 .section-right-3 {
-  padding: 0rem 2rem;
-}
-.row-3 .section-right-3 h5 {
-  width: 60%;
-  margin-bottom: 1.5rem;
-  color: #5f6f52;
-}
-.row-3 .background-rectangule {
-  background-color: #eee7df;
-}
-.row-3 .section-Left-3 {
-  text-align: center;
-}
-.row-3 img {
-  width: 20rem;
+  box-shadow: 1px 1px 6px rgba(142, 142, 142, 0.2509803922);
 }
 
 .faq_section-hero {

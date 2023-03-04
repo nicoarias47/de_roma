@@ -1,66 +1,89 @@
-.about-title {
-  h5 {
-    background-color: $color-principal-200;
-    display: inline-block;
+.about_section {
+  &-hero {
     position: relative;
-    left: 1rem;
-    top: -11rem;
-    margin: 3px;
-  }
-}
-.section-left {
-  padding-bottom: 22rem;
-  text-align: center;
-
-  .img-about {
-    @include hero-img;
-    border: solid white 5px;
-    border-radius: 40px 15px 15px 15px;
-    left: 17%;
-    width: 19rem;
-    width: 15rem;
-  }
-  .about-title {
-    color: $color-white-0;
+    padding-bottom: 2rem;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &-background {
+    background-color: $color-white-0;
+    display: inline-block;
+    padding: 0.5rem;
+    margin-top: 3rem;
+    border-radius: 2rem 0.5rem 2rem 0.5rem;
+  }
+
+  &-description {
     position: absolute;
-    top: 10%;
-    h5 {
-      padding: 0.2rem 0.5rem;
+    color: $color-white-0;
+    letter-spacing: 1px;
+    bottom: 62%;
+    right: 50%;
+  }
+
+  &-title {
+    background-color: $color-principal-200;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 0rem 0;
+    width: 70%;
+  }
+
+  h5 {
+    color: $color-principal-200;
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    padding: 2rem 0 1rem 0;
+  }
+  span {
+    font-size: 1rem;
+  }
+
+  &-different {
+    .different-description {
+      background-color: $color-cream-200;
+      border-radius: 32px 8px 32px 8px;
+      padding: 1rem 1rem 10rem 1rem;
+    }
+
+    .different-img {
+      display: flex;
+      justify-content: center;
+      margin-top: -9rem;
+    }
+  }
+
+  &-because {
+    position: relative;
+    overflow: hidden;
+
+    .becasuse-description {
+      padding-bottom: 1rem;
+    }
+
+    .because-background {
+      position: absolute;
+      background-color: $color-cream-200;
+      width: 22rem;
+      height: 18rem;
+      z-index: -1;
+      border-radius: 62px 0 0 0;
+      width: 100%;
+      right: -120px;
+      bottom: 10%;
+    }
+
+    .becasuse-img {
+      display: flex;
+      justify-content: center;
     }
   }
 }
-.section-right {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  h5 {
-    width: 50%;
-    margin-bottom: 1rem;
-  }
-}
-.section-Left-2 {
-  padding: 1.5rem 1.5rem 5rem 1.5rem;
-  width: 90%;
-  margin: 5%;
-  background-color: $color-secondary-400;
-  border-radius: 40px 15px 40px 15px;
-  h5 {
-    color: $color-black-100;
-    margin-bottom: 1.5rem;
-  }
-}
 
-.section-right-2 {
-  text-align: center;
-  .imgabout2 {
-    position: relative;
-    top: -6rem;
-    width: 19rem;
-    height: 19rem;
-  }
-}
 .section4 {
   text-align: center;
   width: 90%;
@@ -69,6 +92,11 @@
   background-color: $color-secondary-400;
   border-radius: 2rem 0.5rem 2rem 0.5rem;
   padding: 4rem 1rem;
+  h5 {
+    font-family: "Playfair Display", serif;
+    font-size: 2rem;
+    font-weight: 400;
+  }
 
   &-social {
     background-color: $color-white-0;
@@ -76,50 +104,6 @@
     padding: 0.5rem;
     border-radius: 0.5rem;
     margin-top: 2rem;
-  }
-}
-
-.about_section-footer {
-  @include circle-father;
-  top: -7rem;
-  margin-bottom: -16rem;
-
-  .circle {
-    @include circle;
-  }
-
-  .circle::before {
-    @include circle-img;
-    background-image: url("./assets/img/circle_about.svg");
-    right: 0px;
-    bottom: -30px;
-    height: 250px;
-  }
-}
-
-.row-3 {
-  flex-direction: column-reverse;
-  top: -2rem;
-  position: relative;
-
-  .section-right-3 {
-    // margin-top: 2 rem;
-    padding: 0rem 2rem;
-    h5 {
-      width: 60%;
-      margin-bottom: 1.5rem;
-      color: $color-principal-200;
-    }
-  }
-
-  .background-rectangule {
-    background-color: $color-secondary-400;
-  }
-
-  .section-Left-3 {
-    text-align: center;
-  }
-  img {
-    width: 20rem;
+    box-shadow: 1px 1px 6px #8e8e8e40;
   }
 }
