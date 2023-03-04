@@ -1,5 +1,5 @@
-import velas from "../assets/products/velas.jpg";
-import difusores from "../assets/products/difusores.jpg";
+import velas from "../assets/JPG/subCategorias/aromatizantes/velas.jpg";
+import difusores from "../assets/JPG/subCategorias/aromatizantes/difusores.jpg";
 
 export const db = {
   aromatizantes: [
@@ -7,50 +7,63 @@ export const db = {
       id: 1,
       title: "Aromatizantes",
       list: [
-        "Deco de madera",
-        "Centros de mesa",
-        "Cuadros",
-        "Ceramica",
-        "Relojes",
-        "Bandejas",
-        "Lámparas",
-        "Espejos",
+        {
+          title: "Difusores",
+          img: difusores,
+        },
+        {
+          title: "Velas ",
+          img: velas,
+        },
       ],
-      img: velas,
     },
   ],
-  baño: [
+  banio: [
     {
       id: 2,
-      title: "Aromatizantes",
+      title: "Baño",
       list: [
-        "Deco de madera",
-        "Centros de mesa",
-        "Cuadros",
-        "Ceramica",
-        "Relojes",
-        "Bandejas",
-        "Lámparas",
-        "Espejos",
+        {
+          title: "Cruce de bañeras",
+          img: "./assets/JPG/subCategorias/baño/cruce_de_bañera.jpg",
+        },
+        {
+          title: "dispensar",
+          img: "./assets/JPG/subCategorias/baño/cruce_de_bañera.jpg",
+        },
+        {
+          title: "Jaboneras",
+          img: "./assets/JPG/subCategorias/baño/jaboneras.jpg",
+        },
+        {
+          title: "Porta cepillos",
+          img: "./assets/JPG/subCategorias/baño/porta_cepillos.jpg",
+        },
       ],
-      img: velas,
     },
   ],
-  textil: [
+  textiles: [
     {
       id: 3,
-      title: "Aromatizantes",
+      title: "Textiles",
       list: [
-        "Deco de madera",
-        "Centros de mesa",
-        "Cuadros",
-        "Ceramica",
-        "Relojes",
-        "Bandejas",
-        "Lámparas",
-        "Espejos",
+        {
+          title: "Alfombras",
+          img: "./assets/JPG/subCategorias/textiles/alfombras.jpg",
+        },
+        {
+          title: "Macrame",
+          img: "./assets/JPG/subCategorias/textiles/macrame.jpg",
+        },
+        {
+          title: "Mantas",
+          img: "./assets/JPG/subCategorias/textiles/mantas.jpg",
+        },
+        {
+          title: "Pie de cama",
+          img: "./assets/JPG/subCategorias/textiles/pie_de_cama.jpg",
+        },
       ],
-      img: velas,
     },
   ],
   hogar_y_deco: [
@@ -58,50 +71,67 @@ export const db = {
       id: 4,
       title: "Living & Deco",
       list: [
-        "Deco de madera",
-        "Centros de mesa",
-        "Cuadros",
-        "Ceramica",
-        "Relojes",
-        "Bandejas",
-        "Lámparas",
-        "Espejos",
+        {
+          title: "Bandejas",
+          img: "./assets/JPG/subCategorias/living_y_deco/bandejas.jpg",
+        },
+        {
+          title: "Centros de mesa",
+          img: "./assets/JPG/subCategorias/living_y_deco/centros_de_mesa.jpg",
+        },
+        {
+          title: "Ceramica",
+          img: "./assets/JPG/subCategorias/living_y_deco/ceramica.jpg",
+        },
+        {
+          title: "Cuadros",
+          img: "./assets/JPG/subCategorias/living_y_deco/cuadros.jpg",
+        },
+        {
+          title: "Lamparas",
+          img: "./assets/JPG/subCategorias/living_y_deco/lamparas.jpg",
+        },
+        {
+          title: "Relojes",
+          img: "./assets/JPG/subCategorias/living_y_deco/relojes.jpg",
+        },
       ],
-      img: velas,
     },
   ],
   jardin: [
     {
       id: 5,
-      title: "Aromatizantes",
+      title: "Jardin",
       list: [
-        "Deco de madera",
-        "Centros de mesa",
-        "Cuadros",
-        "Ceramica",
-        "Relojes",
-        "Bandejas",
-        "Lámparas",
-        "Espejos",
+        {
+          title: "Macetas",
+          img: "./assets/JPG/subCategorias/jardin/macetas.jpg",
+        },
+        {
+          title: "Porta macetero",
+          img: "./assets/JPG/subCategorias/jardin/porta_macetero.jpg",
+        },
       ],
-      img: velas,
     },
   ],
-  organizacion: [
+  contenedores: [
     {
       id: 6,
-      title: "Aromatizantes",
+      title: "Contenedores",
       list: [
-        "Deco de madera",
-        "Centros de mesa",
-        "Cuadros",
-        "Ceramica",
-        "Relojes",
-        "Bandejas",
-        "Lámparas",
-        "Espejos",
+        {
+          title: "Contenedores de vidrio",
+          img: "./assets/JPG/subCategorias/contenedores/contenedores_vidrio.jpg",
+        },
+        {
+          title: "dispenser",
+          img: "./assets/JPG/subCategorias/contenedores/dispenser.jpg",
+        },
+        {
+          title: "Envases de cocina",
+          img: "./assets/JPG/subCategorias/contenedores/envases_cocina.jpg",
+        },
       ],
-      img: velas,
     },
   ],
 };

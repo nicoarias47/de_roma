@@ -12,25 +12,26 @@ const CardWithCarousel = ({ data }) => {
 
   return (
     <>
-      {data.map((el) => {
+      {data.map((products) => {
         return (
-          <Card key={el.id} className="card_carousel">
+          <Card key={products.id} className="card_carousel">
             <Carousel
               activeIndex={index}
               onSelect={handleSelect}
               indicators={true}
             >
-              <Carousel.Item>
-                <img className="d-block w-100" src={el.img} alt={el.title} />
-              </Carousel.Item>
-              <Carousel.Item>
-                <img className="d-block w-100" src={el.img} alt={el.title} />
-              </Carousel.Item>
+              {products.list.map(({ img, title }) => {
+                return (
+                  <Carousel.Item key={title}>
+                    <img className="d-block w-100" src={img} alt={title} />
+                  </Carousel.Item>
+                );
+              })}
             </Carousel>
             <Card.Body>
               <ul>
-                {el.list.map((item, i) => (
-                  <li key={i}>{item}</li>
+                {products.list.map(({ title, i }) => (
+                  <li key={i}>{title}</li>
                 ))}
               </ul>
               <Button>Ver catalogo</Button>
