@@ -8,8 +8,9 @@
   }
 
   &-img {
-    // width: 14.3rem;
-    //height: 19.5rem;
+    width: 15rem;
+    height: 20rem;
+    border-radius: 24px 4px 24px 4px;
     filter: drop-shadow(2px 2px 11px $color-hero-shadow);
   }
 
@@ -25,7 +26,7 @@
     position: absolute;
     color: $color-white-0;
     letter-spacing: 1px;
-    bottom: 62%;
+    bottom: 59%;
     right: 50%;
   }
 
@@ -35,7 +36,7 @@
     font-size: 2.5rem;
     font-weight: 400;
     padding: 0rem 0;
-    width: 70%;
+    width: 85%;
   }
 
   h5 {
@@ -61,6 +62,14 @@
       display: flex;
       justify-content: center;
       margin-top: -9rem;
+
+      img {
+        width: 17.5rem;
+        height: 17rem;
+        object-fit: cover;
+        border-radius: 32px 8px 32px 8px;
+        border: 8px solid $color-white-0;
+      }
     }
   }
 
@@ -87,6 +96,14 @@
     .becasuse-img {
       display: flex;
       justify-content: center;
+
+      img {
+        width: 19.5rem;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 24px 4px 24px 4px;
+        border: 8px solid $color-white-0;
+      }
     }
   }
 }
@@ -98,6 +115,7 @@
   background-color: $color-secondary-400;
   border-radius: 2rem 0.5rem 2rem 0.5rem;
   padding: 4rem 1rem;
+  margin-top: 4rem;
 
   h5 {
     font-family: "Playfair Display", serif;
@@ -119,6 +137,25 @@
   }
 }
 
+.about_section-footer {
+  @include circle-father;
+  top: -5rem;
+  margin-bottom: -12rem;
+
+  .circle {
+    @include circle;
+  }
+
+  .circle::before {
+    @include circle-img;
+    background-image: url("./assets/PNG/foot/about.png");
+    right: -60px;
+    bottom: -45px;
+    width: 140%;
+    height: 140%;
+  }
+}
+
 @media (min-width: 768px) {
   .about_section {
     &-grid {
@@ -133,6 +170,10 @@
       gap: 2rem;
     }
 
+    &-title {
+      width: 60%;
+    }
+
     &-hero {
       grid-area: hero;
       margin-left: 1.2rem;
@@ -144,7 +185,7 @@
     }
 
     &-description {
-      bottom: 55%;
+      bottom: 50%;
       right: -10%;
     }
 
@@ -214,6 +255,21 @@
       grid-area: sus;
     }
   }
+
+  .about_section-footer {
+    .circle {
+      right: 8%;
+      top: 0rem;
+    }
+  }
+}
+
+@media (min-width: 998px) {
+  .about_section-footer {
+    .circle {
+      right: 20%;
+    }
+  }
 }
 
 @media (min-width: 1200px) {
@@ -234,8 +290,8 @@
     }
 
     &-description {
-      bottom: 50%;
-      right: -12%;
+      bottom: 60%;
+      right: -8%;
     }
 
     &-background::before {
@@ -293,6 +349,41 @@
           width: 26rem;
         }
       }
+    }
+  }
+
+  .about_section-footer {
+    .circle {
+      right: 22%;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .about_section {
+    &-description {
+      bottom: 60%;
+      right: -2%;
+    }
+
+    .becasuse-img::before {
+      left: 100px;
+      bottom: 270px;
+      rotate: (-140deg);
+    }
+  }
+
+  .about_section-footer {
+    .circle {
+      right: 24%;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .about_section-footer {
+    .circle {
+      right: 27%;
     }
   }
 }

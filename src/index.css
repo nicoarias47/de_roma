@@ -439,7 +439,6 @@ h5 {
   height: 200px;
   top: -7rem;
   margin-bottom: -19rem;
-  height: 300px;
 }
 .home_section-footer .circle {
   background-color: #a9b388;
@@ -455,10 +454,11 @@ h5 {
   background-size: contain;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/img/circle_home.svg");
-  right: -5px;
-  bottom: -20px;
-  height: 223px;
+  background-image: url("./assets/PNG/foot/home.png");
+  right: -25px;
+  bottom: -45px;
+  height: 130%;
+  width: 130%;
 }
 
 @media (min-width: 767px) {
@@ -481,6 +481,29 @@ h5 {
     margin: 0rem 2.5rem;
     display: flex;
     justify-content: space-around;
+  }
+  .home_section-footer .circle {
+    right: 8%;
+  }
+}
+@media (min-width: 992px) {
+  .home_section-footer .circle {
+    right: 16%;
+  }
+}
+@media (min-width: 1200px) {
+  .home_section-footer .circle {
+    right: 22%;
+  }
+}
+@media (min-width: 1400px) {
+  .home_section-footer .circle {
+    right: 22%;
+  }
+}
+@media (min-width: 1600px) {
+  .home_section-footer .circle {
+    right: 25%;
   }
 }
 .products b {
@@ -527,51 +550,37 @@ h5 {
   background-size: contain;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/img/circle_products.svg");
-  right: -45px;
-  bottom: -15px;
-  height: 236px;
+  background-image: url("./assets/PNG/foot/products.png");
+  right: -47px;
+  bottom: -45px;
+  height: 130%;
+  width: 130%;
 }
 
 @media (min-width: 768px) {
   .products_section-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 8%;
+    right: 2%;
     top: 0rem;
   }
 }
 @media (min-width: 992px) {
   .products_section-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 14%;
+    right: 2%;
   }
 }
 @media (min-width: 1200px) {
   .products_section-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 16%;
+    right: 2%;
   }
 }
 @media (min-width: 1400px) {
   .products_section-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 20%;
+    right: 2%;
+  }
+}
+@media (min-width: 1600px) {
+  .products_section-footer .circle {
+    right: 10%;
   }
 }
 .payment_section-hero {
@@ -639,7 +648,7 @@ h5 {
   align-items: center;
   height: 200px;
   top: -10rem;
-  margin-bottom: -19rem;
+  margin-bottom: -18rem;
 }
 .payment_section-footer .circle {
   background-color: #a9b388;
@@ -655,9 +664,11 @@ h5 {
   background-size: contain;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/img/circlepaymentimg3.svg");
-  right: -5px;
-  bottom: -20px;
+  background-image: url("./assets/PNG/foot/payment.png");
+  right: -40px;
+  bottom: -40px;
+  width: 130%;
+  height: 130%;
 }
 
 @media (min-width: 768px) {
@@ -698,7 +709,7 @@ h5 {
     height: 10.6rem;
     border-radius: 50%;
     right: -2.5rem;
-    right: 14%;
+    right: 22%;
   }
 }
 @media (min-width: 1200px) {
@@ -809,22 +820,17 @@ h5 {
     bottom: 100px;
   }
   .payment_section-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 16%;
+    right: 22%;
   }
 }
 @media (min-width: 1400px) {
   .payment_section-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 20%;
+    right: 22%;
+  }
+}
+@media (min-width: 1600px) {
+  .payment_section-footer .circle {
+    right: 30%;
   }
 }
 .about_section-hero {
@@ -835,6 +841,9 @@ h5 {
   justify-content: center;
 }
 .about_section-img {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 24px 4px 24px 4px;
   filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
 }
 .about_section-background {
@@ -848,7 +857,7 @@ h5 {
   position: absolute;
   color: #ffffff;
   letter-spacing: 1px;
-  bottom: 62%;
+  bottom: 59%;
   right: 50%;
 }
 .about_section-title {
@@ -857,7 +866,7 @@ h5 {
   font-size: 2.5rem;
   font-weight: 400;
   padding: 0rem 0;
-  width: 70%;
+  width: 85%;
 }
 .about_section h5 {
   color: #5f6f52;
@@ -882,6 +891,13 @@ h5 {
   justify-content: center;
   margin-top: -9rem;
 }
+.about_section-different .different-img img {
+  width: 17.5rem;
+  height: 17rem;
+  object-fit: cover;
+  border-radius: 32px 8px 32px 8px;
+  border: 8px solid #ffffff;
+}
 .about_section-because {
   position: relative;
   overflow: hidden;
@@ -904,6 +920,13 @@ h5 {
   display: flex;
   justify-content: center;
 }
+.about_section-because .becasuse-img img {
+  width: 19.5rem;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 24px 4px 24px 4px;
+  border: 8px solid #ffffff;
+}
 
 .section4 {
   width: 100%;
@@ -912,6 +935,7 @@ h5 {
   background-color: #eee7df;
   border-radius: 2rem 0.5rem 2rem 0.5rem;
   padding: 4rem 1rem;
+  margin-top: 4rem;
 }
 .section4 h5 {
   font-family: "Playfair Display", serif;
@@ -930,6 +954,36 @@ h5 {
   box-shadow: 1px 1px 6px rgba(142, 142, 142, 0.2509803922);
 }
 
+.about_section-footer {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 200px;
+  top: -5rem;
+  margin-bottom: -12rem;
+}
+.about_section-footer .circle {
+  background-color: #a9b388;
+  width: 10.6rem;
+  height: 10.6rem;
+  border-radius: 50%;
+  right: -2.5rem;
+}
+.about_section-footer .circle::before {
+  content: "";
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/PNG/foot/about.png");
+  right: -60px;
+  bottom: -45px;
+  width: 140%;
+  height: 140%;
+}
+
 @media (min-width: 768px) {
   .about_section-grid {
     display: grid;
@@ -937,6 +991,9 @@ h5 {
     grid-template-rows: 1.1fr 1.2fr 1fr 0.1fr;
     grid-template-areas: "hero who" "dif dif" "bec bec" "sus sus";
     gap: 2rem;
+  }
+  .about_section-title {
+    width: 60%;
   }
   .about_section-hero {
     grid-area: hero;
@@ -947,7 +1004,7 @@ h5 {
     border: 10px solid #ffffff;
   }
   .about_section-description {
-    bottom: 55%;
+    bottom: 50%;
     right: -10%;
   }
   .about_section-background {
@@ -1021,6 +1078,15 @@ h5 {
   .about_section .section4 {
     grid-area: sus;
   }
+  .about_section-footer .circle {
+    right: 8%;
+    top: 0rem;
+  }
+}
+@media (min-width: 998px) {
+  .about_section-footer .circle {
+    right: 20%;
+  }
 }
 @media (min-width: 1200px) {
   .about_section-grid {
@@ -1035,8 +1101,8 @@ h5 {
     filter: drop-shadow(2px 2px 21px rgba(95, 111, 82, 0.1882352941));
   }
   .about_section-description {
-    bottom: 50%;
-    right: -12%;
+    bottom: 60%;
+    right: -8%;
   }
   .about_section-background::before {
     content: "";
@@ -1103,6 +1169,28 @@ h5 {
   }
   .about_section-because .becasuse-img img {
     width: 26rem;
+  }
+  .about_section-footer .circle {
+    right: 22%;
+  }
+}
+@media (min-width: 1400px) {
+  .about_section-description {
+    bottom: 60%;
+    right: -2%;
+  }
+  .about_section .becasuse-img::before {
+    left: 100px;
+    bottom: 270px;
+    rotate: -140deg;
+  }
+  .about_section-footer .circle {
+    right: 24%;
+  }
+}
+@media (min-width: 1600px) {
+  .about_section-footer .circle {
+    right: 27%;
   }
 }
 .faq_section-hero {
@@ -1183,7 +1271,7 @@ h5 {
   align-items: center;
   height: 200px;
   top: -5rem;
-  margin-bottom: -14rem;
+  margin-bottom: -12rem;
 }
 .faq_section-footer .circle {
   background-color: #a9b388;
@@ -1199,16 +1287,18 @@ h5 {
   background-size: contain;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/img/circlepaymentimg2.svg");
-  right: 10px;
-  bottom: -25px;
+  background-image: url("./assets/PNG/foot/faq.png");
+  right: -25px;
+  bottom: -33px;
+  width: 120%;
+  height: 120%;
 }
 
 @media (min-width: 768px) {
   .faq_section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.1fr 0.6fr;
+    grid-template-rows: 1.1fr 0.1fr 0.6fr;
     grid-template-areas: "hero hero" "deco accordion" "doubts doubts";
   }
   .faq_section-title {
@@ -1226,28 +1316,17 @@ h5 {
     grid-area: doubts;
   }
   .faq_section-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 8%;
-    top: 0rem;
+    right: 10%;
   }
 }
 @media (min-width: 992px) {
   .faq_section-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 14%;
+    right: 22%;
   }
 }
 @media (min-width: 1200px) {
   .faq_section-grid {
-    grid-template-rows: 1.5fr 1fr 0.6fr;
+    grid-template-rows: 2fr 1.4fr 0.6fr;
   }
   .faq_section-accordion {
     grid-area: accordion;
@@ -1363,7 +1442,7 @@ h5 {
     height: 10.6rem;
     border-radius: 50%;
     right: -2.5rem;
-    right: 16%;
+    right: 22%;
   }
 }
 @media (min-width: 1400px) {
@@ -1373,7 +1452,17 @@ h5 {
     height: 10.6rem;
     border-radius: 50%;
     right: -2.5rem;
-    right: 20%;
+    right: 22%;
+  }
+}
+@media (min-width: 1600px) {
+  .faq_section-footer .circle {
+    background-color: #a9b388;
+    width: 10.6rem;
+    height: 10.6rem;
+    border-radius: 50%;
+    right: -2.5rem;
+    right: 30%;
   }
 }
 .shipping_section-hero {
@@ -1458,7 +1547,7 @@ h5 {
   align-items: center;
   height: 200px;
   top: -10rem;
-  margin-bottom: -19rem;
+  margin-bottom: -18rem;
 }
 .shipping-footer .circle {
   background-color: #a9b388;
@@ -1474,9 +1563,11 @@ h5 {
   background-size: contain;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/img/circlepaymentimg3.svg");
-  right: -5px;
-  bottom: -20px;
+  background-image: url("./assets/PNG/foot/shipping.png");
+  right: -70px;
+  bottom: -110px;
+  width: 160%;
+  height: 160%;
 }
 
 @media (min-width: 768px) {
@@ -1501,23 +1592,13 @@ h5 {
     grid-area: doubts;
   }
   .shipping-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
     right: 8%;
     top: 0rem;
   }
 }
 @media (min-width: 992px) {
   .shipping-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 14%;
+    right: 20%;
   }
 }
 @media (min-width: 1200px) {
@@ -1627,22 +1708,17 @@ h5 {
     bottom: 80px;
   }
   .shipping-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 16%;
+    right: 22%;
   }
 }
 @media (min-width: 1400px) {
   .shipping-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 20%;
+    right: 22%;
+  }
+}
+@media (min-width: 1600px) {
+  .shipping-footer .circle {
+    right: 26%;
   }
 }
 .doubts {
@@ -1780,7 +1856,7 @@ h5 {
   align-items: center;
   height: 200px;
   top: -5rem;
-  margin-bottom: -14rem;
+  margin-bottom: -12rem;
 }
 .faq_section-footer .circle {
   background-color: #a9b388;
@@ -1796,16 +1872,18 @@ h5 {
   background-size: contain;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/img/circlepaymentimg2.svg");
-  right: 10px;
-  bottom: -25px;
+  background-image: url("./assets/PNG/foot/faq.png");
+  right: -25px;
+  bottom: -33px;
+  width: 120%;
+  height: 120%;
 }
 
 @media (min-width: 768px) {
   .faq_section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 0.1fr 0.6fr;
+    grid-template-rows: 1.1fr 0.1fr 0.6fr;
     grid-template-areas: "hero hero" "deco accordion" "doubts doubts";
   }
   .faq_section-title {
@@ -1823,28 +1901,17 @@ h5 {
     grid-area: doubts;
   }
   .faq_section-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 8%;
-    top: 0rem;
+    right: 10%;
   }
 }
 @media (min-width: 992px) {
   .faq_section-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 14%;
+    right: 22%;
   }
 }
 @media (min-width: 1200px) {
   .faq_section-grid {
-    grid-template-rows: 1.5fr 1fr 0.6fr;
+    grid-template-rows: 2fr 1.4fr 0.6fr;
   }
   .faq_section-accordion {
     grid-area: accordion;
@@ -1960,7 +2027,7 @@ h5 {
     height: 10.6rem;
     border-radius: 50%;
     right: -2.5rem;
-    right: 16%;
+    right: 22%;
   }
 }
 @media (min-width: 1400px) {
@@ -1970,7 +2037,17 @@ h5 {
     height: 10.6rem;
     border-radius: 50%;
     right: -2.5rem;
-    right: 20%;
+    right: 22%;
+  }
+}
+@media (min-width: 1600px) {
+  .faq_section-footer .circle {
+    background-color: #a9b388;
+    width: 10.6rem;
+    height: 10.6rem;
+    border-radius: 50%;
+    right: -2.5rem;
+    right: 30%;
   }
 }
 .shipping_section-hero {
@@ -2055,7 +2132,7 @@ h5 {
   align-items: center;
   height: 200px;
   top: -10rem;
-  margin-bottom: -19rem;
+  margin-bottom: -18rem;
 }
 .shipping-footer .circle {
   background-color: #a9b388;
@@ -2071,9 +2148,11 @@ h5 {
   background-size: contain;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/img/circlepaymentimg3.svg");
-  right: -5px;
-  bottom: -20px;
+  background-image: url("./assets/PNG/foot/shipping.png");
+  right: -70px;
+  bottom: -110px;
+  width: 160%;
+  height: 160%;
 }
 
 @media (min-width: 768px) {
@@ -2098,23 +2177,13 @@ h5 {
     grid-area: doubts;
   }
   .shipping-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
     right: 8%;
     top: 0rem;
   }
 }
 @media (min-width: 992px) {
   .shipping-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 14%;
+    right: 20%;
   }
 }
 @media (min-width: 1200px) {
@@ -2224,22 +2293,17 @@ h5 {
     bottom: 80px;
   }
   .shipping-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 16%;
+    right: 22%;
   }
 }
 @media (min-width: 1400px) {
   .shipping-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 20%;
+    right: 22%;
+  }
+}
+@media (min-width: 1600px) {
+  .shipping-footer .circle {
+    right: 26%;
   }
 }
 .doubts {
@@ -2558,16 +2622,18 @@ h5 {
   background-size: contain;
   width: 100%;
   height: 100%;
-  background-image: url("./assets/PNG/foot/vela.png");
-  right: -5px;
-  bottom: -20px;
+  background-image: url("./assets/PNG/foot/contact.png");
+  right: -30px;
+  bottom: -40px;
+  width: 120%;
+  height: 120%;
 }
 
 @media (min-width: 768px) {
   .contact_section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.9fr 0.5fr 0.5fr 0.8fr;
+    grid-template-rows: 0.8fr 0.5fr 0.5fr 0.8fr;
     grid-template-areas: "hero hero" "redes form" "deco form" "sus sus";
   }
   .contact_section-hero {
@@ -2591,28 +2657,18 @@ h5 {
     grid-area: sus;
   }
   .contact_section-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 8%;
+    right: 10%;
     top: 0rem;
   }
 }
 @media (min-width: 992px) {
   .contact_section-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 14%;
+    right: 22%;
   }
 }
 @media (min-width: 1200px) {
   .contact_section-grid {
-    grid-template-rows: 1.7fr 0.5fr 1fr 0.8fr;
+    grid-template-rows: 1.3fr 0.5fr 1fr 0.8fr;
   }
   .contact_section-description {
     margin-top: -22rem;
@@ -2645,6 +2701,7 @@ h5 {
     display: flex;
     justify-content: end;
     padding-right: 7rem;
+    align-items: center;
   }
   .contact_section .contact_decoration-img {
     background-image: url("./assets/img/deco-contact.svg");
@@ -2703,20 +2760,23 @@ h5 {
     height: 10.6rem;
     border-radius: 50%;
     right: -2.5rem;
-    right: 16%;
+    right: 22%;
   }
 }
 @media (min-width: 1400px) {
   .contact_section-footer .circle {
-    background-color: #a9b388;
-    width: 10.6rem;
-    height: 10.6rem;
-    border-radius: 50%;
-    right: -2.5rem;
-    right: 20%;
+    right: 22%;
+  }
+  .contact_section-grid {
+    grid-template-rows: 1.6fr 0.5fr 1fr 0.8fr;
   }
   .contact_section-description {
     margin-top: -32rem;
+  }
+}
+@media (min-width: 1600px) {
+  .contact_section-footer .circle {
+    right: 30%;
   }
 }
 .wpp-button {

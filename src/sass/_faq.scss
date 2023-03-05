@@ -40,7 +40,7 @@
 .faq_section-footer {
   @include circle-father;
   top: -5rem;
-  margin-bottom: -14rem;
+  margin-bottom: -12rem;
 
   .circle {
     @include circle;
@@ -48,9 +48,11 @@
 
   .circle::before {
     @include circle-img;
-    background-image: url("./assets/img/circlepaymentimg2.svg");
-    right: 10px;
-    bottom: -25px;
+    background-image: url("./assets/PNG/foot/faq.png");
+    right: -25px;
+    bottom: -33px;
+    width: 120%;
+    height: 120%;
   }
 }
 
@@ -59,7 +61,7 @@
     &-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 0.1fr 0.6fr;
+      grid-template-rows: 1.1fr 0.1fr 0.6fr;
       grid-template-areas:
         "hero hero"
         "deco accordion"
@@ -86,9 +88,7 @@
 
   .faq_section-footer {
     .circle {
-      @include circle;
-      right: 8%;
-      top: 0rem;
+      right: 10%;
     }
   }
 }
@@ -96,8 +96,7 @@
 @media (min-width: 992px) {
   .faq_section-footer {
     .circle {
-      @include circle;
-      right: 14%;
+      right: 22%;
     }
   }
 }
@@ -105,7 +104,7 @@
 @media (min-width: 1200px) {
   .faq_section {
     &-grid {
-      grid-template-rows: 1.5fr 1fr 0.6fr;
+      grid-template-rows: 2fr 1.4fr 0.6fr;
     }
 
     &-accordion {
@@ -156,7 +155,7 @@
   .faq_section-footer {
     .circle {
       @include circle;
-      right: 16%;
+      right: 22%;
     }
   }
 }
@@ -165,7 +164,16 @@
   .faq_section-footer {
     .circle {
       @include circle;
-      right: 20%;
+      right: 22%;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .faq_section-footer {
+    .circle {
+      @include circle;
+      right: 30%;
     }
   }
 }

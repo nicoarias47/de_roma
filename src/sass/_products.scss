@@ -37,18 +37,18 @@
 
   .circle::before {
     @include circle-img;
-    background-image: url("./assets/img/circle_products.svg");
-    right: -45px;
-    bottom: -15px;
-    height: 236px;
+    background-image: url("./assets/PNG/foot/products.png");
+    right: -47px;
+    bottom: -45px;
+    height: 130%;
+    width: 130%;
   }
 }
 
 @media (min-width: 768px) {
   .products_section-footer {
     .circle {
-      @include circle;
-      right: 8%;
+      right: 2%;
       top: 0rem;
     }
   }
@@ -57,8 +57,7 @@
 @media (min-width: 992px) {
   .products_section-footer {
     .circle {
-      @include circle;
-      right: 14%;
+      right: 2%;
     }
   }
 }
@@ -66,8 +65,7 @@
 @media (min-width: 1200px) {
   .products_section-footer {
     .circle {
-      @include circle;
-      right: 16%;
+      right: 2%;
     }
   }
 }
@@ -75,8 +73,15 @@
 @media (min-width: 1400px) {
   .products_section-footer {
     .circle {
-      @include circle;
-      right: 20%;
+      right: 2%;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .products_section-footer {
+    .circle {
+      right: 10%;
     }
   }
 }

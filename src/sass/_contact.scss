@@ -45,9 +45,11 @@
 
   .circle::before {
     @include circle-img;
-    background-image: url("./assets/PNG/foot/vela.png");
-    right: -5px;
-    bottom: -20px;
+    background-image: url("./assets/PNG/foot/contact.png");
+    right: -30px;
+    bottom: -40px;
+    width: 120%;
+    height: 120%;
   }
 }
 
@@ -56,7 +58,7 @@
     &-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 0.9fr 0.5fr 0.5fr 0.8fr;
+      grid-template-rows: 0.8fr 0.5fr 0.5fr 0.8fr;
       grid-template-areas:
         "hero hero"
         "redes form"
@@ -91,8 +93,7 @@
 
   .contact_section-footer {
     .circle {
-      @include circle;
-      right: 8%;
+      right: 10%;
       top: 0rem;
     }
   }
@@ -101,8 +102,7 @@
 @media (min-width: 992px) {
   .contact_section-footer {
     .circle {
-      @include circle;
-      right: 14%;
+      right: 22%;
     }
   }
 }
@@ -110,7 +110,7 @@
 @media (min-width: 1200px) {
   .contact_section {
     &-grid {
-      grid-template-rows: 1.7fr 0.5fr 1fr 0.8fr;
+      grid-template-rows: 1.3fr 0.5fr 1fr 0.8fr;
     }
 
     &-description {
@@ -126,12 +126,13 @@
 
     .contact_decoration {
       @include deco;
+      align-items: center;
     }
   }
   .contact_section-footer {
     .circle {
       @include circle;
-      right: 16%;
+      right: 22%;
     }
   }
 }
@@ -139,13 +140,24 @@
 @media (min-width: 1400px) {
   .contact_section-footer {
     .circle {
-      @include circle;
-      right: 20%;
+      right: 22%;
     }
   }
   .contact_section {
+    &-grid {
+      grid-template-rows: 1.6fr 0.5fr 1fr 0.8fr;
+    }
+
     &-description {
       margin-top: -32rem;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .contact_section-footer {
+    .circle {
+      right: 30%;
     }
   }
 }

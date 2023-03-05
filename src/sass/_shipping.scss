@@ -45,7 +45,7 @@
 .shipping-footer {
   @include circle-father;
   top: -10rem;
-  margin-bottom: -19rem;
+  margin-bottom: -18rem;
 
   .circle {
     @include circle;
@@ -53,9 +53,11 @@
 
   .circle::before {
     @include circle-img;
-    background-image: url("./assets/img/circlepaymentimg3.svg");
-    right: -5px;
-    bottom: -20px;
+    background-image: url("./assets/PNG/foot/shipping.png");
+    right: -70px;
+    bottom: -110px;
+    width: 160%;
+    height: 160%;
   }
 }
 
@@ -91,7 +93,6 @@
 
   .shipping-footer {
     .circle {
-      @include circle;
       right: 8%;
       top: 0rem;
     }
@@ -101,8 +102,7 @@
 @media (min-width: 992px) {
   .shipping-footer {
     .circle {
-      @include circle;
-      right: 14%;
+      right: 20%;
     }
   }
 }
@@ -155,8 +155,7 @@
   }
   .shipping-footer {
     .circle {
-      @include circle;
-      right: 16%;
+      right: 22%;
     }
   }
 }
@@ -164,8 +163,15 @@
 @media (min-width: 1400px) {
   .shipping-footer {
     .circle {
-      @include circle;
-      right: 20%;
+      right: 22%;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .shipping-footer {
+    .circle {
+      right: 26%;
     }
   }
 }

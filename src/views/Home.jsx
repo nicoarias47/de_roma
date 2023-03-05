@@ -75,7 +75,7 @@ const Home = () => {
           </ul>
         </div>
         <Suscribe />
-        <section className="contact_section-footer">
+        <section className="home_section-footer">
           <div className="circle"></div>
         </section>
       </div>

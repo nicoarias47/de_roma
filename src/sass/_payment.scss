@@ -28,7 +28,7 @@
 .payment_section-footer {
   @include circle-father;
   top: -10rem;
-  margin-bottom: -19rem;
+  margin-bottom: -18rem;
 
   .circle {
     @include circle;
@@ -36,9 +36,11 @@
 
   .circle::before {
     @include circle-img;
-    background-image: url("./assets/img/circlepaymentimg3.svg");
-    right: -5px;
-    bottom: -20px;
+    background-image: url("./assets/PNG/foot/payment.png");
+    right: -40px;
+    bottom: -40px;
+    width: 130%;
+    height: 130%;
   }
 }
 
@@ -85,7 +87,7 @@
   .payment_section-footer {
     .circle {
       @include circle;
-      right: 14%;
+      right: 22%;
     }
   }
 }
@@ -138,8 +140,7 @@
   }
   .payment_section-footer {
     .circle {
-      @include circle;
-      right: 16%;
+      right: 22%;
     }
   }
 }
@@ -147,8 +148,15 @@
 @media (min-width: 1400px) {
   .payment_section-footer {
     .circle {
-      @include circle;
-      right: 20%;
+      right: 22%;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .payment_section-footer {
+    .circle {
+      right: 30%;
     }
   }
 }

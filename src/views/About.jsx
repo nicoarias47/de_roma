@@ -58,24 +58,24 @@ const About = () => {
             </div>
           </section>
         </div>
-      </Container>
-      <div className=" d-flex justify-content-center">
-        <div className="col-12 col-md-8 col-lg-6">
-          <section className="section4">
-            <h5>Síguenos y se parte de esta comunidad</h5>
-            <span className="d-none d-md-block pt-4">
-              Conoce más sobre De Roma y comparte con nosotros el amor por la
-              deco
-            </span>
-            <div className="section4-social">
-              <InstagramIcon stroke={"#B99470"} fill={"#B99470"} />
-            </div>
-          </section>
+        <div className="d-flex justify-content-center">
+          <div className="col-12 col-md-8 col-lg-6">
+            <section className="section4">
+              <h5>Síguenos y se parte de esta comunidad</h5>
+              <span className="d-none d-md-block pt-4">
+                Conoce más sobre De Roma y comparte con nosotros el amor por la
+                deco
+              </span>
+              <div className="section4-social">
+                <InstagramIcon stroke={"#B99470"} fill={"#B99470"} />
+              </div>
+            </section>
+          </div>
         </div>
-      </div>
-      {/* <section className="about_section-footer">
+      </Container>
+      <section className="about_section-footer">
         <div className="circle"></div>
-      </section> */}
+      </section>
     </>
   );
 };

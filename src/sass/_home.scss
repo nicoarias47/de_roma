@@ -37,7 +37,7 @@
 
 .info-icons {
   display: flex;
-  justify-content: space-between ;
+  justify-content: space-between;
   padding: 0px;
   margin: 0 auto;
 
@@ -55,8 +55,7 @@
     transition: 0.3s;
     background-color: $color-secondary-400;
   }
-  li:active{
-
+  li:active {
     background-color: $color-secondary-400;
     margin: 2px solid $color-secondary-300;
   }
@@ -72,7 +71,6 @@
   @include circle-father;
   top: -7rem;
   margin-bottom: -19rem;
-  height: 300px;
 
   .circle {
     @include circle;
@@ -80,10 +78,11 @@
 
   .circle::before {
     @include circle-img;
-    background-image: url("./assets/img/circle_home.svg");
-    right: -5px;
-    bottom: -20px;
-    height: 223px;
+    background-image: url("./assets/PNG/foot/home.png");
+    right: -25px;
+    bottom: -45px;
+    height: 130%;
+    width: 130%;
   }
 }
 
@@ -101,16 +100,54 @@
     font-size: 28px;
     display: none;
   }
-  
+
   .info-icons {
     display: flex;
     padding: 0px;
     justify-content: center;
-  
+
     li {
-      margin:0rem 2.5rem;
+      margin: 0rem 2.5rem;
       display: flex;
       justify-content: space-around;
     }
+  }
+
+  .home_section-footer {
+    .circle {
+      right: 8%;
+    }
+  }
 }
+
+@media (min-width: 992px) {
+  .home_section-footer {
+    .circle {
+      right: 16%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .home_section-footer {
+    .circle {
+      right: 22%;
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .home_section-footer {
+    .circle {
+      right: 22%;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .home_section-footer {
+    .circle {
+      right: 25%;
+    }
+  }
 }
