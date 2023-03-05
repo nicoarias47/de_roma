@@ -2,7 +2,11 @@
   b {
     font-weight: 500;
   }
-
+  
+  .suscribe-container .suscribe-form .suscribe-button {
+    z-index: 10;
+  }
+  
   &_list {
     display: flex;
     flex-direction: column;
