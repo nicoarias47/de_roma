@@ -19,19 +19,19 @@ import Suscribe from "../components/Suscribe/Suscribe";
 const Home = () => {
   const carouselOne = {
     img1: living,
-    // title1: "Living & Deco",
+    title1: "hogar_y_deco",
     img2: aromatizantes,
-    // title2: "Aromatizantes",
+    title2: "aromatizantes",
     img3: baño,
-    // title3: "Baño",
+    title3: "banio",
   };
   const carouselTwo = {
     img1: textiles,
-    // title1: "Textiles",
+    title1: "textil",
     img2: jardin,
-    // title2: "Jardin",
+    title2: "jardin",
     img3: contenedores,
-    // title3: "Contenedores",
+    title3: "contenedores",
   };
   return (
     <>

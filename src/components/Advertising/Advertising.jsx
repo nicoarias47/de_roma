@@ -61,7 +61,7 @@ const Advertising = () => {
                 <strong>De Roma Deco.</strong>
               </p>
             ) : (
-              <div>
+              <div className="d-flex flex-column align-items-center">
                 <p className="body1">
                   Suscríbete a nuestro newsletter y recibe un{" "}
                   <b>10% de descuento</b> en tu primera compra{" "}

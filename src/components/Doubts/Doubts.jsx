@@ -17,11 +17,14 @@ const Doubts = () => {
           Estamos aquí para ti. Escríbenos a WhatsApp o envíanos un mail
         </p>
         <div className="social-doubts">
-          <a href="https://www.whatsapp.com/catalog/5491161845560/">
-          <img src={wspIcon} alt="whatsapp" />
+          <a
+            href="https://www.whatsapp.com/catalog/5491161845560/"
+            target="_blank"
+          >
+            <img src={wspIcon} alt="whatsapp" />
           </a>
-          <a href="mailto:deromadeco@gmail.com">
-          <img src={emailIcon} alt="mail" />
+          <a href="mailto:deromadeco@gmail.com" target="_blank">
+            <img src={emailIcon} alt="mail" />
           </a>
         </div>
       </div>

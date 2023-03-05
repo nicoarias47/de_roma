@@ -155,6 +155,11 @@
 }
 
 @media (min-width: 1600px) {
+  .contact_section {
+    &-redes {
+      margin-top: -8rem;
+    }
+  }
   .contact_section-footer {
     .circle {
       right: 30%;

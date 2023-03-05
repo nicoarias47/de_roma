@@ -66,9 +66,13 @@ const About = () => {
                 Conoce más sobre De Roma y comparte con nosotros el amor por la
                 deco
               </span>
-              <div className="section4-social">
+              <a
+                href="https://www.instagram.com/de.roma_deco/"
+                target="_blank"
+                className="section4-social"
+              >
                 <InstagramIcon stroke={"#B99470"} fill={"#B99470"} />
-              </div>
+              </a>
             </section>
           </div>
         </div>

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import { Card } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
+import { WspIcon } from "../../assets/SVG/wsp-icon";
 
 const CardWithCarousel = ({ data }) => {
   const [index, setIndex] = useState(0);
@@ -34,7 +35,17 @@ const CardWithCarousel = ({ data }) => {
                   <li key={title}>{title}</li>
                 ))}
               </ul>
-              <Button>Ver catalogo</Button>
+              <a
+                href="https://wa.me/c/5491161845560"
+                target="_blank"
+                rel="wppcatalogo"
+                className="wsp-button"
+              >
+                <Button>
+                  <WspIcon stroke={"#ffffff"} />
+                  Ver catalogo
+                </Button>
+              </a>
             </Card.Body>
           </Card>
         );

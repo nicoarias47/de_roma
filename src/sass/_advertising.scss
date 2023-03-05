@@ -1,48 +1,50 @@
 #modal {
-// --bs-modal-width: 20rem;
-// height:40rem;
-margin: 5rem 1rem;
-.img-logo-mobile2 {
+  // --bs-modal-width: 20rem;
+  // height:40rem;
+  //margin: 5rem 1rem;
+
+  .img-logo-mobile2 {
     display: none;
-}
-.modal-content {
+  }
+  .modal-content {
     border-radius: 32px 8px 32px 8px;
-}
-.modal-col-left {
+    padding: 2rem !important;
+  }
+  .modal-col-left {
     padding: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    .img-logo-mobile{
-        position: absolute;
-        padding: 5px;
-        top:0px;
-        width: 120px;
+    .img-logo-mobile {
+      position: absolute;
+      padding: 5px;
+      top: 0px;
+      width: 120px;
     }
     img {
-    width: 210px;
+      width: 210px;
     }
-}
+  }
 
-.modal-col-right {
+  .modal-col-right {
     display: flex;
     flex-direction: column;
     align-items: center;
     .img-logo {
-        margin: 0 auto;
-        padding-top: 20px;
-        width: 150px;
+      margin: 0 auto;
+      padding-top: 20px;
+      width: 150px;
     }
-    p{
-        padding: 0rem 1.5rem;
-        text-align: center; 
-        b{
-            background-color: $color-principal-200;
-        }
+    p {
+      padding: 0rem 1.5rem;
+      text-align: center;
+      b {
+        background-color: $color-principal-200;
+      }
     }
-}
+  }
 
-.suscribe-form-modal {
+  .suscribe-form-modal {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -60,50 +62,46 @@ margin: 5rem 1rem;
       outline: none;
       border: 1px solid $color-principal-100;
     }
-    input{
-        width: 100%;
+    input {
+      width: 100%;
     }
-    .suscribe-button-modal{
-        background-color: $color-principal-200;
-        color: $color-white-0;
-        font-weight: 400;
-        font-size: 16px;
-        padding: 0.4rem 2rem;
-        border: 1px solid $color-principal-200;
-        border-radius: 0.5rem;
-        box-shadow: 1px 2px 6px $color-principal-100;
-      }
+    .suscribe-button-modal {
+      background-color: $color-principal-200;
+      color: $color-white-0;
+      font-weight: 400;
+      font-size: 16px;
+      padding: 0.4rem 2rem;
+      border: 1px solid $color-principal-200;
+      border-radius: 0.5rem;
+      box-shadow: 1px 2px 6px $color-principal-100;
+    }
+  }
 }
-
-}
-@media (min-width:767px) {
-#modal{
-    
-    margin:0 auto;
-    margin-top:8rem;
+@media (min-width: 767px) {
+  #modal {
+    margin: 0 auto;
+    margin-top: 8rem;
 
     .img-logo-mobile {
-        display: none;
-        &2{ display: initial;
-        }
+      display: none;
+      &2 {
+        display: initial;
+      }
     }
     .modal-content {
-        width: 600px;
-        top: 4rem;
-
-       }
-}
-
-
+      width: 600px;
+      top: 4rem;
+    }
+  }
 }
 .modal-col-left {
-justify-content: center;
-img {
+  justify-content: center;
+  img {
     padding-left: 1rem;
     width: 195px;
-    }
+  }
 }
 
 .modal-col-right {
-justify-content: center;
+  justify-content: center;
 }
