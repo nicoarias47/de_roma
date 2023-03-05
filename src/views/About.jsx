@@ -1,9 +1,9 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { InstagramIcon } from "../assets/icon/instagram-icon";
-import aboutimg from "../assets/img/aboutimg.svg";
-import aboutimg2 from "../assets/img/aboutimg2.svg";
-import aboutimg3 from "../assets/img/aboutimg3.svg";
+import aboutimg from "../assets/JPG/about/1.jpg";
+import aboutimg2 from "../assets/JPG/about/2.jpg";
+import aboutimg3 from "../assets/JPG/about/3.jpg";
 
 const About = () => {
   return (

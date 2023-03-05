@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="site-footer">
       <div className="container">
         <div className="row">
-          <div className="col-xs-6 col-md-3">
+          <div className="col-xs-6 col-md-4">
             <h6>Navegacion</h6>
             <ul className="footer-links">
               <li>
@@ -36,7 +36,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-xs-6 col-md-3">
+          <div className="col-xs-6 col-md-4">
             <h6>Contactanos</h6>
             <ul className="footer-links">
               <li>
@@ -50,7 +50,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-xs-6 col-md-3">
+          <div className="col-xs-6 col-md-4">
             <h6>Únete a la comunidad</h6>
             <div>
               <svg

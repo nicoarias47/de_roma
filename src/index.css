@@ -236,7 +236,7 @@ h5 {
   z-index: 100;
 }
 .main-carousel .carousel-caption {
-  top: 23%;
+  top: 21%;
   color: #5f6f52;
   display: inline-block;
   width: 70%;
@@ -287,25 +287,31 @@ h5 {
 }
 .main-carousel .CarouselPhoto {
   margin: 0 auto;
-  height: 362px;
+  height: 350px;
   display: block;
-  width: 75%;
+  width: auto;
+  border-radius: 32px 8px 8px 32px;
+}
+.main-carousel a {
+  text-decoration: none;
 }
 .main-carousel .btn-catalogo {
   display: flex;
+  position: relative;
+  z-index: 100;
   text-align: center;
   margin: 0 auto;
-  color: #22a95c;
+  color: white;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: #22a95c;
   border: #22a95c 0.5px solid;
   border-radius: 8px;
   box-shadow: 1px 1px 0px 0px rgba(34, 169, 93, 0.3058823529);
 }
 .main-carousel .btn-catalogo svg {
   width: auto;
-  stroke: #22a95c !important;
+  stroke: white;
 }
 .main-carousel .btn-catalogo .body4 {
   margin-bottom: 1px;
@@ -313,7 +319,11 @@ h5 {
   padding: 10px;
 }
 .main-carousel .btn-catalogo:hover {
-  border: #22a95c 3px solid;
+  transition: 0.3s;
+  background-color: #3FD881;
+}
+.main-carousel .btn-catalogo:active {
+  background-color: #1D8348;
 }
 
 @media (max-width: 767px) {
@@ -332,7 +342,7 @@ h5 {
     display: none;
   }
   .main-carousel .carousel-caption {
-    top: 16%;
+    top: 14%;
     margin-left: 5%;
     margin-right: 5%;
     width: 90%;
@@ -343,11 +353,12 @@ h5 {
   .main-carousel .carousel-indicators {
     bottom: -58%;
   }
-  .main-carousel .CarouselPhoto {
+  .main-carousel .CarouselPhotoMobile {
     margin: 0 auto;
-    height: 320px;
+    height: 309px;
     display: block;
-    width: 100%;
+    width: 304px;
+    border-radius: 32px 8px 8px 32px;
   }
   .see-more {
     color: white;
@@ -392,9 +403,9 @@ h5 {
 
 .info-icons {
   display: flex;
+  justify-content: space-between;
   padding: 0px;
-  margin: 0px;
-  justify-content: space-evenly;
+  margin: 0 auto;
 }
 .info-icons li {
   display: flex;
@@ -405,6 +416,14 @@ h5 {
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
+}
+.info-icons li:hover {
+  transition: 0.3s;
+  background-color: #eee7df;
+}
+.info-icons li:active {
+  background-color: #eee7df;
+  margin: 2px solid #c4661f;
 }
 .info-icons a {
   text-decoration: none;
@@ -452,6 +471,16 @@ h5 {
     margin-top: 1rem;
     font-size: 28px;
     display: none;
+  }
+  .info-icons {
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+  }
+  .info-icons li {
+    margin: 0rem 2.5rem;
+    display: flex;
+    justify-content: space-around;
   }
 }
 .products b {
@@ -1619,6 +1648,12 @@ h5 {
 .doubts {
   width: 100%;
   height: 40vh;
+  text-align: center;
+}
+.doubts p {
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .row-top {
@@ -1653,12 +1688,18 @@ h5 {
   background-color: #f2ede7;
 }
 
-.social-doubts > img {
-  margin: 0rem 0.5rem;
-  border-radius: 5px;
-  padding: 5px;
-  background-color: white;
+.social-doubts a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
   box-shadow: 0px 0px 15px 9px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 1rem;
+}
+.social-doubts a img {
+  margin: 0.4rem 0.4rem;
 }
 
 .faq_section-hero {
@@ -2204,6 +2245,12 @@ h5 {
 .doubts {
   width: 100%;
   height: 40vh;
+  text-align: center;
+}
+.doubts p {
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .row-top {
@@ -2238,12 +2285,18 @@ h5 {
   background-color: #f2ede7;
 }
 
-.social-doubts > img {
-  margin: 0rem 0.5rem;
-  border-radius: 5px;
-  padding: 5px;
-  background-color: white;
+.social-doubts a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
   box-shadow: 0px 0px 15px 9px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 1rem;
+}
+.social-doubts a img {
+  margin: 0.4rem 0.4rem;
 }
 
 .circle {
@@ -2335,10 +2388,17 @@ h5 {
   font-weight: 400;
   font-size: 1.2rem;
   padding: 0.4rem 1rem;
-  border: 1px solid #5f6f52;
+  border: 0px solid #5f6f52;
   border-radius: 0.5rem;
   box-shadow: 1px 2px 6px #a9b388;
   width: 100%;
+}
+.contact_form .form-button:hover {
+  transition: 0.3s;
+  background-color: #8FA27E;
+}
+.contact_form .form-button:active {
+  background-color: #3C4733;
 }
 .contact_form input::placeholder,
 .contact_form textarea::placeholder {
@@ -2664,6 +2724,16 @@ h5 {
   bottom: 10%;
   right: 5%;
   z-index: 1000;
+  filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5));
+}
+.wpp-button circle {
+  fill: #22a95c;
+}
+.wpp-button circle:hover {
+  fill: #3FD881;
+}
+.wpp-button circle:active {
+  fill: #1D8348;
 }
 
 @media (min-width: 768px) {
@@ -2721,9 +2791,16 @@ h5 {
   font-weight: 400;
   font-size: 16px;
   padding: 0.4rem 2rem;
-  border: 1px solid #5f6f52;
+  border: 0px solid #5f6f52;
   border-radius: 0.5rem;
   box-shadow: 1px 2px 6px #a9b388;
+}
+.suscribe-form .suscribe-button:hover {
+  transition: 0.3s;
+  background-color: #8FA27E;
+}
+.suscribe-form .suscribe-button:active {
+  background-color: #3C4733;
 }
 
 input::placeholder,

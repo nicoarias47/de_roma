@@ -1,6 +1,12 @@
 .doubts {
   width: 100%;
   height: 40vh;
+  text-align: center;
+  p{
+    padding-bottom: 1rem;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 .row-top {
   display: flex;
@@ -32,12 +38,21 @@
   background-color: $color-cream-100;
 }
 
-.social-doubts > img {
-  margin: 0rem 0.5rem;
-  border-radius: 5px;
-  padding: 5px;
-  background-color: white;
-  box-shadow: 0px 0px 15px 9px rgba(0, 0, 0, 0.1);
+.social-doubts {
+  a{ 
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 0px 15px 9px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 1rem;
+
+    img {
+      margin: 0.4rem 0.4rem;
+  }
+}
 }
 
 // @media (min-width: 768px) {

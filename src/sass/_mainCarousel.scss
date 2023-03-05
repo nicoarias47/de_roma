@@ -7,7 +7,7 @@
     z-index: 100;
   }
   .carousel-caption {
-    top: 23%;
+    top: 21%;
     color: #5f6f52;
     // z-index: 2;
     display: inline-block;
@@ -59,24 +59,30 @@
   }
   .CarouselPhoto {
     margin: 0 auto;
-    height: 362px;
+    height: 350px;
     display: block;
-    width: 75%;
+    width: auto;
+    border-radius: 32px 8px 8px 32px;
+  }
+  a {
+    text-decoration: none;
   }
   .btn-catalogo {
     display: flex;
+    position: relative;
+    z-index: 100;
     text-align: center;
     margin: 0 auto;
-    color: #22a95c;
+    color: white;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: $color-green-500;
     border: #22a95c 0.5px solid;
     border-radius: 8px;
     box-shadow: 1px 1px 0px 0px #22a95d4e;
     svg {
       width: auto;
-      stroke: $color-green-500 !important;
+      stroke: white;
     }
     .body4 {
       margin-bottom: 1px;
@@ -85,7 +91,13 @@
     }
   }
   .btn-catalogo:hover {
-    border: #22a95c 3px solid;
+    transition: 0.3s;
+    background-color: $color-green-300;
+    // border: #22a95c 3px solid;
+  }
+  .btn-catalogo:active {
+    background-color: $color-green-200;
+    // border: #22a95c 3px solid;
   }
 }
 
@@ -107,7 +119,7 @@
     }
 
     .carousel-caption {
-      top:16%;
+      top:14%;
       margin-left:5%;
       margin-right:5%;
       width: 90%;
@@ -118,11 +130,12 @@
     .carousel-indicators{
       bottom: -58%;
     }
-    .CarouselPhoto {
+    .CarouselPhotoMobile {
       margin: 0 auto;
-      height: 320px;
+      height: 309px;
       display: block;
-      width: 100%;
+      width: 304px;
+      border-radius:32px 8px 8px 32px;
     }
   }
 
