@@ -31,16 +31,21 @@ const Advertising = () => {
 
   const handleClose = () => setShow(false);
 
+
   useEffect(() => {
-    const hasSeenModal = sessionStorage.getItem("hasSeenModal");
+    const timeoutId = setTimeout(() => {
+      const hasSeenModal = sessionStorage.getItem("hasSeenModal");
 
-    if (!hasSeenModal) {
-      setShow(true);
+      if (!hasSeenModal) {
+        setShow(true);
+        setIsSuscribe(false);
+        sessionStorage.setItem("hasSeenModal", true);
+      } else {
+        setIsSuscribe(true);
+      }
+    }, 5000);
 
-      setIsSuscribe(false);
-    } else {
-      setIsSuscribe(true);
-    }
+    return () => clearTimeout(timeoutId);
   }, []);
 
   //para que cambie el modal al suscribirse
