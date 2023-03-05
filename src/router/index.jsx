@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter, createHashRouter } from "react-router-dom";
 import LayoutPublic from "../layout/LayoutPublic";
 import About from "../views/About";
 import Contact from "../views/Contact";
@@ -9,7 +9,7 @@ import Payment from "../views/Payment";
 import Products from "../views/Products";
 import Shipping from "../views/Shipping";
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
   {
     path: "/",
     element: <LayoutPublic />,
