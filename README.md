@@ -1,9 +1,9 @@
 # De Roma 
 ## Proyecto Freelance - CoderHouse
 
-## [Deploy](https://de-roma.web.app/)
-## [Figma](https://www.figma.com/file/esqaj3LMfCSAci3Ze20tQs/De-Roma-Project?node-id=0%3A1&t=PuDgNdxzLziWb9VH-0)  
-#  
+### [Deploy](https://de-roma.web.app/)
+### [Figma](https://www.figma.com/file/esqaj3LMfCSAci3Ze20tQs/De-Roma-Project?node-id=0%3A1&t=PuDgNdxzLziWb9VH-0)  
+ 
 ## Diseño ux/ui
 ### María Camila Leal Puentes:  
 [Linkedin](https://www.linkedin.com/in/maría-camila-leal-puentes/)  
