@@ -38,48 +38,53 @@ const Faq = () => {
                 </Accordion.Header>
                 <Accordion.Body>
                   <p className="body4">
-                    Sí, actualmente tenemos tres puntos de retiro, lomas de
-                    Temperlay, Plaza Egaña y obelisco.
+                    Sí, lo puedes recoger por
+                    Lomas o Temperley
                   </p>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="2">
                 <Accordion.Header>
                   <b className="body3">
-                    ¿Qué pasa si no me encuentro en mi domicilio en el momento
-                    de la entrega acordada?
+                    ¿Qué pasa si no me encuentro en mi
+                    domicilio en el momento de la
+                    entrega acordada?
                   </b>
                 </Accordion.Header>
                 <Accordion.Body>
                   <p className="body4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Molestias dicta, distinctio dolores culpa dolorum inventore.
+                    El producto regresa a nosotros y el
+                    envío regresa a nosotros debe
+                    abonarse
                   </p>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="3">
                 <Accordion.Header>
                   <b className="body3">
-                    ¿Puedo devolver o cambiar un producto?
+                    ¿Puedo retirar mi pedido
+                    en un punto físico?
                   </b>
                 </Accordion.Header>
                 <Accordion.Body>
                   <p className="body4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Molestias dicta, distinctio dolores culpa dolorum inventore.
+                    Sí, lo puedes recoger por
+                    Lomas o Temperley
                   </p>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="4">
                 <Accordion.Header>
                   <b className="body3">
-                    ¿Qué pasa si al recibir un pedido, falta un producto?
+                    ¿Qué pasa si al recibir un pedido,
+                    falta un producto?
                   </b>
                 </Accordion.Header>
                 <Accordion.Body>
                   <p className="body4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Molestias dicta, distinctio dolores culpa dolorum inventore.
+                    En ese caso nos hacemos
+                    responsables y lo enviamos
+                    nuevamente el producto faltante.
                   </p>
                 </Accordion.Body>
               </Accordion.Item>
@@ -89,21 +94,21 @@ const Faq = () => {
                 </Accordion.Header>
                 <Accordion.Body>
                   <p className="body4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Molestias dicta, distinctio dolores culpa dolorum inventore.
+                    Solamente de velas y difusores.
                   </p>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="6">
                 <Accordion.Header>
                   <b className="body3">
-                    ¿Van a reponer los productos sin stock?
+                    ¿Van a reponer los productos sin
+                    stock?
                   </b>
                 </Accordion.Header>
                 <Accordion.Body>
                   <p className="body4">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Molestias dicta, distinctio dolores culpa dolorum inventore.
+                    Algunos si, otros no porque son ediciones
+                    limitadas.
                   </p>
                 </Accordion.Body>
               </Accordion.Item>
