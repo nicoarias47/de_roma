@@ -47,13 +47,13 @@ const Shipping = () => {
                 Realizamos envíos exprés con otros costos, el mismo se actualiza
                 al momento de hacer la compra.
               </span>
-              <span className="shipping_content-description">
+              {/* <span className="shipping_content-description">
                 Si deseas saber más sobre los costos de despacho dale click en
                 el siguiente enlace.
               </span>
               <Link className="shipping_content-link">
                 Ver costos de despacho
-              </Link>
+              </Link> */}
             </div>
           </section>
           <section className="shipping_decoration">

@@ -351,7 +351,7 @@ h5 {
     font-size: 28px;
   }
   .main-carousel .carousel-indicators {
-    bottom: -58%;
+    bottom: -60%;
   }
   .main-carousel .CarouselPhotoMobile {
     margin: 0 auto;
@@ -364,7 +364,7 @@ h5 {
     color: white;
     width: 8rem;
     height: 2.5rem;
-    background-color: #5F6F52;
+    background-color: #5f6f52;
     border-radius: 5%;
     border: hidden;
     text-decoration: none;
@@ -387,6 +387,7 @@ h5 {
   text-align: center;
   display: block;
   margin-bottom: 2rem;
+  margin-top: 4rem;
 }
 .home .body3-mobile {
   display: none;
@@ -685,6 +686,7 @@ h5 {
   height: 200px;
   top: -10rem;
   margin-bottom: -18rem;
+  height: 300px;
 }
 .payment_section-footer .circle {
   background-color: #a9b388;
@@ -735,7 +737,6 @@ h5 {
     border-radius: 50%;
     right: -2.5rem;
     right: 8%;
-    top: 0rem;
   }
 }
 @media (min-width: 992px) {
@@ -1308,6 +1309,7 @@ h5 {
   height: 200px;
   top: -5rem;
   margin-bottom: -12rem;
+  height: 300px;
 }
 .faq_section-footer .circle {
   background-color: #a9b388;
@@ -1498,7 +1500,7 @@ h5 {
     height: 10.6rem;
     border-radius: 50%;
     right: -2.5rem;
-    right: 30%;
+    right: 25%;
   }
 }
 .shipping_section-hero {
@@ -1584,6 +1586,7 @@ h5 {
   height: 200px;
   top: -10rem;
   margin-bottom: -18rem;
+  height: 300px;
 }
 .shipping-footer .circle {
   background-color: #a9b388;
@@ -1629,7 +1632,6 @@ h5 {
   }
   .shipping-footer .circle {
     right: 8%;
-    top: 0rem;
   }
 }
 @media (min-width: 992px) {
@@ -1893,6 +1895,7 @@ h5 {
   height: 200px;
   top: -5rem;
   margin-bottom: -12rem;
+  height: 300px;
 }
 .faq_section-footer .circle {
   background-color: #a9b388;
@@ -2083,7 +2086,7 @@ h5 {
     height: 10.6rem;
     border-radius: 50%;
     right: -2.5rem;
-    right: 30%;
+    right: 25%;
   }
 }
 .shipping_section-hero {
@@ -2169,6 +2172,7 @@ h5 {
   height: 200px;
   top: -10rem;
   margin-bottom: -18rem;
+  height: 300px;
 }
 .shipping-footer .circle {
   background-color: #a9b388;
@@ -2214,7 +2218,6 @@ h5 {
   }
   .shipping-footer .circle {
     right: 8%;
-    top: 0rem;
   }
 }
 @media (min-width: 992px) {

@@ -33,6 +33,7 @@
     margin-bottom: -2rem;
     margin-left: 15%;
     list-style: none;
+
     button {
       background-color: $color-gray-100 !important;
       border: none !important;
@@ -104,12 +105,12 @@
 @media (max-width: 767px) {
   .main-carousel {
     .carousel {
-      top:-20rem;
+      top: -20rem;
       height: 72vh;
     }
     .carousel-inner {
       height: auto;
-      top:65%;
+      top: 65%;
     }
     .carousel-control-prev {
       display: none;
@@ -119,23 +120,23 @@
     }
 
     .carousel-caption {
-      top:14%;
-      margin-left:5%;
-      margin-right:5%;
+      top: 14%;
+      margin-left: 5%;
+      margin-right: 5%;
       width: 90%;
       h3 {
         font-size: 28px;
       }
     }
-    .carousel-indicators{
-      bottom: -58%;
+    .carousel-indicators {
+      bottom: -60%;
     }
     .CarouselPhotoMobile {
       margin: 0 auto;
       height: 309px;
       display: block;
       width: 304px;
-      border-radius:32px 8px 8px 32px;
+      border-radius: 32px 8px 8px 32px;
     }
   }
 
@@ -143,7 +144,7 @@
     color: white;
     width: 8rem;
     height: 2.5rem;
-    background-color: #5F6F52;
+    background-color: #5f6f52;
     border-radius: 5%;
     border: hidden;
     text-decoration: none;

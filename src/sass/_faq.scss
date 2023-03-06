@@ -41,6 +41,7 @@
   @include circle-father;
   top: -5rem;
   margin-bottom: -12rem;
+  height: 300px;
 
   .circle {
     @include circle;
@@ -173,7 +174,7 @@
   .faq_section-footer {
     .circle {
       @include circle;
-      right: 30%;
+      right: 25%;
     }
   }
 }

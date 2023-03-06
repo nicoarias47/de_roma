@@ -29,6 +29,7 @@
   @include circle-father;
   top: -10rem;
   margin-bottom: -18rem;
+  height: 300px;
 
   .circle {
     @include circle;
@@ -78,7 +79,6 @@
     .circle {
       @include circle;
       right: 8%;
-      top: 0rem;
     }
   }
 }
