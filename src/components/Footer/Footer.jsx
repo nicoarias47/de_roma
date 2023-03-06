@@ -16,11 +16,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to={"/productos"}>
-                  <p>Ver productos</p>
-                </Link>
-              </li>
-              <li>
                 <Link to={"/envios"}>
                   <p>Envíos</p>
                 </Link>
