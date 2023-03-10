@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import Modal from "react-bootstrap/Modal";
-import modalimg from "../../assets/img/advertisingimg.svg";
+import modalimg from "../../assets/img/advertisingimg.png";
 import logo from "../../assets/icon/roma-logo.svg";
 
 const Advertising = () => {
