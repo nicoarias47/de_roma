@@ -38,7 +38,7 @@
     border-radius: 8px;
     resize: none;
     padding: 0.5rem;
-    width: 100%;
+    width: 70%;
   }
 
   .form-email:focus {
@@ -114,10 +114,10 @@ textarea::placeholder {
 @media (min-width: 768px) {
   .suscribe-container {
     p {
-      width: 60%;
+      width: 50%;
     }
     h5 {
-      width: 50%;
+      width: 40%;
     }
   }
 }

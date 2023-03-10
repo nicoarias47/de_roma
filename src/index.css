@@ -150,6 +150,7 @@ h5 {
   line-height: 24px;
   color: #737373;
   margin-top: 5rem;
+  margin-bottom: 1rem;
 }
 .site-footer p {
   margin: 0.4rem;
@@ -246,6 +247,8 @@ h5 {
   left: 0% !important;
 }
 .main-carousel .carousel-caption h3 {
+  font-family: "Playfair Display", serif;
+  font-family: 50px;
   margin-bottom: 1rem;
 }
 .main-carousel .carousel-indicators {
@@ -399,14 +402,14 @@ h5 {
 
 .info-icons-container {
   margin: 0 auto;
-  width: 45%;
+  width: 100%;
   padding: 1rem;
 }
 
 .info-icons {
   display: flex;
   justify-content: space-between;
-  padding: 0px;
+  padding: 0rem 1rem;
   margin: 0 auto;
 }
 .info-icons li {
@@ -464,6 +467,9 @@ h5 {
 }
 
 @media (min-width: 767px) {
+  .info-icons-container {
+    width: 45%;
+  }
   .home .suscribe-container {
     margin: 0 auto;
     width: 45%;
@@ -480,7 +486,7 @@ h5 {
     justify-content: space-between;
   }
   .info-icons li {
-    margin: 0rem 0rem;
+    margin: 0rem -1rem;
     display: flex;
     justify-content: space-around;
   }
@@ -1768,7 +1774,17 @@ h5 {
 .doubts p {
   padding-bottom: 1rem;
   margin: 0 auto;
-  width: 100%;
+  width: 60%;
+}
+@media (max-width: 785px) {
+  .doubts p {
+    width: 80%;
+  }
+}
+@media (max-width: 430) {
+  .doubts p {
+    width: 100%;
+  }
 }
 
 .row-top {
@@ -1808,7 +1824,7 @@ h5 {
   display: inline-block;
   position: relative;
   z-index: 10;
-  box-shadow: 0px 0px 15px 9px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 6px rgba(142, 142, 142, 0.2509803922);
   background-color: white;
   border-radius: 5px;
   margin-left: 1rem;
@@ -2354,7 +2370,17 @@ h5 {
 .doubts p {
   padding-bottom: 1rem;
   margin: 0 auto;
-  width: 100%;
+  width: 60%;
+}
+@media (max-width: 785px) {
+  .doubts p {
+    width: 80%;
+  }
+}
+@media (max-width: 430) {
+  .doubts p {
+    width: 100%;
+  }
 }
 
 .row-top {
@@ -2394,7 +2420,7 @@ h5 {
   display: inline-block;
   position: relative;
   z-index: 10;
-  box-shadow: 0px 0px 15px 9px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 6px rgba(142, 142, 142, 0.2509803922);
   background-color: white;
   border-radius: 5px;
   margin-left: 1rem;
@@ -2890,7 +2916,7 @@ h5 {
   border-radius: 8px;
   resize: none;
   padding: 0.5rem;
-  width: 100%;
+  width: 70%;
 }
 .suscribe-form .form-email:focus {
   outline: none;
@@ -2968,10 +2994,10 @@ textarea::placeholder {
 }
 @media (min-width: 768px) {
   .suscribe-container p {
-    width: 60%;
+    width: 50%;
   }
   .suscribe-container h5 {
-    width: 50%;
+    width: 40%;
   }
 }
 #modal .img-logo-mobile2 {
