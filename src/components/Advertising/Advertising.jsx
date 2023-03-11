@@ -9,7 +9,7 @@ const Advertising = () => {
   const [isSuscribe, setIsSuscribe] = useState(false);
 
   // para testear:
-  //sessionStorage.removeItem("hasSeenModal");
+  sessionStorage.removeItem("hasSeenModal");
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -33,9 +33,9 @@ const Advertising = () => {
 
 
   useEffect(() => {
-    const timeoutId = setTimeout(() => {
+    const timeoutId = setTimeout(async () => {
       const hasSeenModal = sessionStorage.getItem("hasSeenModal");
-
+  
       if (!hasSeenModal) {
         setShow(true);
         setIsSuscribe(false);
@@ -43,10 +43,11 @@ const Advertising = () => {
       } else {
         setIsSuscribe(true);
       }
-    }, 5000);
-
+    }, 4000);
+  
     return () => clearTimeout(timeoutId);
   }, []);
+  
 
   //para que cambie el modal al suscribirse
   return (
