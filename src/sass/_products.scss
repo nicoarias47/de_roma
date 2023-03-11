@@ -15,7 +15,11 @@
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-
+    
+    h4 {
+      position: relative;
+      color: $color-white-400;
+    }
     .carousel-indicators {
       button {
         background-color: #bdbdbd !important;
@@ -23,8 +27,9 @@
         border-radius: 50% !important;
         width: 12px !important;
         height: 12px !important;
+        bottom: 0%;
       }
-
+    
       .active {
         background-color: #c4661f !important;
       }
@@ -90,6 +95,9 @@
 }
 
 @media (min-width: 768px) {
+  .card_products h4 {
+    padding-left: 2rem;
+  }
   .products_section-footer {
     .circle {
       right: 13%;

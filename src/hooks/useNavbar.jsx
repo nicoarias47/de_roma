@@ -11,7 +11,7 @@ const paths = {
     path: "/productos",
     children: {
       home: {
-        name: "Hogar y deco",
+        name: "Living & Deco",
         path: "/hogar_y_deco",
       },
       flavorings: {

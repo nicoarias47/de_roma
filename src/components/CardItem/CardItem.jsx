@@ -9,7 +9,7 @@ const CardItem = ({ data }) => {
           <div className="card_products-item d-flex flex-column">
             <img src={product.img} alt={product.title} className="" />
             <span>{product.title}</span>
-          </div>
+            </div>
         );
       })}
     </>

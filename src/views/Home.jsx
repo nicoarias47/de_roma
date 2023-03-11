@@ -61,7 +61,7 @@ const Home = () => {
               </Link>
             </li>
             <li>
-              <Link className="pagos" to="/medios_de_pago">
+              <Link className="pagos" to="/medios_de_pago"> 
                 <img className="" src={payments} />
                 <p className="body4"> Medios de pago </p>
               </Link>

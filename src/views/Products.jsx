@@ -32,13 +32,15 @@ const Products = () => {
               <div>
                 {isMobile ? (
                   <div className="col products_list">
-                    <h1>{itemSelect[0].title}</h1>
+                    <h4>{itemSelect[0].title}</h4>
                     <CarouselAbstract data={itemSelect} />
                   </div>
                 ) : (
-                  <div className="row card_products gap-2 d-flex flex-wrap justify-content-center">
+                  <div className="row card_products d-flex flex-wrap justify-content-center">
                     <h4>{itemSelect[0].title}</h4>
+                    <div className="card-items-container">
                     <CardItem data={itemSelect[0]} />
+                    </div>
                     <div className="d-flex align-items-center justify-content-center py-5">
                       <a
                         href="https://wa.me/c/5491161845560"
