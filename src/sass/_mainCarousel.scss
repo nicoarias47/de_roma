@@ -18,7 +18,7 @@
     left: 0% !important;
     h3 {
       font-family: "Playfair Display", serif;
-      font-family: 50px;
+      font-size: 36px;
       margin-bottom: 1rem;
     }
   }
@@ -71,6 +71,7 @@
     text-decoration: none;
   }
   .btn-catalogo {
+    width: 20%;
     display: flex;
     position: relative;
     z-index: 100;
@@ -120,7 +121,9 @@
     .carousel-control-next {
       display: none;
     }
-
+    .btn-catalogo {
+      width:90%;
+    }
     .carousel-caption {
       top: 14%;
       margin-left: 5%;

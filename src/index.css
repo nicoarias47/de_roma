@@ -248,7 +248,7 @@ h5 {
 }
 .main-carousel .carousel-caption h3 {
   font-family: "Playfair Display", serif;
-  font-family: 50px;
+  font-size: 36px;
   margin-bottom: 1rem;
 }
 .main-carousel .carousel-indicators {
@@ -299,6 +299,7 @@ h5 {
   text-decoration: none;
 }
 .main-carousel .btn-catalogo {
+  width: 20%;
   display: flex;
   position: relative;
   z-index: 100;
@@ -343,6 +344,9 @@ h5 {
   }
   .main-carousel .carousel-control-next {
     display: none;
+  }
+  .main-carousel .btn-catalogo {
+    width: 90%;
   }
   .main-carousel .carousel-caption {
     top: 14%;
