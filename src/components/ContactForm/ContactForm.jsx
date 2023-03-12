@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import emailjs from '@emailjs/browser';
 
 
 const ContactForm = () => {
+const [message, setMessage] = useState("Enviar Mensaje");
 
   const sendEmail = (event) => {
     event.preventDefault();
@@ -11,7 +12,19 @@ const ContactForm = () => {
     .then(response => console.log(response))
     .catch(error => console.log(error))
     event.target.reset();
+
+
+    setTimeout(() => {
+      setMessage("Mensaje enviado ✓");
+    }, 1000);
+    
   }
+
+  
+
+
+useEffect(() => {}, []);
+
   return (
     <div className="contact_form">
       <form className="form title-form" onSubmit={sendEmail}>
@@ -36,7 +49,7 @@ const ContactForm = () => {
           className="form-message"
           required
         ></textarea>
-        <input type="submit" value="Enviar mensaje" className="form-button" />
+        <input type="submit" value={message} className="form-button" />
       </form>
     </div>
   );
