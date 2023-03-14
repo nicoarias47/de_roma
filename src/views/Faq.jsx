@@ -53,17 +53,15 @@ const Faq = () => {
                 </Accordion.Header>
                 <Accordion.Body>
                   <p className="body4">
-                    El producto regresa a nosotros y el
-                    envío regresa a nosotros debe
-                    abonarse
+                    El producto regresa a nosotras y el
+                    envío debe abonarse
                   </p>
                 </Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="3">
                 <Accordion.Header>
                   <b className="body3">
-                    ¿Puedo retirar mi pedido
-                    en un punto físico?
+                  ¿Puedo devolver o cambiar un producto? 
                   </b>
                 </Accordion.Header>
                 <Accordion.Body>

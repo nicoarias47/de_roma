@@ -73,6 +73,9 @@
         "deco cont"
         "doubts doubts";
     }
+     &-background {
+      @include background;
+    }
     &-hero {
       grid-area: hero;
     }
@@ -89,6 +92,7 @@
 
     &-doubts {
       grid-area: doubts;
+      margin-top: -10%;
     }
   }
 

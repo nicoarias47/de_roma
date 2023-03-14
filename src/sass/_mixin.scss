@@ -17,8 +17,11 @@
   filter: drop-shadow(2px 2px 11px $color-hero-shadow);
 
   @media (min-width: 1200px) {
-    width: 19.3rem;
-    height: 26.9rem;
+ 
+    width: 23.3rem;
+    height: 29.9rem;
+    top: 1rem;
+
 
     filter: drop-shadow(2px 2px 21px $color-hero-shadow);
   }
@@ -51,11 +54,12 @@
 @mixin background {
   position: absolute;
   top: 2rem;
+  left: 6rem;
   border-radius: 204px 204px 8px 8px;
   z-index: -1;
   background-color: #f6ede6;
-  width: 25rem;
-  height: 32.8rem;
+  width: 24rem;
+  height: 31.8rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,7 +73,7 @@
   width: 9.3rem;
   height: 17.1rem;
   z-index: -1;
-  left: -75px;
+  left: -100px;
   bottom: 50px;
 }
 

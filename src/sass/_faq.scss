@@ -50,10 +50,10 @@
   .circle::before {
     @include circle-img;
     background-image: url("./assets/PNG/foot/faq.png");
-    right: -25px;
-    bottom: -33px;
-    width: 120%;
-    height: 120%;
+    right: -31px;
+    bottom: -53px;
+    width: 125%;
+    height: 125%;
   }
 }
 
@@ -84,6 +84,7 @@
 
     &-doubts {
       grid-area: doubts;
+      // margin-top:-5%;
     }
   }
 
