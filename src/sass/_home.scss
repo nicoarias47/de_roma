@@ -88,6 +88,7 @@
 }
 
 @media (min-width: 767px) {
+
   .info-icons-container {
     width: 45%;
   }
@@ -96,7 +97,9 @@
       margin: 0 auto;
       width: 45%;
     }
-    
+    .home_section-footer {
+      margin-bottom: -10rem;
+  }
   }
 
   .body3-desktop {

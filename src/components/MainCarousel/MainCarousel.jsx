@@ -5,7 +5,7 @@ import ControlledCarousel from "./ControlledCarousel.jsx";
 function MainCarousel() {
   return (
     <><div className="main-carousel">
-      <ControlledCarousel />
+
       <Carousel.Caption >
         <div className="main-carousel-title">
           <h3>Mira el catálogo y enamórate DeROMA</h3>
@@ -40,6 +40,7 @@ function MainCarousel() {
           </a>
         </div>
       </Carousel.Caption>
+      <ControlledCarousel />
     </div>
     </>
   );

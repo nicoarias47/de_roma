@@ -32,7 +32,7 @@
     justify-content: center;
     padding: 0px;
     margin-right: 15%;
-    margin-bottom: -2rem;
+    margin-bottom: -4%;
     margin-left: 15%;
     list-style: none;
 
@@ -106,12 +106,20 @@
 }
 
 @media (max-width: 767px) {
+  @media (max-height: 659px)  {
+    .main-carousel {
+    .carousel-indicators {
+      display: none;
+    }
+    }
+  }
   .main-carousel {
+    height: 70vh;
     .carousel {
-      top: -20rem;
-      height: 72vh;
+    height: auto;
     }
     .carousel-inner {
+      margin-top: 3rem;
       height: auto;
       top: 65%;
     }
@@ -125,7 +133,7 @@
       width:90%;
     }
     .carousel-caption {
-      top: 14%;
+      top: 15%;
       margin-left: 5%;
       margin-right: 5%;
       width: 90%;
@@ -134,7 +142,8 @@
       }
     }
     .carousel-indicators {
-      bottom: -60%;
+      // display: none;
+      bottom: -65%;
     }
     .CarouselPhotoMobile {
       margin: 0 auto;

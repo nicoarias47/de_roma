@@ -92,14 +92,28 @@
 
     #offcanvasNavbar-expand-md {
       margin-top: 0;
+      width: 100%!important;;
     }
   }
+.navbar-expand-med .offcanvas {
+  width: 100%;
+  justify-content: space-evenly;
+}
 
+.navbar-expand-md .navbar-nav {
+  width: 100%;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
   .offcanvas-body {
     padding-top: 0;
-    width: 100%;
+    // width: 100%;
 
     .nav-link {
+      text-align: center;
       border-bottom: none;
       font-weight: 300;
       color: $color-white-0;
