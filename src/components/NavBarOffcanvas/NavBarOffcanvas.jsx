@@ -12,7 +12,7 @@ function NavBarOffcanvas() {
   return (
     <>
       {["md"].map((expand) => (
-        <Navbar key={expand} expand={expand} id={navbarClasses}>
+        <Navbar key={expand} collapseOnSelect expand={expand} id={navbarClasses}>
           <Container>
             <div className="menu-toggle">
               <div className="menu-toggle_col-1">
@@ -44,22 +44,22 @@ function NavBarOffcanvas() {
                         >
                           {Object.values(obj.children).map((child) => {
                             return (
-                              <Link
-                                to={obj.path + child.path}
+                              <Nav.Link
+                                href={"#" + obj.path + child.path}
                                 className="dropdown-item"
                                 key={child.name}
                               >
                                 {child.name}
-                              </Link>
+                              </Nav.Link>
                             );
                           })}
                         </NavDropdown>
                       );
                     } else {
                       return (
-                        <Link to={obj.path} key={obj.name} className="nav-link">
+                        <Nav.Link href={"#" + obj.path} key={obj.name} className="nav-link">
                           {obj.name}
-                        </Link>
+                        </Nav.Link>
                       );
                     }
                   })}
