@@ -52,6 +52,7 @@
 
   &-different {
     margin-top: 2rem;
+    
     .different-description {
       background-color: $color-cream-200;
       border-radius: 32px 8px 32px 8px;
@@ -214,9 +215,13 @@
     }
 
     &-different {
-      grid-area: dif;
-      display: flex;
-      align-items: center;
+
+      padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: -5rem;
+    grid-area: dif;
+    display: flex;
+    align-items: center;
 
       .different-description {
         padding: 2rem 4rem 2rem 2rem;
@@ -229,6 +234,7 @@
     }
 
     &-because {
+      margin-top: -3rem;
       grid-area: bec;
       display: flex;
       flex-flow: row-reverse;

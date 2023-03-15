@@ -1033,6 +1033,8 @@ h5 {
   margin: 0 auto;
 }
 .section4-social {
+  z-index: 100;
+  position: relative;
   background-color: #ffffff;
   display: inline-block;
   padding: 0.5rem;
@@ -1130,6 +1132,9 @@ h5 {
     margin-top: 10rem;
   }
   .about_section-different {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-top: -5rem;
     grid-area: dif;
     display: flex;
     align-items: center;
@@ -1142,6 +1147,7 @@ h5 {
     margin-left: -4rem;
   }
   .about_section-because {
+    margin-top: -3rem;
     grid-area: bec;
     display: flex;
     flex-flow: row-reverse;
@@ -3090,12 +3096,15 @@ textarea::placeholder {
     width: 70%;
   }
 }
+.show .modal-dialog {
+  top: 10%;
+}
+
 #modal .img-logo-mobile2 {
   display: none;
 }
 #modal .modal-content {
   border-radius: 32px 8px 32px 8px;
-  padding: 2rem !important;
 }
 #modal .modal-col-left {
   padding: 0.5rem;
@@ -3163,6 +3172,9 @@ textarea::placeholder {
 }
 
 @media (min-width: 767px) {
+  .show .modal-dialog {
+    top: 0%;
+  }
   #modal {
     margin: 0 auto;
     margin-top: 8rem;
@@ -3174,6 +3186,7 @@ textarea::placeholder {
     display: initial;
   }
   #modal .modal-content {
+    padding: 2rem !important;
     width: 600px;
     top: 4rem;
   }

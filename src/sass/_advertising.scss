@@ -1,14 +1,18 @@
+.show {
+  .modal-dialog {
+    top: 10%;
+  }
+}
+
 #modal {
-  // --bs-modal-width: 20rem;
-  // height:40rem;
-  //margin: 5rem 1rem;
+
 
   .img-logo-mobile2 {
     display: none;
   }
   .modal-content {
     border-radius: 32px 8px 32px 8px;
-    padding: 2rem !important;
+
   }
   .modal-col-left {
     padding: 0.5rem;
@@ -78,6 +82,11 @@
   }
 }
 @media (min-width: 767px) {
+  .show {
+    .modal-dialog {
+      top: 0%;
+    }
+  }
   #modal {
     margin: 0 auto;
     margin-top: 8rem;
@@ -89,6 +98,7 @@
       }
     }
     .modal-content {
+      padding: 2rem !important;
       width: 600px;
       top: 4rem;
     }
