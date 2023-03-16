@@ -19,7 +19,8 @@
     h3 {
       font-family: "Playfair Display", serif;
       font-size: 36px;
-      margin-bottom: 1rem;
+      padding-top:1.5rem;
+      margin-bottom: 1.5rem;
     }
   }
   .carousel-indicators {
@@ -32,7 +33,7 @@
     justify-content: center;
     padding: 0px;
     margin-right: 15%;
-    margin-bottom: -4%;
+    margin-bottom: -3%;
     margin-left: 15%;
     list-style: none;
 
@@ -62,7 +63,7 @@
   }
   .CarouselPhoto {
     margin: 0 auto;
-    height: 350px;
+    height: 360px;
     display: block;
     width: auto;
     border-radius: 32px 8px 8px 32px;
@@ -133,12 +134,15 @@
       width:90%;
     }
     .carousel-caption {
-      top: 15%;
+      top: 14%;
       margin-left: 5%;
       margin-right: 5%;
       width: 90%;
       h3 {
         font-size: 28px;
+        margin-top:0.2rem;
+        margin-bottom: 0.2rem ;
+
       }
     }
     .carousel-indicators {

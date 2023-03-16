@@ -80,6 +80,7 @@ h5 {
   background-position: center;
   width: 6rem;
   height: 2rem;
+  margin: 0 auto;
 }
 
 #offcanvasNavbar-expand-md {
@@ -141,12 +142,13 @@ h5 {
   .navbar-nav {
     display: flex;
     justify-content: space-evenly;
+    padding-left: 1rem;
   }
   .offcanvas-body {
     padding-top: 0;
   }
   .offcanvas-body .nav-link {
-    text-align: center;
+    text-align: initial;
     border-bottom: none;
     font-weight: 300;
     color: #ffffff;
@@ -261,7 +263,8 @@ h5 {
 .main-carousel .carousel-caption h3 {
   font-family: "Playfair Display", serif;
   font-size: 36px;
-  margin-bottom: 1rem;
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .main-carousel .carousel-indicators {
   position: absolute;
@@ -273,7 +276,7 @@ h5 {
   justify-content: center;
   padding: 0px;
   margin-right: 15%;
-  margin-bottom: -4%;
+  margin-bottom: -3%;
   margin-left: 15%;
   list-style: none;
 }
@@ -302,7 +305,7 @@ h5 {
 }
 .main-carousel .CarouselPhoto {
   margin: 0 auto;
-  height: 350px;
+  height: 360px;
   display: block;
   width: auto;
   border-radius: 32px 8px 8px 32px;
@@ -369,13 +372,15 @@ h5 {
     width: 90%;
   }
   .main-carousel .carousel-caption {
-    top: 15%;
+    top: 14%;
     margin-left: 5%;
     margin-right: 5%;
     width: 90%;
   }
   .main-carousel .carousel-caption h3 {
     font-size: 28px;
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
   }
   .main-carousel .carousel-indicators {
     bottom: -65%;
@@ -400,6 +405,7 @@ h5 {
   }
 }
 .home {
+  margin-bottom: -10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -494,13 +500,17 @@ h5 {
 
 @media (min-width: 767px) {
   .info-icons-container {
-    width: 45%;
+    width: 42%;
+  }
+  .home {
+    margin-bottom: -5rem;
   }
   .home .suscribe-container {
     margin: 0 auto;
     width: 45%;
   }
   .home .home_section-footer {
+    top: -10rem;
     margin-bottom: -10rem;
   }
   .body3-desktop {
@@ -525,7 +535,7 @@ h5 {
 }
 @media (min-width: 992px) {
   .home_section-footer .circle {
-    right: 16%;
+    right: 18%;
   }
 }
 @media (min-width: 1200px) {
@@ -535,7 +545,7 @@ h5 {
 }
 @media (min-width: 1400px) {
   .home_section-footer .circle {
-    right: 22%;
+    right: 24%;
   }
 }
 @media (min-width: 1600px) {
@@ -676,11 +686,17 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 115px 115px 0 0;
-  width: 14.3rem;
-  height: 19.5rem;
-  top: 4rem;
+  width: 17.3rem;
+  height: 22.5rem;
+  top: 0rem;
   filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
   background-image: url("./assets/img/hero-payment.svg");
+}
+@media (min-width: 768px) {
+  .payment_section-img {
+    width: 22.3rem;
+    height: 22.5rem;
+  }
 }
 @media (min-width: 1200px) {
   .payment_section-img {
@@ -729,7 +745,7 @@ h5 {
   display: flex;
   align-items: center;
   height: 200px;
-  top: -10rem;
+  top: -8.5rem;
   margin-bottom: -18rem;
   height: 300px;
 }
@@ -785,6 +801,9 @@ h5 {
   }
 }
 @media (min-width: 992px) {
+  .payment_section-footer {
+    top: -12rem;
+  }
   .payment_section-footer .circle {
     background-color: #a9b388;
     width: 10.6rem;
@@ -903,17 +922,17 @@ h5 {
     bottom: 100px;
   }
   .payment_section-footer .circle {
-    right: 22%;
+    right: 23%;
   }
 }
 @media (min-width: 1400px) {
   .payment_section-footer .circle {
-    right: 22%;
+    right: 24%;
   }
 }
 @media (min-width: 1600px) {
   .payment_section-footer .circle {
-    right: 30%;
+    right: 26%;
   }
 }
 .about_section-hero {
@@ -1033,8 +1052,6 @@ h5 {
   margin: 0 auto;
 }
 .section4-social {
-  z-index: 100;
-  position: relative;
   background-color: #ffffff;
   display: inline-block;
   padding: 0.5rem;
@@ -1299,11 +1316,17 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 115px 115px 0 0;
-  width: 14.3rem;
-  height: 19.5rem;
-  top: 4rem;
+  width: 17.3rem;
+  height: 22.5rem;
+  top: 0rem;
   filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
   background-image: url("./assets/img/hero-faq.svg");
+}
+@media (min-width: 768px) {
+  .faq_section-img {
+    width: 22.3rem;
+    height: 22.5rem;
+  }
 }
 @media (min-width: 1200px) {
   .faq_section-img {
@@ -1410,6 +1433,9 @@ h5 {
   }
   .faq_section-doubts {
     grid-area: doubts;
+  }
+  .faq_section-footer {
+    top: -9rem;
   }
   .faq_section-footer .circle {
     right: 10%;
@@ -1539,7 +1565,7 @@ h5 {
     height: 10.6rem;
     border-radius: 50%;
     right: -2.5rem;
-    right: 22%;
+    right: 24%;
   }
 }
 @media (min-width: 1400px) {
@@ -1549,7 +1575,7 @@ h5 {
     height: 10.6rem;
     border-radius: 50%;
     right: -2.5rem;
-    right: 22%;
+    right: 26%;
   }
 }
 @media (min-width: 1600px) {
@@ -1574,11 +1600,17 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 115px 115px 0 0;
-  width: 14.3rem;
-  height: 19.5rem;
-  top: 4rem;
+  width: 17.3rem;
+  height: 22.5rem;
+  top: 0rem;
   filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
   background-image: url("./assets/img/hero-shipping.svg");
+}
+@media (min-width: 768px) {
+  .shipping_section-img {
+    width: 22.3rem;
+    height: 22.5rem;
+  }
 }
 @media (min-width: 1200px) {
   .shipping_section-img {
@@ -1614,6 +1646,7 @@ h5 {
   }
 }
 .shipping_section .shipping_content {
+  margin: 0rem 0.3rem;
   display: flex;
   flex-direction: column;
 }
@@ -1644,7 +1677,7 @@ h5 {
   display: flex;
   align-items: center;
   height: 200px;
-  top: -10rem;
+  top: -5rem;
   margin-bottom: -18rem;
   height: 300px;
 }
@@ -1697,12 +1730,16 @@ h5 {
     width: 100%;
   }
   .shipping_section-content {
+    margin: 0rem 0rem;
     grid-area: cont;
     margin-top: -14rem;
   }
   .shipping_section-doubts {
     grid-area: doubts;
     margin-top: -10%;
+  }
+  .shipping-footer {
+    top: -10rem;
   }
   .shipping-footer .circle {
     right: 8%;
@@ -1826,7 +1863,7 @@ h5 {
 }
 @media (min-width: 1400px) {
   .shipping-footer .circle {
-    right: 22%;
+    right: 24%;
   }
 }
 @media (min-width: 1600px) {
@@ -1867,7 +1904,7 @@ h5 {
 
 .row-top h5 {
   color: #b99470;
-  width: 100%;
+  width: 90%;
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 2.4rem;
@@ -1913,11 +1950,17 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 115px 115px 0 0;
-  width: 14.3rem;
-  height: 19.5rem;
-  top: 4rem;
+  width: 17.3rem;
+  height: 22.5rem;
+  top: 0rem;
   filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
   background-image: url("./assets/img/hero-faq.svg");
+}
+@media (min-width: 768px) {
+  .faq_section-img {
+    width: 22.3rem;
+    height: 22.5rem;
+  }
 }
 @media (min-width: 1200px) {
   .faq_section-img {
@@ -2024,6 +2067,9 @@ h5 {
   }
   .faq_section-doubts {
     grid-area: doubts;
+  }
+  .faq_section-footer {
+    top: -9rem;
   }
   .faq_section-footer .circle {
     right: 10%;
@@ -2153,7 +2199,7 @@ h5 {
     height: 10.6rem;
     border-radius: 50%;
     right: -2.5rem;
-    right: 22%;
+    right: 24%;
   }
 }
 @media (min-width: 1400px) {
@@ -2163,7 +2209,7 @@ h5 {
     height: 10.6rem;
     border-radius: 50%;
     right: -2.5rem;
-    right: 22%;
+    right: 26%;
   }
 }
 @media (min-width: 1600px) {
@@ -2188,11 +2234,17 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 115px 115px 0 0;
-  width: 14.3rem;
-  height: 19.5rem;
-  top: 4rem;
+  width: 17.3rem;
+  height: 22.5rem;
+  top: 0rem;
   filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
   background-image: url("./assets/img/hero-shipping.svg");
+}
+@media (min-width: 768px) {
+  .shipping_section-img {
+    width: 22.3rem;
+    height: 22.5rem;
+  }
 }
 @media (min-width: 1200px) {
   .shipping_section-img {
@@ -2228,6 +2280,7 @@ h5 {
   }
 }
 .shipping_section .shipping_content {
+  margin: 0rem 0.3rem;
   display: flex;
   flex-direction: column;
 }
@@ -2258,7 +2311,7 @@ h5 {
   display: flex;
   align-items: center;
   height: 200px;
-  top: -10rem;
+  top: -5rem;
   margin-bottom: -18rem;
   height: 300px;
 }
@@ -2311,12 +2364,16 @@ h5 {
     width: 100%;
   }
   .shipping_section-content {
+    margin: 0rem 0rem;
     grid-area: cont;
     margin-top: -14rem;
   }
   .shipping_section-doubts {
     grid-area: doubts;
     margin-top: -10%;
+  }
+  .shipping-footer {
+    top: -10rem;
   }
   .shipping-footer .circle {
     right: 8%;
@@ -2440,7 +2497,7 @@ h5 {
 }
 @media (min-width: 1400px) {
   .shipping-footer .circle {
-    right: 22%;
+    right: 24%;
   }
 }
 @media (min-width: 1600px) {
@@ -2481,7 +2538,7 @@ h5 {
 
 .row-top h5 {
   color: #b99470;
-  width: 100%;
+  width: 90%;
   font-family: "Playfair Display", serif;
   font-weight: 400;
   font-size: 2.4rem;
@@ -2630,6 +2687,10 @@ h5 {
     width: 70%;
   }
 }
+.products_list h4 {
+  align-self: start;
+  margin-left: 1rem;
+}
 .products_list .card_carousel {
   width: 85%;
   border-radius: 32px 8px;
@@ -2700,6 +2761,7 @@ h5 {
   padding-bottom: 25rem;
   width: 100%;
   overflow: hidden;
+  padding-bottom: 21rem;
 }
 .contact_section-img {
   position: absolute;
@@ -2707,11 +2769,17 @@ h5 {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 115px 115px 0 0;
-  width: 14.3rem;
-  height: 19.5rem;
-  top: 4rem;
+  width: 17.3rem;
+  height: 22.5rem;
+  top: 0rem;
   filter: drop-shadow(2px 2px 11px rgba(95, 111, 82, 0.1882352941));
   background-image: url("./assets/img/hero-contact.svg");
+}
+@media (min-width: 768px) {
+  .contact_section-img {
+    width: 22.3rem;
+    height: 22.5rem;
+  }
 }
 @media (min-width: 1200px) {
   .contact_section-img {
@@ -2748,6 +2816,7 @@ h5 {
 }
 .contact_section-redes {
   padding-bottom: 2rem;
+  padding-left: 2rem;
   border-bottom: 1px solid #bdbdbd;
   font-size: 1rem;
   color: #333333;
@@ -2813,6 +2882,8 @@ h5 {
   .contact_section-redes {
     border: none;
     grid-area: redes;
+    margin-left: 13%;
+    margin-top: 0%;
   }
   .contact_section-description {
     margin-top: -14rem;
@@ -2821,6 +2892,9 @@ h5 {
   }
   .contact_section-suscribe {
     grid-area: sus;
+  }
+  .contact_section-footer {
+    top: -7rem;
   }
   .contact_section-footer .circle {
     right: 10%;
@@ -2835,6 +2909,12 @@ h5 {
 @media (min-width: 1200px) {
   .contact_section-grid {
     grid-template-rows: 1.3fr 0.5fr 1fr 0.8fr;
+  }
+  .contact_section-redes {
+    border: none;
+    grid-area: redes;
+    margin-left: 13%;
+    margin-top: -12%;
   }
   .contact_section-description {
     margin-top: -22rem;
@@ -2869,6 +2949,7 @@ h5 {
     justify-content: end;
     padding-right: 7rem;
     align-items: center;
+    margin-bottom: 7rem;
   }
   .contact_section .contact_decoration-img {
     background-image: url("./assets/img/deco-contact.svg");
@@ -2927,18 +3008,21 @@ h5 {
     height: 10.6rem;
     border-radius: 50%;
     right: -2.5rem;
-    right: 22%;
+    right: 24%;
   }
 }
 @media (min-width: 1400px) {
   .contact_section-footer .circle {
-    right: 22%;
+    right: 26%;
   }
   .contact_section-grid {
     grid-template-rows: 1.6fr 0.5fr 1fr 0.8fr;
   }
   .contact_section-description {
     margin-top: -32rem;
+  }
+  .contact_section-redes {
+    margin-top: -22%;
   }
 }
 @media (min-width: 1600px) {

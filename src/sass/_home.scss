@@ -1,4 +1,5 @@
 .home {
+  margin-bottom: -10rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -90,14 +91,16 @@
 @media (min-width: 767px) {
 
   .info-icons-container {
-    width: 45%;
+    width: 42%;
   }
   .home {
+    margin-bottom: -5rem;
     .suscribe-container {
       margin: 0 auto;
       width: 45%;
     }
     .home_section-footer {
+      top: -10rem;
       margin-bottom: -10rem;
   }
   }
@@ -132,7 +135,7 @@
 @media (min-width: 992px) {
   .home_section-footer {
     .circle {
-      right: 16%;
+      right: 18%;
     }
   }
 }
@@ -148,7 +151,7 @@
 @media (min-width: 1400px) {
   .home_section-footer {
     .circle {
-      right: 22%;
+      right: 24%;
     }
   }
 }

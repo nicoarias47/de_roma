@@ -1,6 +1,8 @@
 .contact_section {
   &-hero {
+
     @include hero-father;
+    padding-bottom: 21rem;
   }
 
   &-img {
@@ -14,6 +16,7 @@
 
   &-redes {
     padding-bottom: 2rem;
+    padding-left: 2rem;
     border-bottom: 1px solid $color-grey-0;
     font-size: 1rem;
     color: $color-black-200;
@@ -78,6 +81,8 @@
     &-redes {
       border: none;
       grid-area: redes;
+      margin-left: 13%;
+      margin-top: 0%;
     }
 
     &-description {
@@ -92,6 +97,7 @@
   }
 
   .contact_section-footer {
+    top: -7rem; 
     .circle {
       right: 10%;
       top: 0rem;
@@ -113,6 +119,12 @@
       grid-template-rows: 1.3fr 0.5fr 1fr 0.8fr;
     }
 
+    &-redes {
+      border: none;
+      grid-area: redes;
+      margin-left: 13%;
+      margin-top: -12%;
+    }
     &-description {
       margin-top: -22rem;
     }
@@ -127,12 +139,13 @@
     .contact_decoration {
       @include deco;
       align-items: center;
+          margin-bottom: 7rem;
     }
   }
   .contact_section-footer {
     .circle {
       @include circle;
-      right: 22%;
+      right: 24%;
     }
   }
 }
@@ -140,7 +153,7 @@
 @media (min-width: 1400px) {
   .contact_section-footer {
     .circle {
-      right: 22%;
+      right: 26%;
     }
   }
   .contact_section {
@@ -150,6 +163,9 @@
 
     &-description {
       margin-top: -32rem;
+    }
+    &-redes {
+      margin-top: -22%;
     }
   }
 }

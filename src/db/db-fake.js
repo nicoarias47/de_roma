@@ -145,7 +145,7 @@ export const db = {
           img: contenedoresDeVidrio,
         },
         {
-          title: "dispenser",
+          title: "Dispenser",
           img: dispenser2,
         },
         {

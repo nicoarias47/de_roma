@@ -36,6 +36,7 @@
     background-position: center;
     width: 6rem;
     height: 2rem;
+    margin: 0 auto;
   }
 }
 
@@ -107,13 +108,14 @@
 .navbar-nav {
   display: flex;
   justify-content: space-evenly;
+  padding-left: 1rem;
 }
   .offcanvas-body {
     padding-top: 0;
     // width: 100%;
 
     .nav-link {
-      text-align: center;
+      text-align: initial;
       border-bottom: none;
       font-weight: 300;
       color: $color-white-0;

@@ -8,8 +8,8 @@ const Advertising = () => {
   const [show, setShow] = useState(false);
   const [isSuscribe, setIsSuscribe] = useState(false);
 
-  // para testear:
-  sessionStorage.removeItem("hasSeenModal");
+  // para testear la advertencia:
+  // sessionStorage.removeItem("hasSeenModal");
 
   const handleSubmit = (event) => {
     event.preventDefault();

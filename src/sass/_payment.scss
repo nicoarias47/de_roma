@@ -27,7 +27,7 @@
 
 .payment_section-footer {
   @include circle-father;
-  top: -10rem;
+  top: -8.5rem;
   margin-bottom: -18rem;
   height: 300px;
 
@@ -85,6 +85,7 @@
 
 @media (min-width: 992px) {
   .payment_section-footer {
+    top: -12rem;
     .circle {
       @include circle;
       right: 22%;
@@ -140,7 +141,7 @@
   }
   .payment_section-footer {
     .circle {
-      right: 22%;
+      right: 23%;
     }
   }
 }
@@ -148,7 +149,7 @@
 @media (min-width: 1400px) {
   .payment_section-footer {
     .circle {
-      right: 22%;
+      right: 24%;
     }
   }
 }
@@ -156,7 +157,7 @@
 @media (min-width: 1600px) {
   .payment_section-footer {
     .circle {
-      right: 30%;
+      right: 26%;
     }
   }
 }
