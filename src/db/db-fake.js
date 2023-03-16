@@ -73,7 +73,7 @@ export const db = {
           img: alfombras,
         },
         {
-          title: "Macrame",
+          title: "Macramé",
           img: macrame,
         },
         {
@@ -101,7 +101,7 @@ export const db = {
           img: centrosDeMesa,
         },
         {
-          title: "Ceramica",
+          title: "Cerámica",
           img: ceramica,
         },
         {
@@ -109,7 +109,7 @@ export const db = {
           img: cuadros,
         },
         {
-          title: "Lamparas",
+          title: "Lámparas",
           img: lamparas,
         },
         {
@@ -122,7 +122,7 @@ export const db = {
   jardin: [
     {
       id: 5,
-      title: "Jardin",
+      title: "Jardín",
       list: [
         {
           title: "Macetas",

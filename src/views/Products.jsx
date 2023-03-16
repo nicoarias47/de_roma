@@ -50,7 +50,7 @@ const Products = () => {
                       >
                         <Button>
                           <WspIcon stroke={"#ffffff"} />
-                          Ver catalogo
+                          Ver catálogo
                         </Button>
                       </a>
                     </div>

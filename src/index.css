@@ -267,6 +267,7 @@ h5 {
   margin-bottom: 1.5rem;
 }
 .main-carousel .carousel-indicators {
+  visibility: hidden;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -378,9 +379,9 @@ h5 {
     width: 90%;
   }
   .main-carousel .carousel-caption h3 {
-    font-size: 28px;
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
+    font-size: 31px;
+    margin-top: 0.5rem;
+    margin-bottom: 1.2rem;
   }
   .main-carousel .carousel-indicators {
     bottom: -65%;
@@ -422,7 +423,7 @@ h5 {
   text-align: center;
   display: block;
   margin-bottom: 2rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 .home .body3-mobile {
   display: none;

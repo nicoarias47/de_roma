@@ -43,7 +43,7 @@ const CardWithCarousel = ({ data }) => {
               >
                 <Button>
                   <WspIcon stroke={"#ffffff"} />
-                  Ver catalogo
+                  Ver catálogo
                 </Button>
               </a>
             </Card.Body>

@@ -14,7 +14,7 @@ const Doubts = () => {
       </div>
       <div className="row row-bottom background-doubts">
         <p className="body3">
-          Estamos aquí para ti. Escríbenos a WhatsApp o envíanos un mail
+          Estamos aquí para ti. Escríbenos a WhatsApp o envíanos un mail.
         </p>
         <div className="social-doubts">
           <a

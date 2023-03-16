@@ -64,7 +64,7 @@ const About = () => {
               <h5>¡Síguenos y se parte de esta comunidad!</h5>
               <span className="d-none d-md-block pt-4">
                 Conoce más sobre De Roma y comparte con nosotros el amor por la
-                deco
+                deco.
               </span>
               <a
                 href="https://www.instagram.com/de.roma_deco/"

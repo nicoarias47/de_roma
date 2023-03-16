@@ -39,7 +39,7 @@ const Faq = () => {
                 <Accordion.Body>
                   <p className="body4">
                     Sí, lo puedes recoger por
-                    Lomas o Temperley
+                    Lomas o Temperley.
                   </p>
                 </Accordion.Body>
               </Accordion.Item>
@@ -54,7 +54,7 @@ const Faq = () => {
                 <Accordion.Body>
                   <p className="body4">
                     El producto regresa a nosotras y el
-                    envío debe abonarse
+                    envío debe abonarse.
                   </p>
                 </Accordion.Body>
               </Accordion.Item>
@@ -67,7 +67,7 @@ const Faq = () => {
                 <Accordion.Body>
                   <p className="body4">
                     Sí, lo puedes recoger por
-                    Lomas o Temperley
+                    Lomas o Temperley.
                   </p>
                 </Accordion.Body>
               </Accordion.Item>

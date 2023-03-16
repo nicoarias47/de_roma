@@ -22,19 +22,19 @@ const Contact = () => {
           </section>
           <section className="col-12 contact_section-redes">
             <div className="row">
-                <div className="col-12 d-flex gap-2 align-items-center">
-                  <WspIcon stroke={"#B99470"} />
-                  <span>+54 11 6184-5560</span>
-                </div>
-                <div className="col-12 d-flex gap-2 align-items-center">
-                  <EmailIcon stroke={"#B99470"} />
-                  <span>drdecohome@gmail.com</span>
-                </div>
-                <div className="col-12 d-flex gap-2 align-items-center">
-                  <InstagramIcon stroke={"#B99470"} fill={"#B99470"} />
-                  <span>de.roma_deco</span>
-                </div>
+              <div className="col-12 d-flex gap-2 align-items-center">
+                <WspIcon stroke={"#B99470"} />
+                <span>+54 11 6184-5560</span>
               </div>
+              <div className="col-12 d-flex gap-2 align-items-center">
+                <EmailIcon stroke={"#B99470"} />
+                <span>drdecohome@gmail.com</span>
+              </div>
+              <div className="col-12 d-flex gap-2 align-items-center">
+                <InstagramIcon stroke={"#B99470"} fill={"#B99470"} />
+                <span>de.roma_deco</span>
+              </div>
+            </div>
           </section>
           <section className="col-12 contact_section-description">
             <h6>
@@ -42,9 +42,7 @@ const Contact = () => {
               Escríbenos!
             </h6>
             <span>
-              Completá la información y nos contactamos lo más pronto posible
-              ten en cuenta que nuestro horario de atención de Lunes a Lunes
-              hasta las 21:00 horas.
+              Completa la información y nos contactamos lo más pronto posible. Ten en cuenta que nuestro horario de atención es de Lunes a Lunes hasta las 21:00 horas.
             </span>
             {/* <ContactForm /> */}
             <ContactForm />
